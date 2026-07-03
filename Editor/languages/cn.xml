@@ -1,0 +1,4530 @@
+<?xml version="1.0"?>
+<!--This file was created by Wicked Engine for language localization.-->
+<!--You can import this file with the wi::Localization::Import() function.-->
+<entry id="0">保存</entry>
+<entry id="1">打开</entry>
+<entry id="2">后台日志</entry>
+<entry id="3">性能分析器</entry>
+<entry id="4">影院模式</entry>
+<entry id="5">全屏</entry>
+<entry id="6">窗口模式</entry>
+<entry id="7">错误报告</entry>
+<entry id="8">关于</entry>
+<entry id="9">退出</entry>
+<entry id="10">未命名场景</entry>
+<entry id="11">内容</entry>
+<section name="gui">
+	<section name="widget_46" />
+	<section name="Graphics" hint="Window">
+		<entry id="0" hint="text">图形选项 </entry>
+		<section name="HDR UI calibration: " hint="Slider">
+			<entry id="0" hint="text">HDR UI 校准： </entry>
+			<entry id="1" hint="tooltip">设置2D渲染的HDR输出乘数，仅在交换链输出格式为非SRGB时生效。
+注意：2D内容（RenderPath2D）内部始终以SDR渲染，此设置影响HDR显示的输出映射。</entry>
+		</section>
+		<section name="Sharpen.Strength: " hint="Slider">
+			<entry id="0" hint="text">强度： </entry>
+			<entry id="1" hint="tooltip">设置锐化滤镜强度。</entry>
+		</section>
+		<section name="Cube Shadowmap res: " hint="ComboBox">
+			<entry id="0" hint="text">立方体阴影贴图分辨率： </entry>
+			<entry id="1" hint="tooltip">选择立方体阴影贴图（点光源、面光源）的阴影质量预设...
+此设置指定这些光源类型的最大阴影分辨率，但除非单独设置为固定分辨率，否则可以动态变化。</entry>
+			<section name="items">
+				<entry id="0">关闭</entry>
+				<entry id="1">128</entry>
+				<entry id="2">256</entry>
+				<entry id="3">512</entry>
+				<entry id="4">1024</entry>
+				<entry id="5">2048</entry>
+			</section>
+		</section>
+		<section name="CRT Filter: " hint="CheckBox">
+			<entry id="0" hint="text">CRT 滤镜： </entry>
+			<entry id="1" hint="tooltip">切换最终图像的CRT屏幕滤镜后处理效果。</entry>
+		</section>
+		<section name="Path tracing statistics" hint="Label">
+			<entry id="0" hint="text">路径追踪统计信息</entry>
+		</section>
+		<section name="EyeAdaption: " hint="CheckBox">
+			<entry id="0" hint="text">眼睛适应： </entry>
+			<entry id="1" hint="tooltip">启用整体屏幕亮度的眼睛适应效果</entry>
+		</section>
+		<section name="Shadow type: " hint="ComboBox">
+			<entry id="0" hint="text">阴影类型： </entry>
+			<entry id="1" hint="tooltip">在阴影贴图和光线追踪阴影之间选择。
+注意：光线追踪阴影需要硬件光线追踪支持，否则不可用</entry>
+			<section name="items">
+				<entry id="0">阴影贴图</entry>
+				<entry id="1">光线追踪</entry>
+			</section>
+		</section>
+		<section name="DepthOfField.Strength: " hint="Slider">
+			<entry id="0" hint="text">强度： </entry>
+			<entry id="1" hint="tooltip">设置景深强度。用于缩放相机的光圈大小设置</entry>
+		</section>
+		<section name="Display Output: " hint="ComboBox">
+			<entry id="0" hint="text">显示输出： </entry>
+			<entry id="1" hint="tooltip">在不同显示输出格式之间选择。
+如果显示器不支持所选格式，将切换回合理的默认值。
+仅当当前显示器支持HDR输出时才能选择HDR格式</entry>
+			<section name="items">
+				<entry id="0">SDR 8bit</entry>
+				<entry id="1">SDR 10bit</entry>
+			</section>
+		</section>
+		<section name="VXGI Reflections: " hint="CheckBox">
+			<entry id="0" hint="text">VXGI 反射： </entry>
+			<entry id="1" hint="tooltip">切换VXGI的镜面反射计算。</entry>
+		</section>
+		<section name="SSR.Quality: " hint="Slider">
+			<entry id="0" hint="text">质量： </entry>
+			<entry id="1" hint="tooltip">设置屏幕空间反射的渲染质量。</entry>
+		</section>
+		<section name="widget_4" hint="ComboBox">
+			<entry id="1" hint="tooltip">选择Surfel GI调试可视化。</entry>
+			<section name="items">
+				<entry id="0">无调试</entry>
+				<entry id="1">法线</entry>
+				<entry id="2">颜色</entry>
+				<entry id="3">点</entry>
+				<entry id="4">随机</entry>
+				<entry id="5">热力图</entry>
+				<entry id="6">不一致</entry>
+			</section>
+		</section>
+		<section name="Capsule Shadows: " hint="CheckBox">
+			<entry id="0" hint="text">胶囊阴影： </entry>
+			<entry id="1" hint="tooltip">启用环境光遮蔽胶囊阴影。</entry>
+		</section>
+		<section name="RTReflection.Quality: " hint="Slider">
+			<entry id="0" hint="text">质量： </entry>
+			<entry id="1" hint="tooltip">设置光线追踪反射的渲染质量。</entry>
+		</section>
+		<section name="Key: " hint="Slider">
+			<entry id="0" hint="text">键值： </entry>
+			<entry id="1" hint="tooltip">设置眼睛适应的键值。</entry>
+		</section>
+		<section name="Sample count: " hint="Slider">
+			<entry id="0" hint="text">采样数： </entry>
+			<entry id="1" hint="tooltip">路径追踪将每像素执行此数量的采样。</entry>
+		</section>
+		<section name="Strength: " hint="Slider">
+			<entry id="0" hint="text">强度： </entry>
+			<entry id="1" hint="tooltip">镜头畸变量。</entry>
+		</section>
+		<section name="RTDiffuse.Quality: " hint="Slider">
+			<entry id="0" hint="text">质量： </entry>
+			<entry id="1" hint="tooltip">设置光线追踪漫反射的渲染质量。</entry>
+		</section>
+		<section name="VXGI Distance: " hint="Slider">
+			<entry id="0" hint="text">VXGI 距离： </entry>
+			<entry id="1" hint="tooltip">调整VXGI的最大光线步进距离。</entry>
+		</section>
+		<section name="Rate: " hint="Slider">
+			<entry id="0" hint="text">速率： </entry>
+			<entry id="1" hint="tooltip">设置眼睛适应速率（调整速度）</entry>
+		</section>
+		<section name="Sample Count: " hint="Slider">
+			<entry id="0" hint="text">采样数： </entry>
+			<entry id="1" hint="tooltip">设置AO光线数量。仅用于SSAO</entry>
+		</section>
+		<section name="AO.Range: " hint="Slider">
+			<entry id="0" hint="text">范围： </entry>
+			<entry id="1" hint="tooltip">设置AO光线长度。仅用于SSAO和RTAO</entry>
+		</section>
+		<section name="Cartoon Outline: " hint="CheckBox">
+			<entry id="0" hint="text">卡通轮廓： </entry>
+			<entry id="1" hint="tooltip">切换卡通轮廓效果。仅对启用了卡通轮廓的材质进行轮廓描绘。</entry>
+		</section>
+		<section name="Allow Mesh Shader: " hint="CheckBox">
+			<entry id="0" hint="text">允许网格着色器： </entry>
+			<entry id="1" hint="tooltip">允许使用网格着色器渲染对象（需要GPU支持）。
+注意：场景必须重新加载才能生效，因为这需要额外的网格处理！</entry>
+		</section>
+		<section name="Cutoff: " hint="Slider">
+			<entry id="0" hint="text">截止值： </entry>
+			<entry id="1" hint="tooltip">设置可用于应用屏幕空间或光线追踪反射的最大粗糙度。</entry>
+		</section>
+		<section name="Bloom.Threshold: " hint="Slider">
+			<entry id="0" hint="text">阈值： </entry>
+			<entry id="1" hint="tooltip">设置泛光阈值。低于此值的像素不会在屏幕上发光。</entry>
+		</section>
+		<section name="DDGI RayCount: " hint="Slider">
+			<entry id="0" hint="text">DDGI 光线数： </entry>
+			<entry id="1" hint="tooltip">调整每个DDGI探针的光线数量。</entry>
+		</section>
+		<section name="2.5D Light Culling: " hint="CheckBox">
+			<entry id="0" hint="text">2.5D 光源剔除： </entry>
+			<entry id="1" hint="tooltip">启用更激进的光源剔除方法，可能导致剔除变慢但渲染更快（仅限分块渲染器）</entry>
+		</section>
+		<section name="2D Shadowmap res: " hint="ComboBox">
+			<entry id="0" hint="text">2D 阴影贴图分辨率： </entry>
+			<entry id="1" hint="tooltip">选择2D阴影贴图（聚光灯、方向光）的阴影质量预设...
+此设置指定这些光源类型的最大阴影分辨率，但除非单独设置为固定分辨率，否则可以动态变化。</entry>
+			<section name="items">
+				<entry id="0">关闭</entry>
+				<entry id="1">128</entry>
+				<entry id="2">256</entry>
+				<entry id="3">512</entry>
+				<entry id="4">1024</entry>
+				<entry id="5">2048</entry>
+				<entry id="6">4096</entry>
+			</section>
+		</section>
+		<section name="DDGI Smoothen: " hint="Slider">
+			<entry id="0" hint="text">DDGI 平滑： </entry>
+			<entry id="1" hint="tooltip">调整平滑背面测试的程度。</entry>
+		</section>
+		<section name="HDR calibration: " hint="Slider">
+			<entry id="0" hint="text">HDR 校准： </entry>
+			<entry id="1" hint="tooltip">设置3D渲染的HDR输出乘数，仅在交换链输出格式为非SRGB时生效。
+注意：3D内容（RenderPath3D）内部始终以HDR渲染，此设置影响HDR显示的输出映射。</entry>
+		</section>
+		<section name="RT Reflections: " hint="CheckBox">
+			<entry id="0" hint="text">RT 反射： </entry>
+			<entry id="1" hint="tooltip">启用光线追踪反射。仅在GPU支持光线追踪时可用。</entry>
+		</section>
+		<section name="AO: " hint="ComboBox">
+			<entry id="0" hint="text">AO： </entry>
+			<entry id="1" hint="tooltip">选择环境光遮蔽类型。RTAO仅在硬件支持光线追踪时可用</entry>
+			<section name="items">
+				<entry id="0">禁用</entry>
+				<entry id="1">SSAO</entry>
+				<entry id="2">HBAO</entry>
+				<entry id="3">MSAO</entry>
+				<entry id="4">RTAO</entry>
+			</section>
+		</section>
+		<section name="Outline.Threshold: " hint="Slider">
+			<entry id="0" hint="text">阈值： </entry>
+			<entry id="1" hint="tooltip">轮廓边缘检测阈值。如果检测到的轮廓不够则增大此值，如果检测到的轮廓太多则减小此值。</entry>
+		</section>
+		<section name="Power: " hint="Slider">
+			<entry id="0" hint="text">强度： </entry>
+			<entry id="1" hint="tooltip">设置SSAO强度。值越大效果越暗、越明显</entry>
+		</section>
+		<section name="Visibility Compute Shading: " hint="CheckBox">
+			<entry id="0" hint="text">可见性计算着色： </entry>
+			<entry id="1" hint="tooltip">可见性计算着色（实验性）
+这将在计算着色器而非像素着色器中着色场景
+初始性能成本较高，但在高多边形场景中会更快。
+与MSAA和曲面细分不兼容。</entry>
+		</section>
+		<section name="Render Path: " hint="ComboBox">
+			<entry id="0" hint="text">渲染路径： </entry>
+			<entry id="1" hint="tooltip">选择渲染路径...
+路径追踪将在非光线追踪GPU上使用回退光线追踪，速度会很慢。
+更改渲染路径将重置部分图形设置！</entry>
+			<section name="items">
+				<entry id="0">默认</entry>
+				<entry id="1">路径追踪</entry>
+			</section>
+		</section>
+		<section name="Streaming Threshold: " hint="Slider">
+			<entry id="0" hint="text">流式加载阈值： </entry>
+			<entry id="1" hint="tooltip">调整纹理流式加载阈值（可用显存的百分比）。
+如果显存使用超过预算，流式系统将尝试降低纹理质量。
+注意：仅DDS纹理支持流式加载。</entry>
+		</section>
+		<section name="Raytrace Bounces: " hint="Slider">
+			<entry id="0" hint="text">光线追踪弹射次数： </entry>
+			<entry id="1" hint="tooltip">执行以下光线追踪效果时计算的光线弹射次数：
+- 路径追踪
+- 光照贴图烘焙</entry>
+		</section>
+		<section name="DEBUGJitter: " hint="CheckBox">
+			<entry id="0" hint="text">调试： </entry>
+			<entry id="1" hint="tooltip">禁用帧历史混合。相机子像素抖动将可见。</entry>
+		</section>
+		<section name="FSR 2.1 Preset: " hint="ComboBox">
+			<entry id="0" hint="text">FSR 2.1 预设： </entry>
+			<entry id="1" hint="tooltip">设置FSR 2.1的分辨率缩放质量模式：
+质量：1.5x
+平衡：1.7x
+性能：2.0x
+超高性能：3.0x</entry>
+			<section name="items">
+				<entry id="0">质量</entry>
+				<entry id="1">平衡</entry>
+				<entry id="2">性能</entry>
+				<entry id="3">超高性能</entry>
+			</section>
+		</section>
+		<section name="DepthOfField: " hint="CheckBox">
+			<entry id="0" hint="text">景深： </entry>
+			<entry id="1" hint="tooltip">启用景深效果。需要额外的相机设置：焦距和光圈大小。</entry>
+		</section>
+		<section name="Dithering: " hint="CheckBox">
+			<entry id="0" hint="text">抖动： </entry>
+			<entry id="1" hint="tooltip">切换全屏抖动效果。这有助于减少色彩条带。</entry>
+		</section>
+		<section name="CapsuleShadow.Fade: " hint="Slider">
+			<entry id="0" hint="text">胶囊阴影淡出： </entry>
+			<entry id="1" hint="tooltip">设置胶囊阴影淡出。</entry>
+		</section>
+		<section name="Tonemap: " hint="ComboBox">
+			<entry id="0" hint="text">色调映射： </entry>
+			<entry id="1" hint="tooltip">选择色调映射类型</entry>
+			<section name="items">
+				<entry id="0">Reinhard</entry>
+				<entry id="1">ACES</entry>
+				<entry id="2">Uchimura</entry>
+			</section>
+		</section>
+		<section name="VXGI Ray Step: " hint="Slider">
+			<entry id="0" hint="text">VXGI 光线步进： </entry>
+			<entry id="1" hint="tooltip">调整[反射]锥形追踪步进的光线步进精度。值越小精度越高但性能越慢。</entry>
+		</section>
+		<section name="GI Boost: " hint="Slider">
+			<entry id="0" hint="text">GI 增强： </entry>
+			<entry id="1" hint="tooltip">调整GI的强度。
+注意：非1.0的值会导致与路径追踪参考不匹配！</entry>
+		</section>
+		<section name="DEBUG: " hint="CheckBox">
+			<entry id="0" hint="text">调试： </entry>
+			<entry id="1" hint="tooltip">切换屏幕空间光源剔除热力图网格的可视化（仅限分块渲染器）</entry>
+		</section>
+		<section name="Lightshaft.Strength: " hint="Slider">
+			<entry id="0" hint="text">强度： </entry>
+			<entry id="1" hint="tooltip">设置光轴强度。</entry>
+		</section>
+		<section name="SSGI.DepthRejection" hint="Slider">
+			<entry id="0" hint="text">深度： </entry>
+			<entry id="1" hint="tooltip">SSGI深度拒绝距离。</entry>
+		</section>
+		<section name="Thickness: " hint="Slider">
+			<entry id="0" hint="text">厚度： </entry>
+			<entry id="1" hint="tooltip">设置轮廓厚度。</entry>
+		</section>
+		<section name="Tessellation: " hint="CheckBox">
+			<entry id="0" hint="text">曲面细分： </entry>
+			<entry id="1" hint="tooltip">启用曲面细分功能。还需要为单个对象指定曲面细分因子。</entry>
+		</section>
+		<section name="VSync: " hint="CheckBox">
+			<entry id="0" hint="text">垂直同步： </entry>
+			<entry id="1" hint="tooltip">切换垂直同步</entry>
+		</section>
+		<section name="Surfel GI: " hint="CheckBox">
+			<entry id="0" hint="text">Surfel GI： </entry>
+			<entry id="1" hint="tooltip">Surfel GI是一种使用光线追踪和表面缓存的光线追踪漫反射GI。</entry>
+		</section>
+		<section name="FSR 1.0: " hint="CheckBox">
+			<entry id="0" hint="text">FSR 1.0： </entry>
+			<entry id="1" hint="tooltip">FidelityFX FSR超分辨率版本1.0。在降低分辨率缩放时与时间抗锯齿或MSAA一起使用。</entry>
+		</section>
+		<section name="FSR 2.1: " hint="CheckBox">
+			<entry id="0" hint="text">FSR 2.1： </entry>
+			<entry id="1" hint="tooltip">FidelityFX FSR超分辨率版本2.1。可替代时间抗锯齿，同时从降低的渲染分辨率进行超分辨率。
+启用FSR 2.1将根据预设应用降低分辨率渲染，但也可以将分辨率缩放修改为自定义值。
+禁用FSR 2.1将保留分辨率缩放设置，不会重置。</entry>
+		</section>
+		<section name="widget_8" hint="TextInputField">
+			<entry id="1" hint="tooltip">Z维度的探针数量。</entry>
+		</section>
+		<section name="Meshlet Occlusion Culling: " hint="CheckBox">
+			<entry id="0" hint="text">Meshlet 遮挡剔除： </entry>
+			<entry id="1" hint="tooltip">单个meshlet是否可以使用专用遮挡剔除（需要GPU支持网格着色器）。</entry>
+		</section>
+		<section name="SSR: " hint="CheckBox">
+			<entry id="0" hint="text">SSR： </entry>
+			<entry id="1" hint="tooltip">启用屏幕空间反射。无法反射屏幕之外的任何内容。</entry>
+		</section>
+		<section name="VXGI Voxel Size: " hint="Slider">
+			<entry id="0" hint="text">VXGI 体素大小： </entry>
+			<entry id="1" hint="tooltip">调整VXGI计算的体素大小。</entry>
+		</section>
+		<section name="Brightness: " hint="Slider">
+			<entry id="0" hint="text">亮度： </entry>
+		</section>
+		<section name="LensFlare: " hint="CheckBox">
+			<entry id="0" hint="text">镜头光晕： </entry>
+			<entry id="1" hint="tooltip">切换光源光晕的可见性。需要为每个光源额外设置才能看到镜头光晕。</entry>
+		</section>
+		<section name="Fade Speed: " hint="Slider">
+			<entry id="0" hint="text">淡出速度： </entry>
+			<entry id="1" hint="tooltip">设置光轴淡出速度。值越大淡出越快。</entry>
+		</section>
+		<section name="Speed: " hint="Slider">
+			<entry id="0" hint="text">速度： </entry>
+			<entry id="1" hint="tooltip">调整全局速度（时间乘数）</entry>
+		</section>
+		<section name="VXGI: " hint="CheckBox">
+			<entry id="0" hint="text">VXGI： </entry>
+			<entry id="1" hint="tooltip">切换体素全局光照。</entry>
+		</section>
+		<section name="Samples: " hint="Slider">
+			<entry id="0" hint="text">采样数： </entry>
+			<entry id="1" hint="tooltip">接触阴影的采样数。值越大质量越好但速度越慢。</entry>
+		</section>
+		<section name="Sharpen Filter: " hint="CheckBox">
+			<entry id="0" hint="text">锐化滤镜： </entry>
+			<entry id="1" hint="tooltip">切换最终图像的锐化后处理效果。</entry>
+		</section>
+		<section name="widget_9" hint="ComboBox">
+			<entry id="1" hint="tooltip">切换VXGI可视化。</entry>
+			<section name="items">
+				<entry id="0">无调试</entry>
+				<entry id="1">Clipmaps</entry>
+				<entry id="2">Clipmap 0</entry>
+				<entry id="3">Clipmap 1</entry>
+				<entry id="4">Clipmap 2</entry>
+				<entry id="5">Clipmap 3</entry>
+				<entry id="6">Clipmap 4</entry>
+				<entry id="7">Clipmap 5</entry>
+			</section>
+		</section>
+		<section name="FSR1.Sharpness: " hint="Slider">
+			<entry id="0" hint="text">锐度： </entry>
+			<entry id="1" hint="tooltip">FSR 1.0超分辨率的锐化量。注意：值越小锐度越高。</entry>
+		</section>
+		<section name="RT Diffuse: " hint="CheckBox">
+			<entry id="0" hint="text">RT 漫反射： </entry>
+			<entry id="1" hint="tooltip">启用光线追踪漫反射。仅在GPU支持光线追踪时可用。
+此效果每像素使用光线追踪计算单次弹射漫反射。
+如果启用了DDGI，将使其变为多次弹射。</entry>
+		</section>
+		<section name="Resolution Scale: " hint="Slider">
+			<entry id="0" hint="text">分辨率缩放： </entry>
+			<entry id="1" hint="tooltip">调整内部渲染分辨率。</entry>
+		</section>
+		<section name="DDGI Blend Speed: " hint="Slider">
+			<entry id="0" hint="text">DDGI 混合速度： </entry>
+			<entry id="1" hint="tooltip">调整新追踪光线的贡献。值越大DDGI更新越快，但可能导致闪烁增加。</entry>
+		</section>
+		<section name="Color Grading: " hint="CheckBox">
+			<entry id="0" hint="text">色彩分级： </entry>
+			<entry id="1" hint="tooltip">启用最终渲染的色彩分级。必须在天气系统中设置额外的查找纹理！</entry>
+		</section>
+		<section name="VRS Classification: " hint="CheckBox">
+			<entry id="0" hint="text">VRS 分类： </entry>
+			<entry id="1" hint="tooltip">启用屏幕上可变速率着色的分类。不太重要的部分将以较低的分辨率着色。
+需要可变着色速率的Tier2支持</entry>
+		</section>
+		<section name="Temporal AA: " hint="CheckBox">
+			<entry id="0" hint="text">时间抗锯齿： </entry>
+			<entry id="1" hint="tooltip">切换时间抗锯齿。这是一种跨多帧执行的超采样技术。</entry>
+		</section>
+		<section name="RTReflection.Range: " hint="Slider">
+			<entry id="0" hint="text">范围： </entry>
+			<entry id="1" hint="tooltip">设置光线追踪反射的反射光线长度。</entry>
+		</section>
+		<section name="MSAA: " hint="ComboBox">
+			<entry id="0" hint="text">MSAA： </entry>
+			<entry id="1" hint="tooltip">多重采样抗锯齿质量。 </entry>
+			<section name="items">
+				<entry id="0">关闭</entry>
+				<entry id="1">2</entry>
+				<entry id="2">4</entry>
+				<entry id="3">8</entry>
+			</section>
+		</section>
+		<section name="FXAA: " hint="CheckBox">
+			<entry id="0" hint="text">FXAA： </entry>
+			<entry id="1" hint="tooltip">快速近似抗锯齿。一种快速的抗锯齿方法，但可能有些模糊。</entry>
+		</section>
+		<section name="Shadow LOD override: " hint="CheckBox">
+			<entry id="0" hint="text">阴影 LOD 覆盖： </entry>
+			<entry id="1" hint="tooltip">启用阴影贴图的自定义LOD选择。
+这可能导致相机中物体和阴影之间的LOD不匹配，但可以提升性能。</entry>
+		</section>
+		<section name="LightShafts: " hint="CheckBox">
+			<entry id="0" hint="text">光轴： </entry>
+			<entry id="1" hint="tooltip">启用方向光源的光轴效果。</entry>
+		</section>
+		<section name="Chromatic Aberration: " hint="CheckBox">
+			<entry id="0" hint="text">色差： </entry>
+			<entry id="1" hint="tooltip">切换全屏色差效果。模拟屏幕边缘的镜头畸变。</entry>
+		</section>
+		<section name="widget_6" hint="TextInputField">
+			<entry id="1" hint="tooltip">X维度的探针数量。</entry>
+		</section>
+		<section name="CapsuleShadow.Angle: " hint="Slider">
+			<entry id="0" hint="text">角度： </entry>
+			<entry id="1" hint="tooltip">设置胶囊阴影展开角度。</entry>
+		</section>
+		<section name="Motionblur.Strength: " hint="Slider">
+			<entry id="0" hint="text">强度： </entry>
+			<entry id="1" hint="tooltip">设置运动模糊的相机快门速度（值越大模糊越强）。</entry>
+		</section>
+		<section name="Reflections: " hint="CheckBox">
+			<entry id="0" hint="text">反射： </entry>
+			<entry id="1" hint="tooltip">启用水和平面反射等材质的反射。</entry>
+		</section>
+		<section name="Bloom: " hint="CheckBox">
+			<entry id="0" hint="text">泛光： </entry>
+			<entry id="1" hint="tooltip">启用泛光。此效果为场景中最亮的部分添加色彩溢出。</entry>
+		</section>
+		<section name="SSGI: " hint="CheckBox">
+			<entry id="0" hint="text">SSGI： </entry>
+			<entry id="1" hint="tooltip">启用屏幕空间全局光照，可以添加来自屏幕上物体的光线弹射效果。</entry>
+		</section>
+		<section name="Contrast: " hint="Slider">
+			<entry id="0" hint="text">对比度： </entry>
+		</section>
+		<section name="Saturation: " hint="Slider">
+			<entry id="0" hint="text">饱和度： </entry>
+		</section>
+		<section name="Texture Quality: " hint="ComboBox">
+			<entry id="0" hint="text">纹理质量： </entry>
+			<entry id="1" hint="tooltip">选择材质纹理的纹理采样方法。</entry>
+			<section name="items">
+				<entry id="0">最近邻</entry>
+				<entry id="1">双线性</entry>
+				<entry id="2">三线性</entry>
+				<entry id="3">各向异性</entry>
+			</section>
+		</section>
+		<section name="Screen Shadows: " hint="CheckBox">
+			<entry id="0" hint="text">屏幕阴影： </entry>
+			<entry id="1" hint="tooltip">启用屏幕空间接触阴影。可以为阴影贴图在屏幕空间中添加小阴影细节。</entry>
+		</section>
+		<section name="widget_7" hint="TextInputField">
+			<entry id="1" hint="tooltip">Y维度的探针数量。</entry>
+		</section>
+		<section name="Tonemap Exposure: " hint="Slider">
+			<entry id="0" hint="text">色调映射曝光： </entry>
+			<entry id="1" hint="tooltip">设置色调映射曝光值</entry>
+		</section>
+		<section name="ScreenspaceShadows.Range: " hint="Slider">
+			<entry id="0" hint="text">范围： </entry>
+			<entry id="1" hint="tooltip">接触阴影的范围</entry>
+		</section>
+		<section name="Mesh Blend: " hint="CheckBox">
+			<entry id="0" hint="text">网格混合： </entry>
+			<entry id="1" hint="tooltip">全局启用网格混合后处理。</entry>
+		</section>
+		<section name="FSR2.Sharpness: " hint="Slider">
+			<entry id="0" hint="text">锐度： </entry>
+			<entry id="1" hint="tooltip">FSR 2.1超分辨率的锐化量。</entry>
+		</section>
+		<section name="Occlusion Culling: " hint="CheckBox">
+			<entry id="0" hint="text">遮挡剔除： </entry>
+			<entry id="1" hint="tooltip">切换遮挡剔除。如果场景中有许多被遮挡的物体，这可以提升帧率。</entry>
+		</section>
+		<section name="MipLOD Bias: " hint="Slider">
+			<entry id="0" hint="text">MipLOD 偏移： </entry>
+			<entry id="1" hint="tooltip">偏移材质纹理的渲染Mipmap级别。</entry>
+		</section>
+		<section name="MotionBlur: " hint="CheckBox">
+			<entry id="0" hint="text">运动模糊： </entry>
+			<entry id="1" hint="tooltip">启用相机移动和动画网格的运动模糊。</entry>
+		</section>
+		<section name="RTDiffuse.Range: " hint="Slider">
+			<entry id="0" hint="text">范围： </entry>
+			<entry id="1" hint="tooltip">设置光线追踪漫反射的反射光线长度。</entry>
+		</section>
+		<section name="DDGI: " hint="CheckBox">
+			<entry id="0" hint="text">DDGI： </entry>
+			<entry id="1" hint="tooltip">切换动态漫反射全局光照（DDGI）。
+注意：关闭后，随场景加载的DDGI探针仍将保持活动，但不会被更新。</entry>
+		</section>
+	</section>
+	<section name="GuiScaling" hint="ComboBox">
+		<entry id="1" hint="tooltip">设置GUI的自定义缩放因子。
+注意：这是在操作系统显示器DPI缩放之外的额外缩放。</entry>
+		<section name="items">
+			<entry id="0">50%</entry>
+			<entry id="1">75%</entry>
+			<entry id="2">100%</entry>
+			<entry id="3">125%</entry>
+			<entry id="4">150%</entry>
+			<entry id="5">175%</entry>
+			<entry id="6">200%</entry>
+			<entry id="7">225%</entry>
+			<entry id="8">250%</entry>
+		</section>
+	</section>
+	<section name="General" hint="Window">
+		<entry id="0" hint="text">通用选项</entry>
+		<section name=" Create Localization Template" hint="Button">
+			<entry id="0" hint="text"> Create Localization Template</entry>
+			<entry id="1" hint="tooltip">生成一个可用于编辑编辑器本地化的文件。
+模板将从当前选择的语言创建。</entry>
+		</section>
+		<section name="AABB visualizer: " hint="CheckBox">
+			<entry id="0" hint="text">AABB 可视化器：</entry>
+			<entry id="1" hint="tooltip">Visualize the scene bounding boxes</entry>
+		</section>
+		<section name=" Force Field visualizer: " hint="CheckBox">
+			<entry id="0" hint="text"> Force Field visualizer: </entry>
+			<entry id="1" hint="tooltip">Visualize force fields</entry>
+		</section>
+		<section name="Opacity: " hint="Slider">
+			<entry id="0" hint="text">Opacity: </entry>
+			<entry id="1" hint="tooltip">You can control the transparency of the transform tool</entry>
+		</section>
+		<section name=" Spline visualizer: " hint="CheckBox">
+			<entry id="0" hint="text"> Spline visualizer: </entry>
+			<entry id="1" hint="tooltip">Toggle visualization of splines in the scene</entry>
+		</section>
+		<section name=" Emitter visualizer: " hint="CheckBox">
+			<entry id="0" hint="text"> Emitter visualizer: </entry>
+			<entry id="1" hint="tooltip">Visualize emitters</entry>
+		</section>
+		<section name="Render wireframe: " hint="ComboBox">
+			<entry id="0" hint="text">Render wireframe: </entry>
+			<entry id="1" hint="tooltip">Choose wireframe rendering mode:
+Disabled: Normal rendering
+Wireframe Only: Replace geometry with wireframe
+Wireframe Overlay: Show wireframe on top of geometry</entry>
+			<section name="items">
+				<entry id="0">Disabled</entry>
+				<entry id="1">Wireframe Only</entry>
+				<entry id="2">Wireframe Overlay</entry>
+			</section>
+		</section>
+		<section name="Name visualizer: " hint="CheckBox">
+			<entry id="0" hint="text">Name visualizer: </entry>
+			<entry id="1" hint="tooltip">Visualize the entity names in the scene</entry>
+		</section>
+		<section name="Bone Picker Opacity: " hint="Slider">
+			<entry id="0" hint="text">Bone Picker Opacity: </entry>
+			<entry id="1" hint="tooltip">You can control the transparency of the bone selector tool</entry>
+		</section>
+		<section name="Disable gradient in GUI: " hint="CheckBox">
+			<entry id="0" hint="text">Disable gradient in GUI: </entry>
+			<entry id="1" hint="tooltip">Disable gradient for the editor GUI elements.</entry>
+		</section>
+		<section name="Save compressed: " hint="CheckBox">
+			<entry id="0" hint="text">Save compressed: </entry>
+			<entry id="1" hint="tooltip">Set whether to enable compression when saving WISCENE files.
+Note that compressed WISCENE with embedded resources will have higher RAM usage when loaded to support streaming.</entry>
+		</section>
+		<section name="Theme: " hint="ComboBox">
+			<entry id="0" hint="text">Theme: </entry>
+			<entry id="1" hint="tooltip">Choose a color theme...</entry>
+			<section name="items">
+				<entry id="0">Dark </entry>
+				<entry id="1">Bright </entry>
+				<entry id="2">Soft </entry>
+				<entry id="3">Hacking </entry>
+				<entry id="4">Nord </entry>
+				<entry id="5">Custom </entry>
+			</section>
+		</section>
+		<section name="Info: " hint="CheckBox">
+			<entry id="0" hint="text">Info: </entry>
+			<entry id="1" hint="tooltip">Toggle advanced data in the info display text in top left corner.</entry>
+		</section>
+		<section name=" Bone line visualizer: " hint="CheckBox">
+			<entry id="0" hint="text"> Bone line visualizer: </entry>
+			<entry id="1" hint="tooltip">Visualize bones of armatures</entry>
+		</section>
+		<section name=" Skeletons always visible: " hint="CheckBox">
+			<entry id="0" hint="text"> Skeletons always visible: </entry>
+			<entry id="1" hint="tooltip">Armature skeletons will be always visible, even when not selected.</entry>
+		</section>
+		<section name="Language: " hint="ComboBox">
+			<entry id="0" hint="text">Language: </entry>
+			<entry id="1" hint="tooltip">Select a language. 
+You can also create a new language option by adding an XML file to the languages folder.
+There is a button below that you can use to create a language template.</entry>
+		</section>
+		<section name="Disable round corners in GUI: " hint="CheckBox">
+			<entry id="0" hint="text">Disable round corners in GUI: </entry>
+			<entry id="1" hint="tooltip">Disable corner rounding for the editor GUI elements.</entry>
+		</section>
+		<section name="Freeze culling camera: " hint="CheckBox">
+			<entry id="0" hint="text">Freeze culling camera: </entry>
+			<entry id="1" hint="tooltip">Freeze culling camera update. Scene culling will not be updated with the view</entry>
+		</section>
+		<section name="Force unlit: " hint="CheckBox">
+			<entry id="0" hint="text">Force unlit: </entry>
+			<entry id="1" hint="tooltip">Sets every surface without lighting and shadows</entry>
+		</section>
+		<section name="Thickness: " hint="Slider">
+			<entry id="0" hint="text">Thickness: </entry>
+			<entry id="1" hint="tooltip">Adjust the line and shape thickness of the transform tool</entry>
+		</section>
+		<section name="themeEditorButton" hint="Button">
+			<entry id="0" hint="text"></entry>
+			<entry id="1" hint="tooltip">Open the theme editor.</entry>
+		</section>
+		<section name="FPS: " hint="CheckBox">
+			<entry id="0" hint="text">FPS: </entry>
+			<entry id="1" hint="tooltip">Toggle the FPS display text in top left corner.</entry>
+		</section>
+		<section name="Master Volume: " hint="Slider">
+			<entry id="0" hint="text">Master Volume: </entry>
+		</section>
+		<section name=" Focus mode GUI: " hint="CheckBox">
+			<entry id="0" hint="text"> Focus mode GUI: </entry>
+			<entry id="1" hint="tooltip">Reduce the amount of effects in the editor GUI to improve accessibility</entry>
+		</section>
+		<section name="Disable albedo maps: " hint="CheckBox">
+			<entry id="0" hint="text">Disable albedo maps: </entry>
+			<entry id="1" hint="tooltip">Disables albedo maps on objects for easier lighting debugging</entry>
+		</section>
+		<section name="Save Mode: " hint="ComboBox">
+			<entry id="0" hint="text">Save Mode: </entry>
+			<entry id="1" hint="tooltip">Choose whether to embed resources (textures, sounds...) in the scene file when saving, or keep them as separate files.
+The Dump to header () option will use embedding and create a C++ header file with byte data of the scene to be used with wi::Archive serialization.</entry>
+			<section name="items">
+				<entry id="0">Embed resources </entry>
+				<entry id="1">No embedding </entry>
+			</section>
+		</section>
+		<section name="Place entities in front of camera: " hint="CheckBox">
+			<entry id="0" hint="text">Place entities in front of camera: </entry>
+			<entry id="1" hint="tooltip">When enabled, newly created entities and imported models will be positioned in front of the editor camera instead of at the origin.</entry>
+		</section>
+		<section name="Force diffuse lighting: " hint="CheckBox">
+			<entry id="0" hint="text">Force diffuse lighting: </entry>
+			<entry id="1" hint="tooltip">Sets every surface fully diffuse, with zero specularity</entry>
+		</section>
+		<section name="Delete duplicate colliders" hint="Button">
+			<entry id="0" hint="text">Delete duplicate colliders</entry>
+			<entry id="1" hint="tooltip">Duplicate colliders will be removed from the scene.</entry>
+		</section>
+		<section name="Grid helper: " hint="CheckBox">
+			<entry id="0" hint="text">Grid helper: </entry>
+			<entry id="1" hint="tooltip">Toggle showing of unit visualizer grid in the world origin</entry>
+		</section>
+		<section name="Scale: " hint="Slider">
+			<entry id="0" hint="text">Scale: </entry>
+			<entry id="1" hint="tooltip">Adjust the overall size of the transform tool</entry>
+		</section>
+		<section name="Transform Tool" hint="Label">
+			<entry id="0" hint="text">Transform Tool</entry>
+		</section>
+		<section name="Version: " hint="CheckBox">
+			<entry id="0" hint="text">Version: </entry>
+			<entry id="1" hint="tooltip">Toggle the engine version display text in top left corner.</entry>
+		</section>
+		<section name="Darken Negative Axes: " hint="Slider">
+			<entry id="0" hint="text">Darken Negative Axes: </entry>
+			<entry id="1" hint="tooltip">You can control the darkening of the transform tool's negative axes</entry>
+		</section>
+		<section name=" Env probe visualizer: " hint="CheckBox">
+			<entry id="0" hint="text"> Env probe visualizer: </entry>
+			<entry id="1" hint="tooltip">Toggle visualization of environment probes as reflective spheres</entry>
+		</section>
+		<section name="Physics draw distance: " hint="Slider">
+			<entry id="0" hint="text">Physics draw distance: </entry>
+			<entry id="1" hint="tooltip">Maximum distance to draw physics debug shapes</entry>
+		</section>
+		<section name="Physics visualizer: " hint="CheckBox">
+			<entry id="0" hint="text">Physics visualizer: </entry>
+			<entry id="1" hint="tooltip">Visualize the physics world</entry>
+		</section>
+		<section name="DDS Convert" hint="Button">
+			<entry id="0" hint="text">DDS Convert</entry>
+			<entry id="1" hint="tooltip">All material textures in the scene will be converted to DDS format.
+DDS format is optimal for GPU and can be streamed.</entry>
+		</section>
+		<section name=" Camera visualizer: " hint="CheckBox">
+			<entry id="0" hint="text"> Camera visualizer: </entry>
+			<entry id="1" hint="tooltip">Toggle visualization of camera proxies in the scene</entry>
+		</section>
+		<section name="Entity Tree Sorting: " hint="ComboBox">
+			<entry id="0" hint="text">Entity Tree Sorting: </entry>
+			<entry id="1" hint="tooltip">Choose how entities are sorted in the entity tree.
+None: Unsorted
+By name: Alphabetically sorted
+By type: Grouped by component types</entry>
+			<section name="items">
+				<entry id="0">None</entry>
+				<entry id="1">By name</entry>
+				<entry id="2">By type</entry>
+			</section>
+		</section>
+		<section name="Outline Opacity: " hint="Slider">
+			<entry id="0" hint="text">Outline Opacity: </entry>
+			<entry id="1" hint="tooltip">You can control the transparency of the selection outline</entry>
+		</section>
+		<section name="RT BVH visualizer: " hint="CheckBox">
+			<entry id="0" hint="text">RT BVH visualizer: </entry>
+			<entry id="1" hint="tooltip">Visualize scene BVH if raytracing is enabled (only for software raytracing currently)</entry>
+		</section>
+		<section name=" Spring visualizer: " hint="CheckBox">
+			<entry id="0" hint="text"> Spring visualizer: </entry>
+			<entry id="1" hint="tooltip">Toggle visualization of springs in the scene</entry>
+		</section>
+		<section name="EliminateCoarseCascades" hint="Button">
+			<entry id="0" hint="text">EliminateCoarseCascades</entry>
+			<entry id="1" hint="tooltip">Eliminate the coarse cascade mask for every object in the scene.</entry>
+		</section>
+		<section name=" Collider visualizer: " hint="CheckBox">
+			<entry id="0" hint="text"> Collider visualizer: </entry>
+			<entry id="1" hint="tooltip">Toggle visualization of colliders in the scene</entry>
+		</section>
+	</section>
+	<section name="" hint="Button">
+		<entry id="1" hint="tooltip">图形选项</entry>
+	</section>
+	<section name="" hint="Button">
+		<entry id="0" hint="text"></entry>
+		<entry id="1" hint="tooltip">Toggle Physics Simulation On/Off
+	Or: press while holding left Ctrl to reset physics bodies</entry>
+	</section>
+	<section name="G" hint="Button">
+		<entry id="1" hint="tooltip">Toggle from Global coordinate space to Local for Translate and Rotate
+Hotkey: 4</entry>
+	</section>
+	<section name="New: " hint="ComboBox">
+		<entry id="0" hint="text">New: </entry>
+		<entry id="1" hint="tooltip">Create a new entity</entry>
+		<section name="items">
+			<entry id="0">Transform </entry>
+			<entry id="1">Material </entry>
+			<entry id="2">Point Light </entry>
+			<entry id="3">Rectangle Light </entry>
+			<entry id="4">Spot Light </entry>
+			<entry id="5">Directional Light </entry>
+			<entry id="6">Environment Probe </entry>
+			<entry id="7">Force </entry>
+			<entry id="8">Decal </entry>
+			<entry id="9">Sound </entry>
+			<entry id="10">Video </entry>
+			<entry id="11">Weather </entry>
+			<entry id="12">Emitter </entry>
+			<entry id="13">HairParticle </entry>
+			<entry id="14">Camera </entry>
+			<entry id="15">Cube </entry>
+			<entry id="16">Plane </entry>
+			<entry id="17">Sphere </entry>
+			<entry id="18">Animation </entry>
+			<entry id="19">Script </entry>
+			<entry id="20">Collider </entry>
+			<entry id="21">Terrain </entry>
+			<entry id="22">Sprite </entry>
+			<entry id="23">Font </entry>
+			<entry id="24">Voxel Grid </entry>
+			<entry id="25">Metadata </entry>
+			<entry id="26">Constraint </entry>
+			<entry id="27">Spline </entry>
+		</section>
+	</section>
+	<section name="About" hint="Window">
+		<entry id="0" hint="text">About</entry>
+	</section>
+	<section name="" hint="Button">
+		<entry id="1" hint="tooltip">Translate/Move (Ctrl + T)
+Hotkey: 1</entry>
+	</section>
+	<section name="Materials" hint="Window">
+		<entry id="0" hint="text">Materials </entry>
+		<section name="Mesh materials: " hint="CheckBox">
+			<entry id="0" hint="text">Mesh materials: </entry>
+		</section>
+		<section name="Zoom: " hint="Slider">
+			<entry id="0" hint="text">Zoom: </entry>
+		</section>
+		<section name="Internal materials: " hint="CheckBox">
+			<entry id="0" hint="text">Internal materials: </entry>
+		</section>
+	</section>
+	<section name="Components " hint="Window">
+		<entry id="0" hint="text">Entity - Component System</entry>
+		<section name=" Weather" hint="Window">
+			<entry id="0" hint="text"> Weather</entry>
+			<section name="Load Color Grading LUT" hint="Button">
+				<entry id="0" hint="text">加载色彩分级 LUT</entry>
+				<entry id="1" hint="tooltip">加载色彩分级查找纹理。必须是256x16 RGBA图像！
+应使用无损格式如PNG</entry>
+			</section>
+			<section name="WeatherPreset - Default" hint="Button">
+				<entry id="0" hint="text">天气预设 - 默认</entry>
+				<entry id="1" hint="tooltip">将此天气预设应用到世界。</entry>
+			</section>
+			<section name="Type amount 1: " hint="Slider">
+				<entry id="0" hint="text">类型数量 1： </entry>
+				<entry id="1" hint="tooltip">从天气图调整类型数量</entry>
+			</section>
+			<section name="widget_69" hint="TextInputField">
+				<entry id="1" hint="tooltip">控制中等云层（类型0.5）的向内量。指定顶部量(X)、顶部偏移(Y)、底部量(Z)、底部偏移(W)</entry>
+			</section>
+			<section name="Wind Wave Size: " hint="Slider">
+				<entry id="0" hint="text">风浪大小： </entry>
+			</section>
+			<section name="Tolerance: " hint="Slider">
+				<entry id="0" hint="text">容差： </entry>
+				<entry id="1" hint="tooltip">大波浪可能在屏幕边缘引入故障，此设置可以修复但会降低表面细节。</entry>
+			</section>
+			<section name="widget_54" hint="TextInputField">
+				<entry id="1" hint="tooltip">使用渐变控制中等云层出现的位置，基于类型0.5</entry>
+			</section>
+			<section name="Ocean simulation: " hint="CheckBox">
+				<entry id="0" hint="text">海洋模拟： </entry>
+			</section>
+			<section name="Sky Receive Shadow: " hint="CheckBox">
+				<entry id="0" hint="text">天空接收阴影： </entry>
+				<entry id="1" hint="tooltip">真实天空从带阴影贴图的物体接收阴影。</entry>
+			</section>
+			<section name="Load Volumetric Clouds Weather Map 1" hint="Button">
+				<entry id="0" hint="text">加载体积云天气图 1</entry>
+				<entry id="1" hint="tooltip">加载体积云的天气图。红色通道是覆盖率，绿色是类型，蓝色是水密度（降雨）。</entry>
+			</section>
+			<section name="Wind Direction: " hint="Slider">
+				<entry id="0" hint="text">风向： </entry>
+			</section>
+			<section name="widget_61" hint="TextInputField">
+				<entry id="1" hint="tooltip">使用渐变控制大型云层出现的位置，基于类型1.0</entry>
+			</section>
+			<section name="Wind speed 1: " hint="Slider">
+				<entry id="0" hint="text">风速 1： </entry>
+				<entry id="1" hint="tooltip">噪声的风速</entry>
+			</section>
+			<section name="Type minimum 1: " hint="Slider">
+				<entry id="0" hint="text">类型最小值 1： </entry>
+				<entry id="1" hint="tooltip">从天气图调整最小类型</entry>
+			</section>
+			<section name="Realistic sky: " hint="CheckBox">
+				<entry id="0" hint="text">真实天空： </entry>
+				<entry id="1" hint="tooltip">基于物理的天空渲染模型。
+注意：真实天空需要太阳（方向光）才能可见。</entry>
+			</section>
+			<section name="WeatherPreset - Night" hint="Button">
+				<entry id="0" hint="text">天气预设 - 夜晚</entry>
+				<entry id="1" hint="tooltip">将此天气预设应用到世界。</entry>
+			</section>
+			<section name="Rain Speed: " hint="Slider">
+				<entry id="0" hint="text">雨速： </entry>
+				<entry id="1" hint="tooltip">雨粒子的下落速度。最终速度也会受风向和风速的调制。</entry>
+			</section>
+			<section name="Sky Texture Rotation: " hint="Slider">
+				<entry id="0" hint="text">天空纹理旋转： </entry>
+				<entry id="1" hint="tooltip">水平旋转天空纹理。（如果使用天空纹理）</entry>
+			</section>
+			<section name="Cast Shadow: " hint="CheckBox">
+				<entry id="0" hint="text">投射阴影： </entry>
+				<entry id="1" hint="tooltip">计算体积云的阴影，用于几何体和光照。</entry>
+			</section>
+			<section name="widget_57" hint="TextInputField">
+				<entry id="1" hint="tooltip">使用渐变控制中等云层出现的位置，基于类型0.5</entry>
+			</section>
+			<section name="WeatherPreset - Sunset" hint="Button">
+				<entry id="0" hint="text">天气预设 - 日落</entry>
+				<entry id="1" hint="tooltip">将此天气预设应用到世界。</entry>
+			</section>
+			<section name="widget_62" hint="TextInputField">
+				<entry id="1" hint="tooltip">控制小型云层（类型0.0）的向内量。指定顶部量(X)、顶部偏移(Y)、底部量(Z)、底部偏移(W)</entry>
+			</section>
+			<section name="Curl height 1: " hint="Slider">
+				<entry id="0" hint="text">卷曲高度 1： </entry>
+				<entry id="1" hint="tooltip">较高的值将卷曲更多地拉向底部</entry>
+			</section>
+			<section name="Detail modifier 1: " hint="Slider">
+				<entry id="0" hint="text">细节修改器 1： </entry>
+			</section>
+			<section name="Coverage minimum 1: " hint="Slider">
+				<entry id="0" hint="text">覆盖率最小值 1： </entry>
+				<entry id="1" hint="tooltip">从天气图调整最小量</entry>
+			</section>
+			<section name="WeatherPreset - Cloudy" hint="Button">
+				<entry id="0" hint="text">天气预设 - 多云</entry>
+				<entry id="1" hint="tooltip">将此天气预设应用到世界。</entry>
+			</section>
+			<section name="Aerial Perspective: " hint="CheckBox">
+				<entry id="0" hint="text">空中透视： </entry>
+				<entry id="1" hint="tooltip">为真实天空添加额外计算，为物体和其他绘制效果启用大气效果。</entry>
+			</section>
+			<section name="widget_56" hint="TextInputField">
+				<entry id="1" hint="tooltip">使用渐变控制中等云层出现的位置，基于类型0.5</entry>
+			</section>
+			<section name="Weather scale 1: " hint="Slider">
+				<entry id="0" hint="text">天气缩放 1： </entry>
+				<entry id="1" hint="tooltip">缩放控制覆盖率、类型和降雨的天气图</entry>
+			</section>
+			<section name="Rain Length: " hint="Slider">
+				<entry id="0" hint="text">雨长度： </entry>
+				<entry id="1" hint="tooltip">雨粒子在运动方向上的拉长程度。</entry>
+			</section>
+			<section name="Wave amplitude: " hint="Slider">
+				<entry id="0" hint="text">波浪振幅： </entry>
+				<entry id="1" hint="tooltip">调整波浪大小</entry>
+			</section>
+			<section name="Cloud start height: " hint="Slider">
+				<entry id="0" hint="text">云层起始高度： </entry>
+				<entry id="1" hint="tooltip">指定云层系统应出现在地面上方多少米处</entry>
+			</section>
+			<section name="widget_51" hint="TextInputField">
+				<entry id="1" hint="tooltip">使用渐变控制小型云层出现的位置，基于类型0.0</entry>
+			</section>
+			<section name="Volumetric Clouds: " hint="CheckBox">
+				<entry id="0" hint="text">体积云： </entry>
+				<entry id="1" hint="tooltip">启体积云渲染，与简单云参数分开。</entry>
+			</section>
+			<section name="Wind dependency: " hint="Slider">
+				<entry id="0" hint="text">风依赖度： </entry>
+				<entry id="1" hint="tooltip">调整风的贡献</entry>
+			</section>
+			<section name="widget_63" hint="TextInputField">
+				<entry id="1" hint="tooltip">控制小型云层（类型0.0）的向内量。指定顶部量(X)、顶部偏移(Y)、底部量(Z)、底部偏移(W)</entry>
+			</section>
+			<section name="Override fog color: " hint="CheckBox">
+				<entry id="0" hint="text">覆盖雾颜色： </entry>
+				<entry id="1" hint="tooltip">启用后，雾颜色将始终取自地平线颜色，即使天空是真实天空</entry>
+			</section>
+			<section name="widget_59" hint="TextInputField">
+				<entry id="1" hint="tooltip">使用渐变控制大型云层出现的位置，基于类型1.0</entry>
+			</section>
+			<section name="Stars: " hint="Slider">
+				<entry id="0" hint="text">星空： </entry>
+				<entry id="1" hint="tooltip">夜空中的星星数量（0为禁用）。
+仅在启用真实天空时有效。
+它们在夜间更加可见。</entry>
+			</section>
+			<section name="Skew noise 1: " hint="Slider">
+				<entry id="0" hint="text">偏斜噪声 1： </entry>
+				<entry id="1" hint="tooltip">仅调整噪声的偏斜</entry>
+			</section>
+			<section name="Coverage wind angle 1: " hint="Slider">
+				<entry id="0" hint="text">覆盖风角 1： </entry>
+				<entry id="1" hint="tooltip">风角度（弧度）</entry>
+			</section>
+			<section name="Cloud Receive Shadow: " hint="CheckBox">
+				<entry id="0" hint="text">云层接收阴影： </entry>
+				<entry id="1" hint="tooltip">云层从带阴影贴图的物体接收阴影。</entry>
+			</section>
+			<section name="Height fog: " hint="CheckBox">
+				<entry id="0" hint="text">高度雾： </entry>
+			</section>
+			<section name="Rain Splash Scale: " hint="Slider">
+				<entry id="0" hint="text">雨水飞溅缩放： </entry>
+				<entry id="1" hint="tooltip">雨粒子落地时的大小。</entry>
+			</section>
+			<section name="Surface Detail: " hint="Slider">
+				<entry id="0" hint="text">表面细节： </entry>
+				<entry id="1" hint="tooltip">调整表面曲面细分分辨率。高值可能降低性能。</entry>
+			</section>
+			<section name="widget_50" hint="TextInputField">
+				<entry id="1" hint="tooltip">使用渐变控制小型云层出现的位置，基于类型0.0</entry>
+			</section>
+			<section name="widget_64" hint="TextInputField">
+				<entry id="1" hint="tooltip">控制小型云层（类型0.0）的向内量。指定顶部量(X)、顶部偏移(Y)、底部量(Z)、底部偏移(W)</entry>
+			</section>
+			<section name="Coverage wind speed 1: " hint="Slider">
+				<entry id="0" hint="text">覆盖风速 1： </entry>
+			</section>
+			<section name="Reset Ocean" hint="Button">
+				<entry id="0" hint="text">重置海洋</entry>
+				<entry id="1" hint="tooltip">将海洋重置为默认值。</entry>
+			</section>
+			<section name="widget_73" hint="TextInputField">
+				<entry id="1" hint="tooltip">控制大型云层（类型1.0）的向内量。指定顶部量(X)、顶部偏移(Y)、底部量(Z)、底部偏移(W)</entry>
+			</section>
+			<section name="Color picker mode: " hint="ComboBox">
+				<entry id="0" hint="text">颜色选择器模式： </entry>
+				<entry id="1" hint="tooltip">选择颜色选择器的目标数据。</entry>
+				<section name="items">
+					<entry id="0">环境光颜色</entry>
+					<entry id="1">地平线颜色</entry>
+					<entry id="2">天顶颜色</entry>
+					<entry id="3">海洋颜色</entry>
+					<entry id="4">海洋消光</entry>
+					<entry id="5">云颜色 1</entry>
+					<entry id="6">云颜色 2</entry>
+					<entry id="7">云消光 1</entry>
+					<entry id="8">云消光 2</entry>
+					<entry id="9">雨颜色</entry>
+				</section>
+			</section>
+			<section name="Color" hint="ColorPicker">
+				<entry id="0" hint="text">颜色</entry>
+				<section name="Hex" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入RGBA十六进制值</entry>
+				</section>
+				<section name="B" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入蓝色通道值（0-255）</entry>
+				</section>
+				<section name="S" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入饱和度通道值（0-100）</entry>
+				</section>
+				<section name="R" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入红色通道值（0-255）</entry>
+				</section>
+				<section name="G" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入绿色通道值（0-255）</entry>
+				</section>
+				<section name="V" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入亮度通道值（0-100）</entry>
+				</section>
+				<section name="H" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入色相通道值（0-360）</entry>
+				</section>
+				<section name="widget_49" hint="Slider">
+					<entry id="1" hint="tooltip">Alpha - 透明度通道值（0-255）</entry>
+				</section>
+			</section>
+			<section name="Rain amount 1: " hint="Slider">
+				<entry id="0" hint="text">雨量 1： </entry>
+				<entry id="1" hint="tooltip">从天气图调整雨量</entry>
+			</section>
+			<section name="Load Sky" hint="Button">
+				<entry id="0" hint="text">加载天空</entry>
+				<entry id="1" hint="tooltip">加载天空盒纹理...
+可以是立方体贴图或球面投影贴图</entry>
+			</section>
+			<section name="Choppiness: " hint="Slider">
+				<entry id="0" hint="text">波浪尖锐度： </entry>
+				<entry id="1" hint="tooltip">调整波浪尖锐度</entry>
+			</section>
+			<section name="widget_58" hint="TextInputField">
+				<entry id="1" hint="tooltip">使用渐变控制大型云层出现的位置，基于类型1.0</entry>
+			</section>
+			<section name="Water level: " hint="Slider">
+				<entry id="0" hint="text">水位： </entry>
+				<entry id="1" hint="tooltip">调整水位</entry>
+			</section>
+			<section name="Coverage minimum 2: " hint="Slider">
+				<entry id="0" hint="text">覆盖率最小值 2： </entry>
+				<entry id="1" hint="tooltip">从天气图调整最小量</entry>
+			</section>
+			<section name="widget_53" hint="TextInputField">
+				<entry id="1" hint="tooltip">使用渐变控制小型云层出现的位置，基于类型0.0</entry>
+			</section>
+			<section name="widget_65" hint="TextInputField">
+				<entry id="1" hint="tooltip">控制小型云层（类型0.0）的向内量。指定顶部量(X)、顶部偏移(Y)、底部量(Z)、底部偏移(W)</entry>
+			</section>
+			<section name="widget_72" hint="TextInputField">
+				<entry id="1" hint="tooltip">控制大型云层（类型1.0）的向内量。指定顶部量(X)、顶部偏移(Y)、底部量(Z)、底部偏移(W)</entry>
+			</section>
+			<section name="Rain minimum 1: " hint="Slider">
+				<entry id="0" hint="text">雨量最小值 1： </entry>
+				<entry id="1" hint="tooltip">从天气图调整最小雨量</entry>
+			</section>
+			<section name="Total noise scale 1: " hint="Slider">
+				<entry id="0" hint="text">总噪声缩放 1： </entry>
+				<entry id="1" hint="tooltip">总缩放调整基础噪声、细节噪声和卷曲噪声</entry>
+			</section>
+			<section name="Wind Randomness: " hint="Slider">
+				<entry id="0" hint="text">风随机性： </entry>
+			</section>
+			<section name="Gravity: " hint="Slider">
+				<entry id="0" hint="text">重力： </entry>
+				<entry id="1" hint="tooltip">设置物理Y（垂直）轴的重力因子。</entry>
+			</section>
+			<section name="Wind angle 1: " hint="Slider">
+				<entry id="0" hint="text">风角度 1： </entry>
+				<entry id="1" hint="tooltip">风角度（弧度）</entry>
+			</section>
+			<section name="Wind Speed: " hint="Slider">
+				<entry id="0" hint="text">风速： </entry>
+			</section>
+			<section name="Wind Magnitude: " hint="Slider">
+				<entry id="0" hint="text">风强度： </entry>
+			</section>
+			<section name="Fog Height End: " hint="Slider">
+				<entry id="0" hint="text">雾高度终点： </entry>
+			</section>
+			<section name="Rain Amount: " hint="Slider">
+				<entry id="0" hint="text">雨量： </entry>
+				<entry id="1" hint="tooltip">设置雨效果量。0 = 禁用，1 = 大雨</entry>
+			</section>
+			<section name="Time scale: " hint="Slider">
+				<entry id="0" hint="text">时间缩放： </entry>
+				<entry id="1" hint="tooltip">调整模拟速度</entry>
+			</section>
+			<section name="Detail scale 1: " hint="Slider">
+				<entry id="0" hint="text">细节缩放 1： </entry>
+			</section>
+			<section name="widget_52" hint="TextInputField">
+				<entry id="1" hint="tooltip">使用渐变控制小型云层出现的位置，基于类型0.0</entry>
+			</section>
+			<section name="widget_66" hint="TextInputField">
+				<entry id="1" hint="tooltip">控制中等云层（类型0.5）的向内量。指定顶部量(X)、顶部偏移(Y)、底部量(Z)、底部偏移(W)</entry>
+			</section>
+			<section name="widget_71" hint="TextInputField">
+				<entry id="1" hint="tooltip">控制大型云层（类型1.0）的向内量。指定顶部量(X)、顶部偏移(Y)、底部量(Z)、底部偏移(W)</entry>
+			</section>
+			<section name="Wind up amount 1: " hint="Slider">
+				<entry id="0" hint="text">风向上量 1： </entry>
+				<entry id="1" hint="tooltip">噪声接收多少风向上拖拽</entry>
+			</section>
+			<section name="High Quality Sky: " hint="CheckBox">
+				<entry id="0" hint="text">高质量天空： </entry>
+				<entry id="1" hint="tooltip">跳过LUT以获得更准确的天空和空中透视。这也使阴影贴图影响天空计算。
+注意：要使体积阴影可见，请增加阴影贴图边界和/或启用云阴影。</entry>
+			</section>
+			<section name="Fog Start: " hint="Slider">
+				<entry id="0" hint="text">雾起始： </entry>
+			</section>
+			<section name="Sky Exposure: " hint="Slider">
+				<entry id="0" hint="text">天空曝光： </entry>
+			</section>
+			<section name="Fog Density: " hint="Slider">
+				<entry id="0" hint="text">雾密度： </entry>
+			</section>
+			<section name="Skew coverage 1: " hint="Slider">
+				<entry id="0" hint="text">偏斜覆盖率 1： </entry>
+				<entry id="1" hint="tooltip">沿高度将整个云层拉向风向</entry>
+			</section>
+			<section name="Coverage amount 1: " hint="Slider">
+				<entry id="0" hint="text">覆盖量 1： </entry>
+				<entry id="1" hint="tooltip">从天气图调整覆盖量</entry>
+			</section>
+			<section name="widget_68" hint="TextInputField">
+				<entry id="1" hint="tooltip">控制中等云层（类型0.5）的向内量。指定顶部量(X)、顶部偏移(Y)、底部量(Z)、底部偏移(W)</entry>
+			</section>
+			<section name="WeatherPreset - White Furnace" hint="Button">
+				<entry id="0" hint="text">天气预设 - 白色熔炉</entry>
+				<entry id="1" hint="tooltip">白色熔炉模式将环境设置为全白，用于测试光和材质的能量守恒。
+如果看不到全白，是因为色调映射。</entry>
+			</section>
+			<section name="Curl scale 1: " hint="Slider">
+				<entry id="0" hint="text">卷曲缩放 1： </entry>
+			</section>
+			<section name="widget_55" hint="TextInputField">
+				<entry id="1" hint="tooltip">使用渐变控制中等云层出现的位置，基于类型0.5</entry>
+			</section>
+			<section name="Curl modifier 1: " hint="Slider">
+				<entry id="0" hint="text">卷曲修改器 1： </entry>
+			</section>
+			<section name="Patch size: " hint="Slider">
+				<entry id="0" hint="text">区块大小： </entry>
+				<entry id="1" hint="tooltip">调整水面平铺区块大小</entry>
+			</section>
+			<section name="Detail height 1: " hint="Slider">
+				<entry id="0" hint="text">细节高度 1： </entry>
+				<entry id="1" hint="tooltip">较高的值将细节更多地拉向底部</entry>
+			</section>
+			<section name="widget_67" hint="TextInputField">
+				<entry id="1" hint="tooltip">控制中等云层（类型0.5）的向内量。指定顶部量(X)、顶部偏移(Y)、底部量(Z)、底部偏移(W)</entry>
+			</section>
+			<section name="widget_70" hint="TextInputField">
+				<entry id="1" hint="tooltip">控制大型云层（类型1.0）的向内量。指定顶部量(X)、顶部偏移(Y)、底部量(Z)、底部偏移(W)</entry>
+			</section>
+			<section name="Fog Height Start: " hint="Slider">
+				<entry id="0" hint="text">雾高度起始： </entry>
+			</section>
+			<section name="Rain Scale: " hint="Slider">
+				<entry id="0" hint="text">雨缩放： </entry>
+				<entry id="1" hint="tooltip">雨粒子的整体大小。</entry>
+			</section>
+			<section name="Coverage amount 2: " hint="Slider">
+				<entry id="0" hint="text">覆盖量 2： </entry>
+				<entry id="1" hint="tooltip">从天气图调整覆盖量</entry>
+			</section>
+			<section name="Load Volumetric Clouds Weather Map 2" hint="Button">
+				<entry id="0" hint="text">加载体积云天气图 2</entry>
+				<entry id="1" hint="tooltip">加载体积云的天气图。红色通道是覆盖率，绿色是类型，蓝色是水密度（降雨）。</entry>
+			</section>
+			<section name="Set as primary weather" hint="Button">
+				<entry id="0" hint="text">设为主要天气</entry>
+				<entry id="1" hint="tooltip">将此项设置为渲染中使用的主要天气</entry>
+			</section>
+			<section name="Cloud thickness: " hint="Slider">
+				<entry id="0" hint="text">云层厚度： </entry>
+				<entry id="1" hint="tooltip">指定云层系统厚度，即从起始高度加上顶部的额外厚度</entry>
+			</section>
+			<section name="WeatherPreset - Daytime" hint="Button">
+				<entry id="0" hint="text">天气预设 - 白天</entry>
+				<entry id="1" hint="tooltip">将此天气预设应用到世界。</entry>
+			</section>
+			<section name="widget_60" hint="TextInputField">
+				<entry id="1" hint="tooltip">使用渐变控制大型云层出现的位置，基于类型1.0</entry>
+			</section>
+		</section>
+		<section name=" Script" hint="Window">
+			<entry id="0" hint="text"> Script</entry>
+			<section name="widget_173" hint="Button">
+				<entry id="1" hint="tooltip">播放/停止脚本</entry>
+			</section>
+			<section name="Open File..." hint="Button">
+				<entry id="0" hint="text">打开文件...</entry>
+			</section>
+			<section name="Once: " hint="CheckBox">
+				<entry id="0" hint="text">仅一次： </entry>
+				<entry id="1" hint="tooltip">仅播放脚本一次，然后立即停止。
+用于在脚本中实现自定义更新频率逻辑。</entry>
+			</section>
+		</section>
+		<section name=" Mesh" hint="Window">
+			<entry id="0" hint="text"> Mesh</entry>
+			<section name="X" hint="Button">
+				<entry id="0" hint="text">X</entry>
+				<entry id="1" hint="tooltip">移除当前选中的子集。LOD将丢失，需要重新生成！</entry>
+			</section>
+			<section name="Merge Selected" hint="Button">
+				<entry id="0" hint="text">合并选中</entry>
+				<entry id="1" hint="tooltip">将选中的对象/网格合并为一个。
+所有选中对象的变换将应用到网格上，所有网格将烘焙为单个网格。</entry>
+			</section>
+			<section name="Sloppy LOD: " hint="CheckBox">
+				<entry id="0" hint="text">粗糙 LOD： </entry>
+				<entry id="1" hint="tooltip">使用粗糙简化算法，速度更快但不能很好地保持形状。</entry>
+			</section>
+			<section name="Weight: " hint="Slider">
+				<entry id="0" hint="text">权重： </entry>
+				<entry id="1" hint="tooltip">设置变形目标的权重</entry>
+			</section>
+			<section name="Material: " hint="ComboBox">
+				<entry id="0" hint="text">材质： </entry>
+				<entry id="1" hint="tooltip">设置选中网格子集的基础材质</entry>
+				<section name="items" />
+			</section>
+			<section name="Select subset: " hint="ComboBox">
+				<entry id="0" hint="text">选择子集： </entry>
+				<entry id="1" hint="tooltip">选择子集。也可以在3D场景中拾取子集。
+选中子集后查看材质窗口进行编辑。
+如果添加新子集，LOD将丢失，需要重新生成！</entry>
+				<section name="items" />
+			</section>
+			<section name="widget_82" hint="TextInputField" />
+			<section name="Select instances" hint="Button">
+				<entry id="0" hint="text">选择实例</entry>
+				<entry id="1" hint="tooltip">选择使用此网格的所有实例。</entry>
+			</section>
+			<section name="Quantization Disabled: " hint="CheckBox">
+				<entry id="0" hint="text">禁用量化： </entry>
+				<entry id="1" hint="tooltip">如果在使用UNORM位置格式时发现精度错误，请禁用顶点位置量化。</entry>
+			</section>
+			<section name="Compute Normals [HARD]" hint="Button">
+				<entry id="0" hint="text">计算法线 [硬]</entry>
+				<entry id="1" hint="tooltip">计算网格的表面法线。结果法线在每个面上唯一。这可能增加顶点数量。</entry>
+			</section>
+			<section name="Delete LODs" hint="Button">
+				<entry id="0" hint="text">删除 LOD</entry>
+				<entry id="1" hint="tooltip">移除所有细节级别网格。</entry>
+			</section>
+			<section name="Recenter to Bottom" hint="Button">
+				<entry id="0" hint="text">重置中心到底部</entry>
+				<entry id="1" hint="tooltip">将网格中心重置到AABB底部。</entry>
+			</section>
+			<section name="Optimize" hint="Button">
+				<entry id="0" hint="text">优化</entry>
+				<entry id="1" hint="tooltip">运行meshoptimizer库。</entry>
+			</section>
+			<section name="Double Sided: " hint="CheckBox">
+				<entry id="0" hint="text">双面： </entry>
+				<entry id="1" hint="tooltip">启用后，网格内部将可见。</entry>
+			</section>
+			<section name="Impostor Dist: " hint="Slider">
+				<entry id="0" hint="text">替身距离： </entry>
+				<entry id="1" hint="tooltip">指定网格几何体切换到替身图像的距离。</entry>
+			</section>
+			<section name="Tess Factor: " hint="Slider">
+				<entry id="0" hint="text">曲面细分因子： </entry>
+				<entry id="1" hint="tooltip">设置动态曲面细分量。曲面细分应在渲染器窗口中启用且GPU必须支持！</entry>
+			</section>
+			<section name="Flip Normals" hint="Button">
+				<entry id="0" hint="text">翻转法线</entry>
+				<entry id="1" hint="tooltip">翻转表面法线。</entry>
+			</section>
+			<section name="Flip Culling" hint="Button">
+				<entry id="0" hint="text">翻转剔除</entry>
+				<entry id="1" hint="tooltip">翻转面以反转三角形剔除顺序。</entry>
+			</section>
+			<section name="widget_80" hint="TextInputField" />
+			<section name="Generate LODs" hint="Button">
+				<entry id="0" hint="text">生成 LOD</entry>
+				<entry id="1" hint="tooltip">生成细节级别网格。</entry>
+			</section>
+			<section name="Export to C++ header" hint="Button">
+				<entry id="0" hint="text">导出为 C++ 头文件</entry>
+				<entry id="1" hint="tooltip">将顶点位置和索引缓冲区导出到C++头文件。
+ - 对象变换（如果通过对象拾取选中）和蒙皮姿态将被应用。
+ - 仅导出LOD0。
+ - 生成的顶点位置和索引将被重新排序和优化，不考虑其他顶点属性。</entry>
+			</section>
+			<section name="widget_81" hint="TextInputField" />
+			<section name="Compute Normals [SMOOTH]" hint="Button">
+				<entry id="0" hint="text">计算法线 [平滑]</entry>
+				<entry id="1" hint="tooltip">计算网格的表面法线。结果法线在每个顶点上唯一。这可以减少顶点数量，但速度较慢。</entry>
+			</section>
+			<section name="Double Sided Shadow: " hint="CheckBox">
+				<entry id="0" hint="text">双面阴影： </entry>
+				<entry id="1" hint="tooltip">启用后，阴影渲染将强制使用双面模式。
+这可以帮助修复一些阴影伪影，而无需为此网格的主渲染启用双面模式。</entry>
+			</section>
+			<section name="Enable BVH: " hint="CheckBox">
+				<entry id="0" hint="text">启用 BVH： </entry>
+				<entry id="1" hint="tooltip">是否为网格生成BVH（包围体层次结构）。
+BVH将用于优化与网格的相交检测，但需要额外内存。
+建议对将用于相交检测的高多边形网格使用BVH。
+此CPU BVH不支持蒙皮或变形几何体。</entry>
+			</section>
+			<section name="Recenter to Top" hint="Button">
+				<entry id="0" hint="text">重置中心到顶部</entry>
+				<entry id="1" hint="tooltip">将网格中心重置到AABB顶部。</entry>
+			</section>
+			<section name="Recenter" hint="Button">
+				<entry id="0" hint="text">重置中心</entry>
+				<entry id="1" hint="tooltip">将网格中心重置到AABB中心。</entry>
+			</section>
+			<section name="Morph Target:" hint="ComboBox">
+				<entry id="0" hint="text">变形目标：</entry>
+				<entry id="1" hint="tooltip">选择要编辑权重的变形目标。</entry>
+				<section name="items" />
+			</section>
+			<section name="Move subset to last index" hint="Button">
+				<entry id="0" hint="text">将子集移至最后索引</entry>
+				<entry id="1" hint="tooltip">将子集移至最后索引以最后渲染。如果要在子集内强制透明渲染顺序，此功能很有用。</entry>
+			</section>
+			<section name="LOD Error: " hint="Slider">
+				<entry id="0" hint="text">LOD 误差： </entry>
+				<entry id="1" hint="tooltip">较低的值将生成更精确的细节级别。</entry>
+			</section>
+			<section name="LOD Count: " hint="Slider">
+				<entry id="0" hint="text">LOD 数量： </entry>
+				<entry id="1" hint="tooltip">即将创建的细节级别数量。</entry>
+			</section>
+			<section name="LOD Quality: " hint="Slider">
+				<entry id="0" hint="text">LOD 质量： </entry>
+				<entry id="1" hint="tooltip">较低的值将使LOD更积极地简化。</entry>
+			</section>
+			<section name="Mesh Info" hint="Label">
+				<entry id="0" hint="text">选择一个网格...</entry>
+			</section>
+			<section name="Create Impostor" hint="Button">
+				<entry id="0" hint="text">创建替身</entry>
+				<entry id="1" hint="tooltip">创建网格的替身图像。网格在远处将被此图像替换，以加快渲染速度。</entry>
+			</section>
+		</section>
+		<section name=" Sound" hint="Window">
+			<entry id="0" hint="text"> Sound</entry>
+			<section name="widget_90" hint="TextInputField">
+				<entry id="1" hint="tooltip">长度（秒）（0 = 到结束）</entry>
+			</section>
+			<section name="2D: " hint="CheckBox">
+				<entry id="0" hint="text">2D： </entry>
+				<entry id="1" hint="tooltip">场景中的声音默认为3D空间。选择此项以禁用3D效果。</entry>
+			</section>
+			<section name="widget_92" hint="TextInputField">
+				<entry id="1" hint="tooltip">循环区域长度（秒）（0 = 到结束）</entry>
+			</section>
+			<section name="Reverb: " hint="ComboBox">
+				<entry id="0" hint="text">混响： </entry>
+				<entry id="1" hint="tooltip">设置全局混响。声音实例需要启用混响才能生效！</entry>
+				<section name="items">
+					<entry id="0">DEFAULT</entry>
+					<entry id="1">GENERIC</entry>
+					<entry id="2">FOREST</entry>
+					<entry id="3">PADDEDCELL</entry>
+					<entry id="4">ROOM</entry>
+					<entry id="5">BATHROOM</entry>
+					<entry id="6">LIVINGROOM</entry>
+					<entry id="7">STONEROOM</entry>
+					<entry id="8">AUDITORIUM</entry>
+					<entry id="9">CONCERTHALL</entry>
+					<entry id="10">CAVE</entry>
+					<entry id="11">ARENA</entry>
+					<entry id="12">HANGAR</entry>
+					<entry id="13">CARPETEDHALLWAY</entry>
+					<entry id="14">HALLWAY</entry>
+					<entry id="15">STONECORRIDOR</entry>
+					<entry id="16">ALLEY</entry>
+					<entry id="17">CITY</entry>
+					<entry id="18">MOUNTAINS</entry>
+					<entry id="19">QUARRY</entry>
+					<entry id="20">PLAIN</entry>
+					<entry id="21">PARKINGLOT</entry>
+					<entry id="22">SEWERPIPE</entry>
+					<entry id="23">UNDERWATER</entry>
+					<entry id="24">SMALLROOM</entry>
+					<entry id="25">MEDIUMROOM</entry>
+					<entry id="26">LARGEROOM</entry>
+					<entry id="27">MEDIUMHALL</entry>
+					<entry id="28">LARGEHALL</entry>
+					<entry id="29">PLATE</entry>
+				</section>
+			</section>
+			<section name="widget_89" hint="TextInputField">
+				<entry id="1" hint="tooltip">播放起始时间（秒），相对于创建源声音（0 = 从头开始）。</entry>
+			</section>
+			<section name="Looped: " hint="CheckBox">
+				<entry id="0" hint="text">循环： </entry>
+				<entry id="1" hint="tooltip">为选中的声音实例启用循环。</entry>
+			</section>
+			<section name="Volume: " hint="Slider">
+				<entry id="0" hint="text">音量： </entry>
+				<entry id="1" hint="tooltip">设置选中声音实例的音量级别。</entry>
+			</section>
+			<section name="Open File " hint="Button">
+				<entry id="0" hint="text">Open File </entry>
+				<entry id="1" hint="tooltip">打开声音文件。
+支持的格式：WAV, OGG</entry>
+			</section>
+			<section name="" hint="Button">
+				<entry id="0" hint="text"></entry>
+				<entry id="1" hint="tooltip">播放/停止选中的声音实例。</entry>
+			</section>
+			<section name="widget_91" hint="TextInputField">
+				<entry id="1" hint="tooltip">循环区域起始（秒），相对于实例起始时间（0 = 从头开始）</entry>
+			</section>
+			<section name="Submix: " hint="ComboBox">
+				<entry id="0" hint="text">子混音： </entry>
+				<entry id="1" hint="tooltip">设置声音的子混音通道。
+音量等声音属性可以按声音设置，也可以按子混音通道设置。</entry>
+				<section name="items">
+					<entry id="0">SOUNDEFFECT</entry>
+					<entry id="1">MUSIC</entry>
+					<entry id="2">USER0</entry>
+					<entry id="3">USER1</entry>
+				</section>
+			</section>
+		</section>
+		<section name=" Animation" hint="Window">
+			<entry id="0" hint="text"> Animation</entry>
+			<section name="End" hint="TextInputField">
+				<entry id="1" hint="tooltip">设置动画结束时间（秒）。相对于0，不是动画开始时间。</entry>
+			</section>
+			<section name="Start" hint="TextInputField">
+				<entry id="1" hint="tooltip">设置动画开始时间（秒）。这将是循环的起始点。</entry>
+			</section>
+			<section name="Keyframes" hint="TreeList">
+				<entry id="0" hint="text">关键帧</entry>
+			</section>
+			<section name="Play" hint="Button">
+				<entry id="0" hint="text"></entry>
+				<entry id="1" hint="tooltip">从当前位置播放动画。</entry>
+			</section>
+			<section name="Root Bone: " hint="ComboBox">
+				<entry id="0" hint="text">根骨骼： </entry>
+				<entry id="1" hint="tooltip">选择用于评估根运动的根骨骼。</entry>
+				<section name="items" />
+			</section>
+			<section name="Record: " hint="ComboBox">
+				<entry id="0" hint="text">录制： </entry>
+				<entry id="1" hint="tooltip">将选中实体指定的通道录制到当前时间的动画中。</entry>
+				<section name="items">
+					<entry id="0">Transform   </entry>
+					<entry id="1">Position </entry>
+					<entry id="2">Rotation </entry>
+					<entry id="3">Scale </entry>
+					<entry id="4">Morph weights </entry>
+					<entry id="5">Light [color] </entry>
+					<entry id="6">Light [intensity] </entry>
+					<entry id="7">Light [range] </entry>
+					<entry id="8">Light [inner cone] </entry>
+					<entry id="9">Light [outer cone] </entry>
+					<entry id="10">Sound [play] </entry>
+					<entry id="11">Sound [stop] </entry>
+					<entry id="12">Sound [volume] </entry>
+					<entry id="13">Emitter [emit count] </entry>
+					<entry id="14">Camera [fov] </entry>
+					<entry id="15">Camera [focal length] </entry>
+					<entry id="16">Camera [aperture size] </entry>
+					<entry id="17">Camera [aperture shape] </entry>
+					<entry id="18">Script [play] </entry>
+					<entry id="19">Script [stop] </entry>
+					<entry id="20">Material [color] </entry>
+					<entry id="21">Material [emissive] </entry>
+					<entry id="22">Material [roughness] </entry>
+					<entry id="23">Material [metalness] </entry>
+					<entry id="24">Material [reflectance] </entry>
+					<entry id="25">Material [texmuladd] </entry>
+					<entry id="26">Close loop </entry>
+				</section>
+			</section>
+			<section name="Backwards" hint="Button">
+				<entry id="0" hint="text"></entry>
+				<entry id="1" hint="tooltip">Play the animation backwards from the current position.</entry>
+			</section>
+			<section name="Retarget: " hint="ComboBox">
+				<entry id="0" hint="text">重定向： </entry>
+				<entry id="1" hint="tooltip">复制此动画并为人形重定向。
+仅对此动画中属于人形的骨骼有效。</entry>
+				<section name="items" />
+			</section>
+			<section name="Sampling: " hint="ComboBox">
+				<entry id="0" hint="text">采样： </entry>
+				<entry id="1" hint="tooltip">选择关键帧之间动画数据的解释方式。
+注意：三次样条采样需要样条动画数据，否则将回退到线性！
+目前不支持创建样条动画数据，但可以从GLTF/VRM模型导入。</entry>
+				<section name="items">
+					<entry id="0">步进</entry>
+					<entry id="1">线性</entry>
+					<entry id="2">三次样条</entry>
+				</section>
+			</section>
+			<section name="Amount: " hint="Slider">
+				<entry id="0" hint="text">量： </entry>
+				<entry id="1" hint="tooltip">手动设置动画混合量。</entry>
+			</section>
+			<section name="BackwardsFromEnd" hint="Button">
+				<entry id="0" hint="text"></entry>
+				<entry id="1" hint="tooltip">Play the animation backwards starting from the end.</entry>
+			</section>
+			<section name="Speed: " hint="Slider">
+				<entry id="0" hint="text">速度： </entry>
+				<entry id="1" hint="tooltip">设置动画速度。</entry>
+			</section>
+			<section name="RootMotion: " hint="CheckBox">
+				<entry id="0" hint="text">根运动： </entry>
+				<entry id="1" hint="tooltip">切换根骨骼动画。</entry>
+			</section>
+			<section name="Timer: " hint="Slider">
+				<entry id="0" hint="text">计时器： </entry>
+				<entry id="1" hint="tooltip">手动设置动画计时器。</entry>
+			</section>
+			<section name="LoopType" hint="Button">
+				<entry id="0" hint="text"></entry>
+			</section>
+			<section name="Stop" hint="Button">
+				<entry id="0" hint="text"></entry>
+				<entry id="1" hint="tooltip">Stop.</entry>
+			</section>
+			<section name="PlayFromStart" hint="Button">
+				<entry id="0" hint="text"></entry>
+				<entry id="1" hint="tooltip">Play the animation from the beginning.</entry>
+			</section>
+			<section name="widget_99" hint="Label">
+				<entry id="0" hint="text">The animation window will stay open even if you select other entities until it is collapsed, so you can record other entities' data.</entry>
+			</section>
+		</section>
+		<section name=" Soft Body Physics" hint="Window">
+			<entry id="0" hint="text"> Soft Body Physics</entry>
+			<section name="Reset" hint="Button">
+				<entry id="0" hint="text">重置</entry>
+				<entry id="1" hint="tooltip">设置模拟和图形网格之间保留的细节。
+较低 = 较少细节，较高 = 更多细节。</entry>
+			</section>
+			<section name="widget_181" hint="Label">
+				<entry id="0" hint="text">软体物理必须与MeshComponent一起使用，否则无效。
+可以使用绘制工具固定或软化软体顶点。</entry>
+			</section>
+			<section name="Mass: " hint="Slider">
+				<entry id="0" hint="text">质量： </entry>
+				<entry id="1" hint="tooltip">设置物理引擎的质量。</entry>
+			</section>
+			<section name="LOD Detail: " hint="Slider">
+				<entry id="0" hint="text">LOD 细节： </entry>
+				<entry id="1" hint="tooltip">设置模拟和图形网格之间保留的细节。
+较低 = 较少细节，较高 = 更多细节。</entry>
+			</section>
+			<section name="Friction: " hint="Slider">
+				<entry id="0" hint="text">摩擦力： </entry>
+				<entry id="1" hint="tooltip">设置物理引擎的摩擦力。</entry>
+			</section>
+			<section name="Restitution: " hint="Slider">
+				<entry id="0" hint="text">恢复力： </entry>
+				<entry id="1" hint="tooltip">设置物理引擎的恢复力。</entry>
+			</section>
+			<section name="Pressure: " hint="Slider">
+				<entry id="0" hint="text">压力： </entry>
+				<entry id="1" hint="tooltip">设置物理引擎的压力。</entry>
+			</section>
+			<section name="Vertex Radius: " hint="Slider">
+				<entry id="0" hint="text">顶点半径： </entry>
+				<entry id="1" hint="tooltip">设置顶点与其他物理体应保持的距离。</entry>
+			</section>
+			<section name="Wind: " hint="CheckBox">
+				<entry id="0" hint="text">风： </entry>
+				<entry id="1" hint="tooltip">启用/禁用此软体上的风力。</entry>
+			</section>
+		</section>
+		<section name=" Material" hint="Window">
+			<entry id="0" hint="text"> Material</entry>
+			<section name="Blend mode: " hint="ComboBox">
+				<entry id="0" hint="text">混合模式： </entry>
+				<entry id="1" hint="tooltip">设置材质的混合模式。</entry>
+				<section name="items">
+					<entry id="0">不透明</entry>
+					<entry id="1">Alpha</entry>
+					<entry id="2">预乘</entry>
+					<entry id="3">加法</entry>
+					<entry id="4">乘法</entry>
+					<entry id="5">反转</entry>
+				</section>
+			</section>
+			<section name="Clearcoat Roughness: " hint="Slider">
+				<entry id="0" hint="text">清漆粗糙度： </entry>
+				<entry id="1" hint="tooltip">影响清漆层的粗糙度。</entry>
+			</section>
+			<section name="Reflectance: " hint="Slider">
+				<entry id="0" hint="text">反射率： </entry>
+				<entry id="1" hint="tooltip">调整表面[非金属]反射率（也称为specularFactor）。
+注意：在specular-glossiness工作流中不可用</entry>
+			</section>
+			<section name="uvset" hint="TextInputField">
+				<entry id="1" hint="tooltip">UV集编号</entry>
+			</section>
+			<section name="Subsurface Scattering: " hint="Slider">
+				<entry id="0" hint="text">次表面散射： </entry>
+				<entry id="1" hint="tooltip">次表面散射量。
+也可以在颜色选择器中选择以调整次表面颜色</entry>
+			</section>
+			<section name="Texcoord anim V: " hint="Slider">
+				<entry id="0" hint="text">纹理坐标动画 V： </entry>
+				<entry id="1" hint="tooltip">调整纹理空间中V方向的纹理动画速度。</entry>
+			</section>
+			<section name="Occlusion 1: " hint="CheckBox">
+				<entry id="0" hint="text">遮蔽 1： </entry>
+				<entry id="1" hint="tooltip">启用后，表面贴图的红色通道将用作遮蔽贴图</entry>
+			</section>
+			<section name="Texcoord anim U: " hint="Slider">
+				<entry id="0" hint="text">纹理坐标动画 U： </entry>
+				<entry id="1" hint="tooltip">调整纹理空间中U方向的纹理动画速度。</entry>
+			</section>
+			<section name="Clearcoat: " hint="Slider">
+				<entry id="0" hint="text">清漆： </entry>
+				<entry id="1" hint="tooltip">影响清漆层混合。</entry>
+			</section>
+			<section name="Cast Shadow: " hint="CheckBox">
+				<entry id="0" hint="text">投射阴影： </entry>
+				<entry id="1" hint="tooltip">启用后，子集将对场景阴影产生贡献。</entry>
+			</section>
+			<section name="Save preset" hint="Button">
+				<entry id="0" hint="text">保存预设</entry>
+				<entry id="1" hint="tooltip">将材质预设保存到文件</entry>
+			</section>
+			<section name="Cartoon Outline: " hint="CheckBox">
+				<entry id="0" hint="text">卡通轮廓： </entry>
+				<entry id="1" hint="tooltip">启用卡通轮廓。还需要启用卡通轮廓图形设置才能显示。</entry>
+			</section>
+			<section name="Roughness: " hint="Slider">
+				<entry id="0" hint="text">粗糙度： </entry>
+				<entry id="1" hint="tooltip">调整表面粗糙度。粗糙表面光泽度较低，更哑光。</entry>
+			</section>
+			<section name="Camera source: " hint="ComboBox">
+				<entry id="0" hint="text">相机源： </entry>
+				<entry id="1" hint="tooltip">选择要用作纹理的相机</entry>
+				<section name="items" />
+			</section>
+			<section name="Interior Rotation: " hint="Slider">
+				<entry id="0" hint="text">内部旋转： </entry>
+				<entry id="1" hint="tooltip">设置内部映射的立方体贴图水平旋转（如果材质使用内部映射着色器）</entry>
+			</section>
+			<section name="Interior Offset Y: " hint="Slider">
+				<entry id="0" hint="text">内部偏移 Y： </entry>
+				<entry id="1" hint="tooltip">设置内部映射的立方体贴图偏移（如果材质使用内部映射着色器）</entry>
+			</section>
+			<section name="Texture TileSize X: " hint="Slider">
+				<entry id="0" hint="text">纹理平铺大小 X： </entry>
+				<entry id="1" hint="tooltip">调整纹理映射大小。</entry>
+			</section>
+			<section name="Interior Offset X: " hint="Slider">
+				<entry id="0" hint="text">内部偏移 X： </entry>
+				<entry id="1" hint="tooltip">设置内部映射的立方体贴图偏移（如果材质使用内部映射着色器）</entry>
+			</section>
+			<section name="Coplanar blending: " hint="CheckBox">
+				<entry id="0" hint="text">共面混合： </entry>
+				<entry id="1" hint="tooltip">如果多边形与不透明表面共面，则可以在不透明通道中进行混合。
+这可以为特定的透明表面启用不透明渲染通道的一些优势。</entry>
+			</section>
+			<section name="widget_44" hint="Image">
+				<entry id="1" hint="tooltip">RGBA: 基础颜色</entry>
+			</section>
+			<section name="Double sided: " hint="CheckBox">
+				<entry id="0" hint="text">双面： </entry>
+				<entry id="1" hint="tooltip">决定是否渲染材质的两面（也可以按网格设置此行为）。</entry>
+			</section>
+			<section name="Use vertex colors: " hint="CheckBox">
+				<entry id="0" hint="text">使用顶点颜色： </entry>
+				<entry id="1" hint="tooltip">如果要使用顶点颜色渲染网格则启用（必须有相应的顶点缓冲区）</entry>
+			</section>
+			<section name="AlphaRef: " hint="Slider">
+				<entry id="0" hint="text">AlphaRef： </entry>
+				<entry id="1" hint="tooltip">调整Alpha截止阈值。Alpha裁剪可能影响性能</entry>
+			</section>
+			<section name="Vertex AO: " hint="CheckBox">
+				<entry id="0" hint="text">顶点 AO： </entry>
+				<entry id="1" hint="tooltip">启用后，将启用顶点环境光遮蔽（如果存在）</entry>
+			</section>
+			<section name="Interior Scale Z: " hint="Slider">
+				<entry id="0" hint="text">内部缩放 Z： </entry>
+				<entry id="1" hint="tooltip">设置内部映射的立方体贴图缩放（如果材质使用内部映射着色器）</entry>
+			</section>
+			<section name="Normalmap: " hint="Slider">
+				<entry id="0" hint="text">法线贴图： </entry>
+				<entry id="1" hint="tooltip">法线贴图对面法线的扭曲程度（凹凸感）。</entry>
+			</section>
+			<section name="Emissive: " hint="Slider">
+				<entry id="0" hint="text">自发光： </entry>
+				<entry id="1" hint="tooltip">调整表面的发光强度。发光颜色与材质颜色相同。</entry>
+			</section>
+			<section name="MaterialName" hint="TextInputField">
+				<entry id="1" hint="tooltip">为材质设置名称...</entry>
+			</section>
+			<section name="Displacement: " hint="Slider">
+				<entry id="0" hint="text">位移： </entry>
+				<entry id="1" hint="tooltip">调整使用曲面细分时凹凸贴图对几何体的调制程度。</entry>
+			</section>
+			<section name="Color picker mode: " hint="ComboBox">
+				<entry id="0" hint="text">颜色选择器模式： </entry>
+				<entry id="1" hint="tooltip">选择颜色选择器的目标数据。</entry>
+				<section name="items">
+					<entry id="0">基础颜色</entry>
+					<entry id="1">高光颜色</entry>
+					<entry id="2">自发光颜色</entry>
+					<entry id="3">次表面颜色</entry>
+					<entry id="4">光泽颜色</entry>
+					<entry id="5">消光颜色</entry>
+				</section>
+			</section>
+			<section name="Receive Shadow: " hint="CheckBox">
+				<entry id="0" hint="text">接收阴影： </entry>
+				<entry id="1" hint="tooltip">是否接收阴影？</entry>
+			</section>
+			<section name="Color" hint="ColorPicker">
+				<entry id="0" hint="text">Color</entry>
+				<section name="Hex" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter RGBA hex value</entry>
+				</section>
+				<section name="B" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for BLUE channel (0-255)</entry>
+				</section>
+				<section name="S" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for SATURATION channel (0-100)</entry>
+				</section>
+				<section name="R" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for RED channel (0-255)</entry>
+				</section>
+				<section name="G" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for GREEN channel (0-255)</entry>
+				</section>
+				<section name="widget_42" hint="Slider">
+					<entry id="1" hint="tooltip">Value for ALPHA - TRANSPARENCY channel (0-255)</entry>
+				</section>
+				<section name="V" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for LUMINANCE channel (0-100)</entry>
+				</section>
+				<section name="H" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for HUE channel (0-360)</entry>
+				</section>
+			</section>
+			<section name="Cloak: " hint="Slider">
+				<entry id="0" hint="text">隐身： </entry>
+				<entry id="1" hint="tooltip">隐身效果是透射、折射和粗糙度的组合，没有色彩偏移。</entry>
+			</section>
+			<section name="Anisotropy Rot: " hint="Slider">
+				<entry id="0" hint="text">各向异性旋转： </entry>
+				<entry id="1" hint="tooltip">调整各向异性高光效果的旋转。
+仅适用于PBR + 各向异性着色器。</entry>
+			</section>
+			<section name="Texcoord anim FPS: " hint="Slider">
+				<entry id="0" hint="text">纹理坐标动画 FPS： </entry>
+				<entry id="1" hint="tooltip">调整纹理动画帧率（每秒帧数）。任何大于0的值都将使材质动态化。</entry>
+			</section>
+			<section name="Interior Offset Z: " hint="Slider">
+				<entry id="0" hint="text">内部偏移 Z： </entry>
+				<entry id="1" hint="tooltip">设置内部映射的立方体贴图偏移（如果材质使用内部映射着色器）</entry>
+			</section>
+			<section name="Shading Rate: " hint="ComboBox">
+				<entry id="0" hint="text">着色速率： </entry>
+				<entry id="1" hint="tooltip">选择此材质的着色速率。
+选择较大的着色速率将降低此材质的渲染质量，
+但提高性能。
+需要可变着色速率的硬件支持</entry>
+				<section name="items">
+					<entry id="0">1X1</entry>
+					<entry id="1">1X2</entry>
+					<entry id="2">2X1</entry>
+					<entry id="3">2X2</entry>
+					<entry id="4">2X4</entry>
+					<entry id="5">4X2</entry>
+					<entry id="6">4X4</entry>
+				</section>
+			</section>
+			<section name="Interior Scale X: " hint="Slider">
+				<entry id="0" hint="text">内部缩放 X： </entry>
+				<entry id="1" hint="tooltip">设置内部映射的立方体贴图缩放（如果材质使用内部映射着色器）</entry>
+			</section>
+			<section name="Sheen Roughness: " hint="Slider">
+				<entry id="0" hint="text">光泽粗糙度： </entry>
+				<entry id="1" hint="tooltip">影响布料着色的光泽层粗糙度。</entry>
+			</section>
+			<section name="Interior Scale Y: " hint="Slider">
+				<entry id="0" hint="text">内部缩放 Y： </entry>
+				<entry id="1" hint="tooltip">设置内部映射的立方体贴图缩放（如果材质使用内部映射着色器）</entry>
+			</section>
+			<section name="Prefer Uncompressed Textures: " hint="CheckBox">
+				<entry id="0" hint="text">优先使用未压缩纹理： </entry>
+				<entry id="1" hint="tooltip">对于未压缩纹理（jpg、png等），可以在此启用/禁用导入时的自动块压缩。
+块压缩可以减少GPU内存使用并提高性能，但可能导致质量下降。</entry>
+			</section>
+			<section name="Refraction: " hint="Slider">
+				<entry id="0" hint="text">折射： </entry>
+				<entry id="1" hint="tooltip">调整透射材质的折射量。</entry>
+			</section>
+			<section name="Transmission: " hint="Slider">
+				<entry id="0" hint="text">透射： </entry>
+				<entry id="1" hint="tooltip">调整透射度。透射度越高，越多漫反射光被透射而非吸收。</entry>
+			</section>
+			<section name="Spec-gloss workflow: " hint="CheckBox">
+				<entry id="0" hint="text">Spec-gloss 工作流： </entry>
+				<entry id="1" hint="tooltip">启用后，表面贴图将被视为包含高光颜色（RGB）和光滑度（A）</entry>
+			</section>
+			<section name="Occlusion 2: " hint="CheckBox">
+				<entry id="0" hint="text">遮蔽 2： </entry>
+				<entry id="1" hint="tooltip">启用后，遮蔽贴图的红色通道将用作遮蔽贴图</entry>
+			</section>
+			<section name="Capsule Shadow Disabled: " hint="CheckBox">
+				<entry id="0" hint="text">禁用胶囊阴影： </entry>
+				<entry id="1" hint="tooltip">禁用此材质接收胶囊阴影。</entry>
+			</section>
+			<section name="Anisotropy Strength: " hint="Slider">
+				<entry id="0" hint="text">各向异性强度： </entry>
+				<entry id="1" hint="tooltip">调整各向异性高光效果的强度。
+仅适用于PBR + 各向异性着色器。</entry>
+			</section>
+			<section name="Select texture" hint="Button">
+				<entry id="0" hint="text">选择纹理</entry>
+				<entry id="1" hint="tooltip">从当前场景选择纹理</entry>
+			</section>
+			<section name="Load preset" hint="Button">
+				<entry id="0" hint="text">加载预设</entry>
+				<entry id="1" hint="tooltip">从文件加载材质预设</entry>
+			</section>
+			<section name="Load from file" hint="Button">
+				<entry id="0" hint="text">从文件加载</entry>
+				<entry id="1" hint="tooltip">从磁盘文件加载纹理</entry>
+			</section>
+			<section name="Wind: " hint="CheckBox">
+				<entry id="0" hint="text">风： </entry>
+				<entry id="1" hint="tooltip">启用后，顶点风权重将影响风偏移对子集的影响程度。</entry>
+			</section>
+			<section name="Disable Texture Streaming: " hint="CheckBox">
+				<entry id="0" hint="text">禁用纹理流式加载： </entry>
+				<entry id="1" hint="tooltip">仅为此材质禁用纹理流式加载。</entry>
+			</section>
+			<section name="Saturation: " hint="Slider">
+				<entry id="0" hint="text">饱和度： </entry>
+				<entry id="1" hint="tooltip">调整材质的饱和度。</entry>
+			</section>
+			<section name="Metalness: " hint="Slider">
+				<entry id="0" hint="text">金属度： </entry>
+				<entry id="1" hint="tooltip">表面越像金属，其颜色对反射颜色的贡献越大。
+注意：在specular-glossiness工作流中不可用</entry>
+			</section>
+			<section name="Texture Slot: " hint="ComboBox">
+				<entry id="0" hint="text">纹理槽： </entry>
+				<entry id="1" hint="tooltip">选择要修改的纹理槽。</entry>
+				<section name="items">
+					<entry id="0">BaseColor map</entry>
+					<entry id="1">Normal map</entry>
+					<entry id="2">Surface map</entry>
+					<entry id="3">Emissive map</entry>
+					<entry id="4">Displacement map</entry>
+					<entry id="5">Occlusion map</entry>
+					<entry id="6">Transmission map</entry>
+					<entry id="7">SheenColor map</entry>
+					<entry id="8">SheenRoughness map</entry>
+					<entry id="9">Clearcoat map</entry>
+					<entry id="10">ClearcoatRoughness map</entry>
+					<entry id="11">ClearcoatNormal map</entry>
+					<entry id="12">Specular map</entry>
+					<entry id="13">Anisotropy map</entry>
+					<entry id="14">Transparency map</entry>
+				</section>
+			</section>
+			<section name="Chromatic aberration: " hint="Slider">
+				<entry id="0" hint="text">色差： </entry>
+				<entry id="1" hint="tooltip">透射材质内RGB颜色的分离。</entry>
+			</section>
+			<section name="Mesh Blend: " hint="Slider">
+				<entry id="0" hint="text">网格混合： </entry>
+				<entry id="1" hint="tooltip">屏幕空间网格混合后处理距离衰减。</entry>
+			</section>
+			<section name="Clear texture" hint="Button">
+				<entry id="0" hint="text">清除纹理</entry>
+				<entry id="1" hint="tooltip">从槽位清除纹理</entry>
+			</section>
+			<section name="Blend with terrain: " hint="Slider">
+				<entry id="0" hint="text">与地形混合： </entry>
+				<entry id="1" hint="tooltip">与地形高度混合。</entry>
+			</section>
+			<section name="Texture TileSize Y: " hint="Slider">
+				<entry id="0" hint="text">纹理平铺大小 Y： </entry>
+				<entry id="1" hint="tooltip">调整纹理映射大小。</entry>
+			</section>
+			<section name="Shader: " hint="ComboBox">
+				<entry id="0" hint="text">着色器： </entry>
+				<entry id="1" hint="tooltip">为此材质选择着色器。
+自定义着色器（*）也会显示在此处（参见wi::renderer:RegisterCustomShader()获取更多信息）。
+注意：自定义着色器（*）无法在混合模式之间选择，因为它们使用显式混合模式创建。</entry>
+				<section name="items" />
+			</section>
+			<section name="Par Occl Mapping: " hint="Slider">
+				<entry id="0" hint="text">视差遮蔽映射： </entry>
+				<entry id="1" hint="tooltip">[视差遮蔽映射] 调整凹凸贴图对表面视差效果的调制程度。
+仅适用于PBR + 视差着色器。</entry>
+			</section>
+		</section>
+		<section name="widget_36" hint="CheckBox">
+			<entry id="1" hint="tooltip">切换区分大小写的名称过滤</entry>
+		</section>
+		<section name=" Gaussian Splats" hint="Window">
+			<entry id="0" hint="text"> Gaussian Splats</entry>
+		</section>
+		<section name=" Font" hint="Window">
+			<entry id="0" hint="text"> Font</entry>
+			<section name="Spacing: " hint="Slider">
+				<entry id="0" hint="text">间距： </entry>
+				<entry id="1" hint="tooltip">字符之间的水平间距。</entry>
+			</section>
+			<section name="Tip: if you add Sound Component to text, then the typewriter animation will use that sound as typewriter sound effect." hint="Label">
+				<entry id="0" hint="text">提示：如果为文本添加声音组件，打字机动画将使用该声音作为打字机音效。</entry>
+			</section>
+			<section name="widget_213" hint="TextInputField">
+				<entry id="1" hint="tooltip">设置打字机动画的起始字符（0 = 第一个）。</entry>
+			</section>
+			<section name="Bolden: " hint="Slider">
+				<entry id="0" hint="text">加粗： </entry>
+			</section>
+			<section name="Typewriter time: " hint="Slider">
+				<entry id="0" hint="text">打字机时间： </entry>
+				<entry id="1" hint="tooltip">完成打字机动画的时间（0 = 禁用）。</entry>
+			</section>
+			<section name="Shadow Softness: " hint="Slider">
+				<entry id="0" hint="text">阴影柔和度： </entry>
+			</section>
+			<section name="Hidden: " hint="CheckBox">
+				<entry id="0" hint="text">隐藏： </entry>
+				<entry id="1" hint="tooltip">隐藏/显示字体</entry>
+			</section>
+			<section name="Size: " hint="ComboBox">
+				<entry id="0" hint="text">大小： </entry>
+				<entry id="1" hint="tooltip">字体缓存大小。较大的大小会占用更多内存，但质量更好。</entry>
+				<section name="items">
+					<entry id="0">10</entry>
+					<entry id="1">12</entry>
+					<entry id="2">14</entry>
+					<entry id="3">16</entry>
+					<entry id="4">18</entry>
+					<entry id="5">20</entry>
+					<entry id="6">22</entry>
+					<entry id="7">24</entry>
+					<entry id="8">26</entry>
+					<entry id="9">28</entry>
+					<entry id="10">36</entry>
+					<entry id="11">48</entry>
+					<entry id="12">72</entry>
+					<entry id="13">84</entry>
+					<entry id="14">96</entry>
+					<entry id="15">108</entry>
+				</section>
+			</section>
+			<section name="Shadow Offset Y: " hint="Slider">
+				<entry id="0" hint="text">阴影偏移 Y： </entry>
+			</section>
+			<section name="Camera Scaling: " hint="CheckBox">
+				<entry id="0" hint="text">相机缩放： </entry>
+				<entry id="1" hint="tooltip">相机缩放字体将始终在屏幕上保持相同大小，不受相机距离影响。</entry>
+			</section>
+			<section name="Shadow Offset X: " hint="Slider">
+				<entry id="0" hint="text">阴影偏移 X： </entry>
+			</section>
+			<section name="Shadow Bolden: " hint="Slider">
+				<entry id="0" hint="text">阴影加粗： </entry>
+			</section>
+			<section name="H Align: " hint="ComboBox">
+				<entry id="0" hint="text">水平对齐： </entry>
+				<entry id="1" hint="tooltip">水平对齐。</entry>
+				<section name="items">
+					<entry id="0">左</entry>
+					<entry id="1">居中</entry>
+					<entry id="2">右</entry>
+				</section>
+			</section>
+			<section name="Softness: " hint="Slider">
+				<entry id="0" hint="text">柔和度： </entry>
+			</section>
+			<section name="Shadow Intensity: " hint="Slider">
+				<entry id="0" hint="text">阴影强度： </entry>
+			</section>
+			<section name="Color" hint="ColorPicker">
+				<entry id="0" hint="text">Color</entry>
+				<section name="Hex" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter RGBA hex value</entry>
+				</section>
+				<section name="B" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for BLUE channel (0-255)</entry>
+				</section>
+				<section name="S" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for SATURATION channel (0-100)</entry>
+				</section>
+				<section name="widget_212" hint="Slider">
+					<entry id="1" hint="tooltip">Value for ALPHA - TRANSPARENCY channel (0-255)</entry>
+				</section>
+				<section name="R" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for RED channel (0-255)</entry>
+				</section>
+				<section name="G" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for GREEN channel (0-255)</entry>
+				</section>
+				<section name="V" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for LUMINANCE channel (0-100)</entry>
+				</section>
+				<section name="H" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for HUE channel (0-360)</entry>
+				</section>
+			</section>
+			<section name="Typewriter Looped: " hint="CheckBox">
+				<entry id="0" hint="text">打字机循环： </entry>
+				<entry id="1" hint="tooltip">打字机动画是否循环。</entry>
+			</section>
+			<section name="SDF: " hint="CheckBox">
+				<entry id="0" hint="text">SDF： </entry>
+				<entry id="1" hint="tooltip">有符号距离场渲染用于改善字体放大、柔和度、加粗和柔和阴影效果。</entry>
+			</section>
+			<section name="From file..." hint="Button">
+				<entry id="0" hint="text">从文件...</entry>
+			</section>
+			<section name="widget_207" hint="Button">
+				<entry id="1" hint="tooltip">从文件（.TTF）加载字体样式以应用到此字体。</entry>
+			</section>
+			<section name="Rotation: " hint="Slider">
+				<entry id="0" hint="text">旋转： </entry>
+				<entry id="1" hint="tooltip">围绕对齐中心点的Z旋转。编辑器输入为度数。</entry>
+			</section>
+			<section name="Depth Test: " hint="CheckBox">
+				<entry id="0" hint="text">深度测试： </entry>
+				<entry id="1" hint="tooltip">深度测试字体将被几何体裁剪。</entry>
+			</section>
+			<section name="V Align: " hint="ComboBox">
+				<entry id="0" hint="text">垂直对齐： </entry>
+				<entry id="1" hint="tooltip">垂直对齐。</entry>
+				<section name="items">
+					<entry id="0">顶部</entry>
+					<entry id="1">居中</entry>
+					<entry id="2">底部</entry>
+				</section>
+			</section>
+			<section name="Color mode: " hint="ComboBox">
+				<entry id="0" hint="text">颜色模式： </entry>
+				<entry id="1" hint="tooltip">选择颜色选择器的目标数据。</entry>
+				<section name="items">
+					<entry id="0">字体颜色</entry>
+					<entry id="1">阴影颜色</entry>
+				</section>
+			</section>
+			<section name="Intensity: " hint="Slider">
+				<entry id="0" hint="text">强度： </entry>
+			</section>
+			<section name="Camera Facing: " hint="CheckBox">
+				<entry id="0" hint="text">面向相机： </entry>
+				<entry id="1" hint="tooltip">面向相机的字体将始终旋转朝向相机。</entry>
+			</section>
+		</section>
+		<section name=" Force Field" hint="Window">
+			<entry id="0" hint="text"> Force Field</entry>
+			<section name="Type: " hint="ComboBox">
+				<entry id="0" hint="text">类型： </entry>
+				<entry id="1" hint="tooltip">选择力场类型。</entry>
+				<section name="items">
+					<entry id="0">点</entry>
+					<entry id="1">平面</entry>
+				</section>
+			</section>
+			<section name="Gravity: " hint="Slider">
+				<entry id="0" hint="text">重力： </entry>
+				<entry id="1" hint="tooltip">设置重力大小。正值吸引，负值偏转。</entry>
+			</section>
+			<section name="Range: " hint="Slider">
+				<entry id="0" hint="text">范围： </entry>
+				<entry id="1" hint="tooltip">设置影响范围。</entry>
+			</section>
+		</section>
+		<section name=" Inverse Kinematics" hint="Window">
+			<entry id="0" hint="text"> Inverse Kinematics</entry>
+			<section name="Target: " hint="ComboBox">
+				<entry id="0" hint="text">目标： </entry>
+				<entry id="1" hint="tooltip">选择IK将跟随的目标实体（带变换）</entry>
+				<section name="items" />
+			</section>
+			<section name="Disabled: " hint="CheckBox">
+				<entry id="0" hint="text">禁用： </entry>
+				<entry id="1" hint="tooltip">禁用模拟。</entry>
+			</section>
+			<section name="Chain Length: " hint="Slider">
+				<entry id="0" hint="text">链长度： </entry>
+				<entry id="1" hint="tooltip">从此实体向后模拟的层次链长度</entry>
+			</section>
+			<section name="Iteration Count: " hint="Slider">
+				<entry id="0" hint="text">迭代次数： </entry>
+				<entry id="1" hint="tooltip">计算逆运动学的迭代次数。值越大越慢但越精确。</entry>
+			</section>
+		</section>
+		<section name=" Transform" hint="Window">
+			<entry id="0" hint="text"> Transform</entry>
+			<section name="Apply Scale to Object" hint="Button">
+				<entry id="0" hint="text">应用缩放到对象</entry>
+				<entry id="1" hint="tooltip">重新计算子对象网格的顶点位置、变形目标位置和骨架骨骼，以应用当前变换缩放</entry>
+			</section>
+			<section name="widget_127" hint="TextInputField" />
+			<section name="widget_134" hint="TextInputField">
+				<entry id="1" hint="tooltip">Rotation Quaternion.Y</entry>
+			</section>
+			<section name="widget_135" hint="TextInputField">
+				<entry id="1" hint="tooltip">Rotation Quaternion.Z</entry>
+			</section>
+			<section name="widget_126" hint="TextInputField" />
+			<section name="widget_129" hint="TextInputField" />
+			<section name="widget_132" hint="TextInputField">
+				<entry id="1" hint="tooltip">Yaw (in degrees)
+ Note: Euler angle rotations can result in precision loss from quaternion conversion!</entry>
+			</section>
+			<section name="widget_133" hint="TextInputField">
+				<entry id="1" hint="tooltip">Rotation Quaternion.X</entry>
+			</section>
+			<section name="widget_128" hint="TextInputField" />
+			<section name="widget_138" hint="TextInputField" />
+			<section name="Move to Editor Camera" hint="Button">
+				<entry id="0" hint="text">移动到编辑器相机</entry>
+				<entry id="1" hint="tooltip">移动选中的变换以匹配当前编辑器相机视图</entry>
+			</section>
+			<section name="Clear Transform" hint="Button">
+				<entry id="0" hint="text">清除变换</entry>
+				<entry id="1" hint="tooltip">将变换重置为恒等</entry>
+			</section>
+			<section name="widget_130" hint="TextInputField">
+				<entry id="1" hint="tooltip">Roll (in degrees)
+ Note: Euler angle rotations can result in precision loss from quaternion conversion!</entry>
+			</section>
+			<section name="widget_139" hint="TextInputField" />
+			<section name="ResetScaleUniform" hint="Button">
+				<entry id="0" hint="text">X</entry>
+				<entry id="1" hint="tooltip">Reset scale</entry>
+			</section>
+			<section name="widget_123" hint="TextInputField" />
+			<section name="widget_131" hint="TextInputField">
+				<entry id="1" hint="tooltip">Pitch (in degrees)
+ Note: Euler angle rotations can result in precision loss from quaternion conversion!</entry>
+			</section>
+			<section name="ResetRotation" hint="Button">
+				<entry id="0" hint="text">X</entry>
+				<entry id="1" hint="tooltip">Reset rotation</entry>
+			</section>
+			<section name="widget_136" hint="TextInputField">
+				<entry id="1" hint="tooltip">Rotation Quaternion.W</entry>
+			</section>
+			<section name="widget_125" hint="TextInputField" />
+			<section name="ResetTranslation" hint="Button">
+				<entry id="0" hint="text">X</entry>
+				<entry id="1" hint="tooltip">Reset translation</entry>
+			</section>
+			<section name="widget_124" hint="TextInputField" />
+			<section name="widget_137" hint="TextInputField" />
+			<section name="ResetScale" hint="Button">
+				<entry id="0" hint="text">X</entry>
+				<entry id="1" hint="tooltip">Reset scale</entry>
+			</section>
+		</section>
+		<section name=" Constraint" hint="Window">
+			<entry id="0" hint="text"> Constraint</entry>
+			<section name="Plane Angle: " hint="Slider">
+				<entry id="0" hint="text">平面角度： </entry>
+			</section>
+			<section name="Fix Y" hint="Button">
+				<entry id="0" hint="text">固定 Y</entry>
+			</section>
+			<section name="Fix Rot X" hint="Button">
+				<entry id="0" hint="text">固定旋转 X</entry>
+			</section>
+			<section name="motorSlider1" hint="Slider">
+				<entry id="0" hint="text">motorSlider1</entry>
+			</section>
+			<section name="Fix Z" hint="Button">
+				<entry id="0" hint="text">固定 Z</entry>
+			</section>
+			<section name="Max Rotation Z: " hint="Slider">
+				<entry id="0" hint="text">最大旋转 Z： </entry>
+			</section>
+			<section name="ConstraintInfo" hint="Label">
+				<entry id="0" hint="text">可以添加约束来绑定一个或两个刚体。如果只指定一个体，则它将绑定到约束的位置。如果指定两个体，它们将在绑定时通过约束作为枢轴绑定在一起。</entry>
+			</section>
+			<section name="Min Translation Z: " hint="Slider">
+				<entry id="0" hint="text">最小平移 Z： </entry>
+			</section>
+			<section name="Max Rotation X: " hint="Slider">
+				<entry id="0" hint="text">最大旋转 X： </entry>
+			</section>
+			<section name="Type: " hint="ComboBox">
+				<entry id="0" hint="text">类型： </entry>
+				<entry id="1" hint="tooltip">设置约束类型。</entry>
+				<section name="items">
+					<entry id="0">固定</entry>
+					<entry id="1">点</entry>
+					<entry id="2">距离</entry>
+					<entry id="3">铰链</entry>
+					<entry id="4">锥形</entry>
+					<entry id="5">六自由度</entry>
+					<entry id="6">摆动扭转</entry>
+					<entry id="7">滑块</entry>
+				</section>
+			</section>
+			<section name="Min Rotation X: " hint="Slider">
+				<entry id="0" hint="text">最小旋转 X： </entry>
+			</section>
+			<section name="Max Rotation Y: " hint="Slider">
+				<entry id="0" hint="text">最大旋转 Y： </entry>
+			</section>
+			<section name="Max Translation Z: " hint="Slider">
+				<entry id="0" hint="text">最大平移 Z： </entry>
+			</section>
+			<section name="maxSlider" hint="Slider">
+				<entry id="0" hint="text">maxSlider</entry>
+			</section>
+			<section name="minSlider" hint="Slider">
+				<entry id="0" hint="text">minSlider</entry>
+			</section>
+			<section name="Max Translation Y: " hint="Slider">
+				<entry id="0" hint="text">最大平移 Y： </entry>
+			</section>
+			<section name="Disable self collision: " hint="CheckBox">
+				<entry id="0" hint="text">禁用自碰撞： </entry>
+				<entry id="1" hint="tooltip">禁用此约束目标的两个体之间的碰撞。
+注意：更改此选项将在当前相对于体的姿态中重新创建约束。</entry>
+			</section>
+			<section name="Normal Angle: " hint="Slider">
+				<entry id="0" hint="text">法线角度： </entry>
+			</section>
+			<section name="Fix Rot Z" hint="Button">
+				<entry id="0" hint="text">固定旋转 Z</entry>
+			</section>
+			<section name="Max Translation X: " hint="Slider">
+				<entry id="0" hint="text">最大平移 X： </entry>
+			</section>
+			<section name="Min Rotation Y: " hint="Slider">
+				<entry id="0" hint="text">最小旋转 Y： </entry>
+			</section>
+			<section name=" Physics visualizer: " hint="CheckBox">
+				<entry id="0" hint="text"> Physics visualizer: </entry>
+				<entry id="1" hint="tooltip">Visualize the physics world</entry>
+			</section>
+			<section name="Rebind Constraint" hint="Button">
+				<entry id="0" hint="text">重新绑定约束</entry>
+			</section>
+			<section name="Debug size: " hint="Slider">
+				<entry id="0" hint="text">调试大小： </entry>
+			</section>
+			<section name="Fix X" hint="Button">
+				<entry id="0" hint="text">固定 X</entry>
+			</section>
+			<section name="Break distance: " hint="Slider">
+				<entry id="0" hint="text">断裂距离： </entry>
+				<entry id="1" hint="tooltip">约束在断裂前允许施加的程度，以相对距离计算。设为FLT_MAX可禁用断裂。</entry>
+			</section>
+			<section name="Body A: " hint="ComboBox">
+				<entry id="0" hint="text">刚体 A： </entry>
+				<section name="items" />
+			</section>
+			<section name="Fix Rot Y" hint="Button">
+				<entry id="0" hint="text">固定旋转 Y</entry>
+			</section>
+			<section name="Min Translation Y: " hint="Slider">
+				<entry id="0" hint="text">最小平移 Y： </entry>
+			</section>
+			<section name="Min Translation X: " hint="Slider">
+				<entry id="0" hint="text">最小平移 X： </entry>
+			</section>
+			<section name="Body B: " hint="ComboBox">
+				<entry id="0" hint="text">刚体 B： </entry>
+				<section name="items" />
+			</section>
+			<section name="motorSlider2" hint="Slider">
+				<entry id="0" hint="text">motorSlider2</entry>
+			</section>
+			<section name="Min Rotation Z: " hint="Slider">
+				<entry id="0" hint="text">最小旋转 Z： </entry>
+			</section>
+		</section>
+		<section name="widget_35" hint="TextInputField">
+			<entry id="1" hint="tooltip">按名称搜索实体</entry>
+		</section>
+		<section name="Add component  " hint="ComboBox">
+			<entry id="0" hint="text">Add component  </entry>
+			<entry id="1" hint="tooltip">向选中的实体添加组件。</entry>
+			<section name="items">
+				<entry id="0">Name </entry>
+				<entry id="1">Layer </entry>
+				<entry id="2">Hierarchy </entry>
+				<entry id="3">Transform </entry>
+				<entry id="4">Light </entry>
+				<entry id="5">Material </entry>
+				<entry id="6">Mesh </entry>
+				<entry id="7">Object </entry>
+				<entry id="8">Spring </entry>
+				<entry id="9">Inverse Kinematics </entry>
+				<entry id="10">Sound </entry>
+				<entry id="11">Environment Probe </entry>
+				<entry id="12">Emitted Particle System </entry>
+				<entry id="13">Hair Particle System </entry>
+				<entry id="14">Decal </entry>
+				<entry id="15">Weather </entry>
+				<entry id="16">Force Field </entry>
+				<entry id="17">Animation </entry>
+				<entry id="18">Script </entry>
+				<entry id="19">Rigid Body Physics </entry>
+				<entry id="20">Soft Body Physics </entry>
+				<entry id="21">Collider </entry>
+				<entry id="22">Camera </entry>
+				<entry id="23">Video </entry>
+				<entry id="24">Sprite </entry>
+				<entry id="25">Font </entry>
+				<entry id="26">Voxel Grid </entry>
+				<entry id="27">Metadata </entry>
+				<entry id="28">Constraint </entry>
+				<entry id="29">Spline </entry>
+			</section>
+		</section>
+		<section name=" Sprite" hint="Window">
+			<entry id="0" hint="text"> Sprite</entry>
+			<section name="Pivot Y: " hint="Slider">
+				<entry id="0" hint="text">枢轴 Y： </entry>
+				<entry id="1" hint="tooltip">垂直枢轴：0：顶部，0.5：中心，1：底部</entry>
+			</section>
+			<section name="Rounding 2: " hint="Slider">
+				<entry id="0" hint="text">圆角 2： </entry>
+				<entry id="1" hint="tooltip">为左下角启用圆角。</entry>
+			</section>
+			<section name="Rounding 3: " hint="Slider">
+				<entry id="0" hint="text">圆角 3： </entry>
+				<entry id="1" hint="tooltip">为右下角启用圆角。</entry>
+			</section>
+			<section name="Mask Alpha End: " hint="Slider">
+				<entry id="0" hint="text">遮罩 Alpha 结束： </entry>
+				<entry id="1" hint="tooltip">限制遮罩Alpha不超过此级别。</entry>
+			</section>
+			<section name="Base Texture" hint="Button">
+				<entry id="0" hint="text">基础纹理</entry>
+			</section>
+			<section name="Spritesheet FPS: " hint="Slider">
+				<entry id="0" hint="text">精灵表 FPS： </entry>
+				<entry id="1" hint="tooltip">精灵表动画的每秒帧率。</entry>
+			</section>
+			<section name="Wobble Speed: " hint="Slider">
+				<entry id="0" hint="text">摆动速度： </entry>
+				<entry id="1" hint="tooltip">摆动动画的速度。</entry>
+			</section>
+			<section name="Mask Texture" hint="Button">
+				<entry id="0" hint="text">遮罩纹理</entry>
+			</section>
+			<section name="Blending: " hint="ComboBox">
+				<entry id="0" hint="text">混合： </entry>
+				<section name="items">
+					<entry id="0">不透明</entry>
+					<entry id="1">Alpha</entry>
+					<entry id="2">预乘</entry>
+					<entry id="3">加法</entry>
+					<entry id="4">乘法</entry>
+					<entry id="5">反转</entry>
+				</section>
+			</section>
+			<section name="Hidden: " hint="CheckBox">
+				<entry id="0" hint="text">隐藏： </entry>
+				<entry id="1" hint="tooltip">隐藏/显示精灵</entry>
+			</section>
+			<section name="Mask Alpha Start: " hint="Slider">
+				<entry id="0" hint="text">遮罩 Alpha 开始： </entry>
+				<entry id="1" hint="tooltip">限制遮罩Alpha不低于此级别。</entry>
+			</section>
+			<section name="Rounding 0: " hint="Slider">
+				<entry id="0" hint="text">圆角 0： </entry>
+				<entry id="1" hint="tooltip">为左上角启用圆角。</entry>
+			</section>
+			<section name="widget_204" hint="TextInputField">
+				<entry id="1" hint="tooltip">设置精灵表动画的总帧数（1 = 仅1帧，无动画）。</entry>
+			</section>
+			<section name="Camera Scaling: " hint="CheckBox">
+				<entry id="0" hint="text">相机缩放： </entry>
+				<entry id="1" hint="tooltip">相机缩放精灵将始终在屏幕上保持相同大小，不受相机距离影响。</entry>
+			</section>
+			<section name="Sampling: " hint="ComboBox">
+				<entry id="0" hint="text">采样： </entry>
+				<section name="items">
+					<entry id="0">钳制</entry>
+					<entry id="1">镜像</entry>
+					<entry id="2">平铺</entry>
+				</section>
+			</section>
+			<section name="Distortion: " hint="CheckBox">
+				<entry id="0" hint="text">扭曲： </entry>
+				<entry id="1" hint="tooltip">扭曲效果将使用精灵作为法线贴图来扭曲渲染图像。
+使用颜色Alpha控制扭曲量。</entry>
+			</section>
+			<section name="widget_205" hint="TextInputField">
+				<entry id="1" hint="tooltip">设置精灵表动画的水平帧数。
+（可选，如果精灵表包含多行则使用，默认 = 0）。</entry>
+			</section>
+			<section name="Color" hint="ColorPicker">
+				<entry id="0" hint="text">Color</entry>
+				<section name="Hex" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter RGBA hex value</entry>
+				</section>
+				<section name="B" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for BLUE channel (0-255)</entry>
+				</section>
+				<section name="S" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for SATURATION channel (0-100)</entry>
+				</section>
+				<section name="R" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for RED channel (0-255)</entry>
+				</section>
+				<section name="widget_203" hint="Slider">
+					<entry id="1" hint="tooltip">Value for ALPHA - TRANSPARENCY channel (0-255)</entry>
+				</section>
+				<section name="G" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for GREEN channel (0-255)</entry>
+				</section>
+				<section name="V" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for LUMINANCE channel (0-100)</entry>
+				</section>
+				<section name="H" hint="TextInputField">
+					<entry id="1" hint="tooltip">Enter value for HUE channel (0-360)</entry>
+				</section>
+			</section>
+			<section name="Scrolling X: " hint="Slider">
+				<entry id="0" hint="text">滚动 X： </entry>
+				<entry id="1" hint="tooltip">X方向滚动动画的速度。</entry>
+			</section>
+			<section name="Scrolling Y: " hint="Slider">
+				<entry id="0" hint="text">滚动 Y： </entry>
+				<entry id="1" hint="tooltip">Y方向滚动动画的速度。</entry>
+			</section>
+			<section name="Filtering: " hint="ComboBox">
+				<entry id="0" hint="text">过滤： </entry>
+				<section name="items">
+					<entry id="0">最近邻</entry>
+					<entry id="1">线性</entry>
+					<entry id="2">各向异性</entry>
+				</section>
+			</section>
+			<section name="Wobble Y: " hint="Slider">
+				<entry id="0" hint="text">摆动 Y： </entry>
+				<entry id="1" hint="tooltip">X方向摆动动画的量。</entry>
+			</section>
+			<section name="Wobble X: " hint="Slider">
+				<entry id="0" hint="text">摆动 X： </entry>
+				<entry id="1" hint="tooltip">X方向摆动动画的量。</entry>
+			</section>
+			<section name="Rotation: " hint="Slider">
+				<entry id="0" hint="text">旋转： </entry>
+				<entry id="1" hint="tooltip">围绕枢轴点的Z旋转。编辑器输入为度数。</entry>
+			</section>
+			<section name="Saturation: " hint="Slider">
+				<entry id="0" hint="text">饱和度： </entry>
+				<entry id="1" hint="tooltip">修改图像的饱和度。</entry>
+			</section>
+			<section name="Depth Test: " hint="CheckBox">
+				<entry id="0" hint="text">深度测试： </entry>
+				<entry id="1" hint="tooltip">深度测试精灵将被几何体裁剪。</entry>
+			</section>
+			<section name="Border Soften: " hint="Slider">
+				<entry id="0" hint="text">边缘柔和： </entry>
+				<entry id="1" hint="tooltip">柔化精灵的边缘。</entry>
+			</section>
+			<section name="Rounding 1: " hint="Slider">
+				<entry id="0" hint="text">圆角 1： </entry>
+				<entry id="1" hint="tooltip">为右上角启用圆角。</entry>
+			</section>
+			<section name="Intensity: " hint="Slider">
+				<entry id="0" hint="text">强度： </entry>
+				<entry id="1" hint="tooltip">颜色乘数</entry>
+			</section>
+			<section name="Pivot X: " hint="Slider">
+				<entry id="0" hint="text">枢轴 X： </entry>
+				<entry id="1" hint="tooltip">水平枢轴：0：左，0.5：中心，1：右</entry>
+			</section>
+			<section name="Camera Facing: " hint="CheckBox">
+				<entry id="0" hint="text">面向相机： </entry>
+				<entry id="1" hint="tooltip">面向相机的精灵将始终旋转朝向相机。</entry>
+			</section>
+		</section>
+		<section name=" Collider" hint="Window">
+			<entry id="0" hint="text"> Collider</entry>
+			<section name="CPU: " hint="CheckBox">
+				<entry id="0" hint="text">CPU： </entry>
+				<entry id="1" hint="tooltip">启用以在CPU上使用。CPU使用包括：弹簧。</entry>
+			</section>
+			<section name="widget_182" hint="Label">
+				<entry id="0" hint="text">碰撞体用于简单的模拟物理，不使用物理引擎。它们仅在特定的CPU/GPU系统中使用。</entry>
+			</section>
+			<section name="Offset X: " hint="Slider">
+				<entry id="0" hint="text">偏移 X： </entry>
+			</section>
+			<section name="Tail X: " hint="Slider">
+				<entry id="0" hint="text">尾部 X： </entry>
+			</section>
+			<section name="Tail Y: " hint="Slider">
+				<entry id="0" hint="text">尾部 Y： </entry>
+			</section>
+			<section name="GPU: " hint="CheckBox">
+				<entry id="0" hint="text">GPU： </entry>
+				<entry id="1" hint="tooltip">启用以在GPU上使用。GPU使用包括：发射器和毛发粒子系统。
+注意GPU只能支持有限数量的碰撞体。</entry>
+			</section>
+			<section name="Offset Z: " hint="Slider">
+				<entry id="0" hint="text">偏移 Z： </entry>
+			</section>
+			<section name="Radius: " hint="Slider">
+				<entry id="0" hint="text">半径： </entry>
+			</section>
+			<section name="Offset Y: " hint="Slider">
+				<entry id="0" hint="text">偏移 Y： </entry>
+			</section>
+			<section name="Shape: " hint="ComboBox">
+				<entry id="0" hint="text">形状： </entry>
+				<section name="items">
+					<entry id="0">球体</entry>
+					<entry id="1">胶囊体</entry>
+					<entry id="2">平面</entry>
+				</section>
+			</section>
+			<section name="Tail Z: " hint="Slider">
+				<entry id="0" hint="text">尾部 Z： </entry>
+			</section>
+		</section>
+		<section name=" Light" hint="Window">
+			<entry id="0" hint="text"> Light</entry>
+			<section name="Lens flare textures: " hint="Label">
+				<entry id="0" hint="text">镜头光晕纹理： </entry>
+			</section>
+			<section name="Static: " hint="CheckBox">
+				<entry id="0" hint="text">静态： </entry>
+				<entry id="1" hint="tooltip">静态光源仅用于烘焙到光照贴图、DDGI和Surfel GI。</entry>
+			</section>
+			<section name="LensFlareSlot" hint="Button">
+				<entry id="1" hint="tooltip">加载镜头光晕纹理到此槽位</entry>
+			</section>
+			<section name="Camera source: " hint="ComboBox">
+				<entry id="0" hint="text">相机源： </entry>
+				<entry id="1" hint="tooltip">选择要用作纹理的相机</entry>
+				<section name="items" />
+			</section>
+			<section name="Type: " hint="ComboBox">
+				<entry id="0" hint="text">类型： </entry>
+				<entry id="1" hint="tooltip">选择光源类型...</entry>
+				<section name="items">
+					<entry id="0">方向光</entry>
+					<entry id="1">点光源</entry>
+					<entry id="2">聚光灯</entry>
+					<entry id="3">矩形光</entry>
+				</section>
+			</section>
+			<section name="Volumetric Clouds: " hint="CheckBox">
+				<entry id="0" hint="text">体积云： </entry>
+				<entry id="1" hint="tooltip">启用后，光发射将影响体积云。</entry>
+			</section>
+			<section name="Shadow resolution: " hint="ComboBox">
+				<entry id="0" hint="text">阴影分辨率： </entry>
+				<entry id="1" hint="tooltip">可以为此光源的阴影贴图强制固定分辨率以避免动态缩放。
+如果保持动态，分辨率将根据光源距离和大小在0和渲染器中此光源类型的最大阴影分辨率之间缩放。</entry>
+				<section name="items">
+					<entry id="0">动态</entry>
+					<entry id="1">32</entry>
+					<entry id="2">64</entry>
+					<entry id="3">128</entry>
+					<entry id="4">256</entry>
+					<entry id="5">512</entry>
+					<entry id="6">1024</entry>
+					<entry id="7">2048</entry>
+					<entry id="8">4096</entry>
+					<entry id="9">8192</entry>
+				</section>
+			</section>
+			<section name="Volumetric boost: " hint="Slider">
+				<entry id="0" hint="text">体积增强： </entry>
+				<entry id="1" hint="tooltip">仅调整此光源的体积雾效果强度</entry>
+			</section>
+			<section name="Length: " hint="Slider">
+				<entry id="0" hint="text">长度： </entry>
+				<entry id="1" hint="tooltip">调整光源长度。
+可以将点光源变为胶囊光。</entry>
+			</section>
+			<section name="Radius: " hint="Slider">
+				<entry id="0" hint="text">半径： </entry>
+				<entry id="1" hint="tooltip">[实验性] 调整光源半径。
+对于方向光，这仅影响光线追踪阴影柔和度。</entry>
+			</section>
+			<section name="Range: " hint="Slider">
+				<entry id="0" hint="text">范围： </entry>
+				<entry id="1" hint="tooltip">调整光源影响的最大范围。</entry>
+			</section>
+			<section name="Inner Cone Angle: " hint="Slider">
+				<entry id="0" hint="text">内锥角： </entry>
+				<entry id="1" hint="tooltip">调整聚光灯的内锥孔径。
+（内锥始终在外锥内部）</entry>
+			</section>
+			<section name="Shadow: " hint="CheckBox">
+				<entry id="0" hint="text">阴影： </entry>
+				<entry id="1" hint="tooltip">将光源设为阴影投射者。多个阴影投射者可能影响性能！</entry>
+			</section>
+			<section name="Visualizer: " hint="CheckBox">
+				<entry id="0" hint="text">可视化器： </entry>
+				<entry id="1" hint="tooltip">可视化光源发射</entry>
+			</section>
+			<section name="Height: " hint="Slider">
+				<entry id="0" hint="text">高度： </entry>
+				<entry id="1" hint="tooltip">调整矩形光源的高度。
+</entry>
+			</section>
+			<section name="Outer Cone Angle: " hint="Slider">
+				<entry id="0" hint="text">外锥角： </entry>
+				<entry id="1" hint="tooltip">调整聚光灯的主锥孔径。</entry>
+			</section>
+			<section name="Volumetric: " hint="CheckBox">
+				<entry id="0" hint="text">体积： </entry>
+				<entry id="1" hint="tooltip">计算体积光散射效果。
+雾设置影响散射（参见天气窗口）。如果没有雾，则没有散射。</entry>
+			</section>
+			<section name="TipLabel" hint="Label">
+				<entry id="0" hint="text">提示：可以为此实体添加材质，其基础颜色纹理将用于着色光源颜色（点光源需要立方体贴图，聚光灯需要texture2D）。也可以为此实体添加视频，视频将用作光源颜色乘数（仅适用于聚光灯和矩形光）。</entry>
+			</section>
+			<section name="Light Color" hint="ColorPicker">
+				<entry id="0" hint="text">光源颜色</entry>
+				<section name="Hex" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入RGBA十六进制值</entry>
+				</section>
+				<section name="B" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入蓝色通道值（0-255）</entry>
+				</section>
+				<section name="S" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入饱和度通道值（0-100）</entry>
+				</section>
+				<section name="R" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入红色通道值（0-255）</entry>
+				</section>
+				<section name="widget_95" hint="Slider">
+					<entry id="1" hint="tooltip">Alpha - 透明度通道值（0-255）</entry>
+				</section>
+				<section name="G" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入绿色通道值（0-255）</entry>
+				</section>
+				<section name="V" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入亮度通道值（0-100）</entry>
+				</section>
+				<section name="H" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入色相通道值（0-360）</entry>
+				</section>
+			</section>
+			<section name="Intensity: " hint="Slider">
+				<entry id="0" hint="text">强度： </entry>
+				<entry id="1" hint="tooltip">光源亮度。定义单位取决于光源类型。
+点光源和聚光灯使用发光强度（坎德拉 lm/sr），方向光使用照度（勒克斯 lm/m2）。</entry>
+			</section>
+		</section>
+		<section name="Entities" hint="TreeList">
+			<entry id="0" hint="text">Entities</entry>
+		</section>
+		<section name=" Humanoid" hint="Window">
+			<entry id="0" hint="text"> Humanoid</entry>
+			<section name="Bones: " hint="TreeList">
+				<entry id="0" hint="text">骨骼： </entry>
+			</section>
+			<section name="Ragdoll Physics Enabled: " hint="CheckBox">
+				<entry id="0" hint="text">布娃娃物理启用： </entry>
+				<entry id="1" hint="tooltip">激活动态布娃娃物理。
+注意：运动学布娃娃物理始终活动（布娃娃默认为动画驱动/运动学）。
+注意：缩放人形将禁用布娃娃物理，如果需要请重新启用。</entry>
+			</section>
+			<section name="Head horizontal: " hint="Slider">
+				<entry id="0" hint="text">头部水平： </entry>
+				<entry id="1" hint="tooltip">限制头部水平移动（输入为度数）</entry>
+			</section>
+			<section name=" Import animations" hint="Button">
+				<entry id="0" hint="text"> Import animations</entry>
+				<entry id="1" hint="tooltip">Import animations from a scene or model file and retarget them to this humanoid.</entry>
+			</section>
+			<section name="Ragdoll Disabled: " hint="CheckBox">
+				<entry id="0" hint="text">布娃娃禁用： </entry>
+				<entry id="1" hint="tooltip">完全禁用此人形的布娃娃物理创建。
+适用于人形骨架不应有任何物理交互的情况。</entry>
+			</section>
+			<section name="Eye horizontal: " hint="Slider">
+				<entry id="0" hint="text">眼睛水平： </entry>
+				<entry id="1" hint="tooltip">限制眼睛水平移动（输入为度数）</entry>
+			</section>
+			<section name="Head size: " hint="Slider">
+				<entry id="0" hint="text">头部大小： </entry>
+				<entry id="1" hint="tooltip">调整头部大小。</entry>
+			</section>
+			<section name="Look At: " hint="CheckBox">
+				<entry id="0" hint="text">注视： </entry>
+				<entry id="1" hint="tooltip">启用注视方向更新。启用后，头部将转向面向注视点。
+如果启用跟随鼠标选项，编辑器可以生成示例注视点。</entry>
+			</section>
+			<section name="Ragdoll Physics 2D: " hint="CheckBox">
+				<entry id="0" hint="text">布娃娃物理 2D： </entry>
+				<entry id="1" hint="tooltip">可以在此将布娃娃物理锁定到2D（XY平移，Z旋转）平面。</entry>
+			</section>
+			<section name="widget_190" hint="Label">
+				<entry id="0" hint="text">此窗口将保持打开，即使选择其他实体，直到折叠，以便选择其他骨骼实体。</entry>
+			</section>
+			<section name="Look At Entity: " hint="ComboBox">
+				<entry id="0" hint="text">注视实体： </entry>
+				<entry id="1" hint="tooltip">如果设置为带TransformComponent的实体，将覆盖直接设置的注视位置，并随场景保存。</entry>
+				<section name="items" />
+			</section>
+			<section name="Animation tester: " hint="ComboBox">
+				<entry id="0" hint="text">动画测试器： </entry>
+				<entry id="1" hint="tooltip">从此人形的子级列表中选择动画。
+选中的动画将立即播放，其他动画将停止。</entry>
+				<section name="items" />
+			</section>
+			<section name="Eye speed: " hint="Slider">
+				<entry id="0" hint="text">眼睛速度： </entry>
+				<entry id="1" hint="tooltip">调整眼睛转动速度。</entry>
+			</section>
+			<section name="Leg spacing: " hint="Slider">
+				<entry id="0" hint="text">腿部间距： </entry>
+				<entry id="1" hint="tooltip">调整腿部之间的距离。</entry>
+			</section>
+			<section name="Activate all ragdolls" hint="Button">
+				<entry id="0" hint="text">激活所有布娃娃</entry>
+				<entry id="1" hint="tooltip">从场景或模型文件导入动画并重定向到此人形。</entry>
+			</section>
+			<section name="Head speed: " hint="Slider">
+				<entry id="0" hint="text">头部速度： </entry>
+				<entry id="1" hint="tooltip">调整头部转动速度。</entry>
+			</section>
+			<section name="Ragdoll head: " hint="Slider">
+				<entry id="0" hint="text">布娃娃头部： </entry>
+				<entry id="1" hint="tooltip">调整布娃娃物理头部的整体大小。</entry>
+			</section>
+			<section name="Capsule Shadow Disabled: " hint="CheckBox">
+				<entry id="0" hint="text">禁用胶囊阴影： </entry>
+				<entry id="1" hint="tooltip">禁用此特定人形的胶囊阴影。</entry>
+			</section>
+			<section name="Arm spacing: " hint="Slider">
+				<entry id="0" hint="text">手臂间距： </entry>
+				<entry id="1" hint="tooltip">调整手臂之间的距离。</entry>
+			</section>
+			<section name="Head vertical: " hint="Slider">
+				<entry id="0" hint="text">头部垂直： </entry>
+				<entry id="1" hint="tooltip">限制头部垂直移动（输入为度数）</entry>
+			</section>
+			<section name="Eye vertical: " hint="Slider">
+				<entry id="0" hint="text">眼睛垂直： </entry>
+				<entry id="1" hint="tooltip">限制眼睛垂直移动（输入为度数）</entry>
+			</section>
+			<section name="Follow mouse: " hint="CheckBox">
+				<entry id="0" hint="text">跟随鼠标： </entry>
+				<entry id="1" hint="tooltip">在鼠标位置生成示例注视点。如果启用了注视，角色的头部将尝试面向鼠标方向</entry>
+			</section>
+			<section name="Ragdoll fatness: " hint="Slider">
+				<entry id="0" hint="text">布娃娃肥胖度： </entry>
+				<entry id="1" hint="tooltip">调整布娃娃物理骨架的整体肥胖度。</entry>
+			</section>
+		</section>
+		<section name="widget_33" hint="ComboBox">
+			<entry id="1" hint="tooltip">Apply filtering to the Entities by components</entry>
+		</section>
+		<section name=" Expression" hint="Window">
+			<entry id="0" hint="text"> Expression</entry>
+			<section name="Weight: " hint="Slider">
+				<entry id="0" hint="text">权重： </entry>
+			</section>
+			<section name="Blink Length: " hint="Slider">
+				<entry id="0" hint="text">眨眼长度： </entry>
+			</section>
+			<section name="Force Talking: " hint="CheckBox">
+				<entry id="0" hint="text">强制说话： </entry>
+				<entry id="1" hint="tooltip">强制持续说话动画，即使没有语音播放</entry>
+			</section>
+			<section name="Expressions: " hint="TreeList">
+				<entry id="0" hint="text">表情： </entry>
+			</section>
+			<section name="Blinks: " hint="Slider">
+				<entry id="0" hint="text">眨眼： </entry>
+				<entry id="1" hint="tooltip">指定每秒眨眼次数。</entry>
+			</section>
+			<section name="Override Look: " hint="ComboBox">
+				<entry id="0" hint="text">覆盖注视： </entry>
+				<entry id="1" hint="tooltip">注视移开覆盖控制</entry>
+				<section name="items">
+					<entry id="0">无</entry>
+					<entry id="1">阻挡</entry>
+					<entry id="2">混合</entry>
+				</section>
+			</section>
+			<section name="Looks: " hint="Slider">
+				<entry id="0" hint="text">注视移开： </entry>
+				<entry id="1" hint="tooltip">指定每秒注视移开次数。</entry>
+			</section>
+			<section name="Override Mouth: " hint="ComboBox">
+				<entry id="0" hint="text">覆盖嘴部： </entry>
+				<entry id="1" hint="tooltip">唇形同步覆盖控制</entry>
+				<section name="items">
+					<entry id="0">无</entry>
+					<entry id="1">阻挡</entry>
+					<entry id="2">混合</entry>
+				</section>
+			</section>
+			<section name="widget_185" hint="Label">
+				<entry id="0" hint="text">提示：如果还为此实体附加声音组件，嘴部表情（如果有）将根据播放的声音进行动画。</entry>
+			</section>
+			<section name="Look Length: " hint="Slider">
+				<entry id="0" hint="text">注视长度： </entry>
+			</section>
+			<section name="Override Blink: " hint="ComboBox">
+				<entry id="0" hint="text">覆盖眨眼： </entry>
+				<entry id="1" hint="tooltip">眨眼覆盖控制</entry>
+				<section name="items">
+					<entry id="0">无</entry>
+					<entry id="1">阻挡</entry>
+					<entry id="2">混合</entry>
+				</section>
+			</section>
+			<section name="Binary: " hint="CheckBox">
+				<entry id="0" hint="text">二元： </entry>
+			</section>
+			<section name="Blink Count: " hint="Slider">
+				<entry id="0" hint="text">眨眼次数： </entry>
+			</section>
+		</section>
+		<section name=" Armature" hint="Window">
+			<entry id="0" hint="text"> Armature</entry>
+			<section name="Reset Pose" hint="Button">
+				<entry id="0" hint="text">重置姿态</entry>
+				<entry id="1" hint="tooltip">将基于骨骼逆绑定矩阵在骨架上执行重置姿态。</entry>
+			</section>
+			<section name="Try to create humanoid rig" hint="Button">
+				<entry id="0" hint="text">尝试创建人形绑定</entry>
+				<entry id="1" hint="tooltip">尝试基于骨骼命名约定创建人形组件。
+支持VRM和Mixamo命名约定。</entry>
+			</section>
+			<section name="Bones: " hint="TreeList">
+				<entry id="0" hint="text">骨骼： </entry>
+			</section>
+			<section name="widget_189" hint="Label">
+				<entry id="0" hint="text">此窗口将保持打开，即使选择其他实体，直到折叠，以便选择其他骨骼实体。</entry>
+			</section>
+		</section>
+		<section name=" Rigid Body Physics" hint="Window">
+			<entry id="0" hint="text"> Rigid Body Physics</entry>
+			<section name="Wheel width: " hint="Slider">
+				<entry id="0" hint="text">Wheel width: </entry>
+			</section>
+			<section name="Front wheel offset: " hint="Slider">
+				<entry id="0" hint="text">Front wheel offset: </entry>
+			</section>
+			<section name="Wheel radius: " hint="Slider">
+				<entry id="0" hint="text">Wheel radius: </entry>
+			</section>
+			<section name="Front Right Wheel: " hint="ComboBox">
+				<entry id="0" hint="text">Front Right Wheel: </entry>
+				<entry id="1" hint="tooltip">Map an entity transform to this wheel, so the wheel graphics can be animated by physics (optional).
+The entity name must contain the word wheel to be displayed here.</entry>
+				<section name="items" />
+			</section>
+			<section name="Rear wheel offset: " hint="Slider">
+				<entry id="0" hint="text">Rear wheel offset: </entry>
+			</section>
+			<section name="Buoyancy: " hint="Slider">
+				<entry id="0" hint="text">Buoyancy: </entry>
+				<entry id="1" hint="tooltip">Higher buoyancy will make the bodies float up faster in water.</entry>
+			</section>
+			<section name="Max slope angle: " hint="Slider">
+				<entry id="0" hint="text">Max slope angle: </entry>
+				<entry id="1" hint="tooltip">Specify the slope angle that the character can stand on.</entry>
+			</section>
+			<section name="Rear Left Wheel: " hint="ComboBox">
+				<entry id="0" hint="text">Rear Left Wheel: </entry>
+				<entry id="1" hint="tooltip">Map an entity transform to this wheel, so the wheel graphics can be animated by physics (optional).
+The entity name must contain the word wheel to be displayed here.</entry>
+				<section name="items" />
+			</section>
+			<section name="YSlider" hint="Slider">
+				<entry id="0" hint="text">YSlider</entry>
+			</section>
+			<section name=" Drive in Editor: " hint="CheckBox">
+				<entry id="0" hint="text"> Drive in Editor: </entry>
+				<entry id="1" hint="tooltip">Override editor controls to drive this vehicle.
+Controls: WASD for driving, left-right for camera rotation, Left Shift: brake, Space: handbrake
+Controller: R2: forward, L2: backward, Square/X: handbrake.</entry>
+			</section>
+			<section name="Local Offset X: " hint="Slider">
+				<entry id="0" hint="text">Local Offset X: </entry>
+				<entry id="1" hint="tooltip">Set a local offset relative to the object transform</entry>
+			</section>
+			<section name="Local Offset Y: " hint="Slider">
+				<entry id="0" hint="text">Local Offset Y: </entry>
+				<entry id="1" hint="tooltip">Set a local offset relative to the object transform</entry>
+			</section>
+			<section name="Mass: " hint="Slider">
+				<entry id="0" hint="text">Mass: </entry>
+				<entry id="1" hint="tooltip">Set the mass amount for the physics engine.</entry>
+			</section>
+			<section name="Disable Deactivation: " hint="CheckBox">
+				<entry id="0" hint="text">Disable Deactivation: </entry>
+				<entry id="1" hint="tooltip">Toggle kinematic behaviour.</entry>
+			</section>
+			<section name="VehicleLabel" hint="Label">
+				<entry id="0" hint="text">Vehicle physics tips:
+- The vehicle's base shape can be configured in the standard shape settings above
+- A vehicle is always facing forward in +Z direction by default
+- Check that mass is set higher than the default 1kg, somewhere around ~1000 kg
+- Enable physics visualizer while editing vehicle parameters
+- You can reset vehicles by Ctrl + left click on the physics toggle button
+</entry>
+			</section>
+			<section name="R. Susp. Max Length: " hint="Slider">
+				<entry id="0" hint="text">R. Susp. Max Length: </entry>
+			</section>
+			<section name="Max Steering Angle: " hint="Slider">
+				<entry id="0" hint="text">Max Steering Angle: </entry>
+			</section>
+			<section name="Max Roll Angle: " hint="Slider">
+				<entry id="0" hint="text">Max Roll Angle: </entry>
+			</section>
+			<section name="Linear Damping: " hint="Slider">
+				<entry id="0" hint="text">Linear Damping: </entry>
+				<entry id="1" hint="tooltip">Set the linear damping amount for the physics engine.</entry>
+			</section>
+			<section name="Use Mesh LOD: " hint="Slider">
+				<entry id="0" hint="text">Use Mesh LOD: </entry>
+				<entry id="1" hint="tooltip">Specify which LOD to use for triangle mesh physics.</entry>
+			</section>
+			<section name="F. Brake Susp. Angle: " hint="Slider">
+				<entry id="0" hint="text">F. Brake Susp. Angle: </entry>
+			</section>
+			<section name="Friction: " hint="Slider">
+				<entry id="0" hint="text">Friction: </entry>
+				<entry id="1" hint="tooltip">Set the friction amount for the physics engine.</entry>
+			</section>
+			<section name="Gravity factor: " hint="Slider">
+				<entry id="0" hint="text">Gravity factor: </entry>
+				<entry id="1" hint="tooltip">Specify the strength of gravity acting on the character.</entry>
+			</section>
+			<section name="Restitution: " hint="Slider">
+				<entry id="0" hint="text">Restitution: </entry>
+				<entry id="1" hint="tooltip">Set the restitution amount for the physics engine.</entry>
+			</section>
+			<section name="R. Susp. Damping: " hint="Slider">
+				<entry id="0" hint="text">R. Susp. Damping: </entry>
+			</section>
+			<section name="F. Susp. Min Length: " hint="Slider">
+				<entry id="0" hint="text">F. Susp. Min Length: </entry>
+			</section>
+			<section name="Motorcycle lean control: " hint="CheckBox">
+				<entry id="0" hint="text">Motorcycle lean control: </entry>
+			</section>
+			<section name="Kinematic: " hint="CheckBox">
+				<entry id="0" hint="text">Kinematic: </entry>
+				<entry id="1" hint="tooltip">Toggle kinematic behaviour.</entry>
+			</section>
+			<section name="Max Torque: " hint="Slider">
+				<entry id="0" hint="text">Max Torque: </entry>
+			</section>
+			<section name="CharacterLabel" hint="Label">
+				<entry id="0" hint="text">Notes about physics-driven character:
+- The capsule shape is recommended for a physics character.
+- The friction and mass of the physics character are taken from the standard rigid body parameters.
+- This is different from CharacterComponent which uses custom character movement logic.</entry>
+			</section>
+			<section name="Local Offset Z: " hint="Slider">
+				<entry id="0" hint="text">Local Offset Z: </entry>
+				<entry id="1" hint="tooltip">Set a local offset relative to the object transform</entry>
+			</section>
+			<section name="F. Brake Torque: " hint="Slider">
+				<entry id="0" hint="text">F. Brake Torque: </entry>
+			</section>
+			<section name="Vehicle collision: " hint="ComboBox">
+				<entry id="0" hint="text">Vehicle collision: </entry>
+				<section name="items">
+					<entry id="0">Ray</entry>
+					<entry id="1">Sphere</entry>
+					<entry id="2">Cylinder</entry>
+				</section>
+			</section>
+			<section name="Chassis height: " hint="Slider">
+				<entry id="0" hint="text">Chassis height: </entry>
+			</section>
+			<section name="R. Brake Torque: " hint="Slider">
+				<entry id="0" hint="text">R. Brake Torque: </entry>
+			</section>
+			<section name="4-wheel drive: " hint="CheckBox">
+				<entry id="0" hint="text">4-wheel drive: </entry>
+			</section>
+			<section name="Start deactivated: " hint="CheckBox">
+				<entry id="0" hint="text">Start deactivated: </entry>
+				<entry id="1" hint="tooltip">If enabled, the rigid body will start in a deactivated state.
+Even if the body is dynamic (non-kinematic, mass &gt; 0), it will not fall unless interacted with.</entry>
+			</section>
+			<section name="F. Susp. Damping: " hint="Slider">
+				<entry id="0" hint="text">F. Susp. Damping: </entry>
+			</section>
+			<section name="Rear Right Wheel: " hint="ComboBox">
+				<entry id="0" hint="text">Rear Right Wheel: </entry>
+				<entry id="1" hint="tooltip">Map an entity transform to this wheel, so the wheel graphics can be animated by physics (optional).
+The entity name must contain the word wheel to be displayed here.</entry>
+				<section name="items" />
+			</section>
+			<section name="XSlider" hint="Slider">
+				<entry id="0" hint="text">XSlider</entry>
+			</section>
+			<section name="2D lock: " hint="CheckBox">
+				<entry id="0" hint="text">2D lock: </entry>
+				<entry id="1" hint="tooltip">You can lock the physics to be 2D only (XY translation, Z rotation).</entry>
+			</section>
+			<section name=" Physics visualizer: " hint="CheckBox">
+				<entry id="0" hint="text"> Physics visualizer: </entry>
+				<entry id="1" hint="tooltip">Visualize the physics world</entry>
+			</section>
+			<section name="F. Susp. Max Length: " hint="Slider">
+				<entry id="0" hint="text">F. Susp. Max Length: </entry>
+			</section>
+			<section name="Chassis length: " hint="Slider">
+				<entry id="0" hint="text">Chassis length: </entry>
+			</section>
+			<section name="R. Susp. Frequency: " hint="Slider">
+				<entry id="0" hint="text">R. Susp. Frequency: </entry>
+			</section>
+			<section name="F. Susp. Frequency: " hint="Slider">
+				<entry id="0" hint="text">F. Susp. Frequency: </entry>
+			</section>
+			<section name="Collision Shape: " hint="ComboBox">
+				<entry id="0" hint="text">Collision Shape: </entry>
+				<entry id="1" hint="tooltip">Set rigid body collision shape.</entry>
+				<section name="items">
+					<entry id="0">Box</entry>
+					<entry id="1">Sphere</entry>
+					<entry id="2">Capsule</entry>
+					<entry id="3">Cylinder</entry>
+					<entry id="4">Convex Hull</entry>
+					<entry id="5">Triangle Mesh</entry>
+					<entry id="6">Height Field</entry>
+				</section>
+			</section>
+			<section name="Clutch Strength: " hint="Slider">
+				<entry id="0" hint="text">Clutch Strength: </entry>
+			</section>
+			<section name="Angular Damping: " hint="Slider">
+				<entry id="0" hint="text">Angular Damping: </entry>
+				<entry id="1" hint="tooltip">Set the angular damping amount for the physics engine.</entry>
+			</section>
+			<section name=" Character physics: " hint="CheckBox">
+				<entry id="0" hint="text"> Character physics: </entry>
+				<entry id="1" hint="tooltip">Enable physics-driven character</entry>
+			</section>
+			<section name="R. Susp. Min Length: " hint="Slider">
+				<entry id="0" hint="text">R. Susp. Min Length: </entry>
+			</section>
+			<section name=" Vehicle physics: " hint="ComboBox">
+				<entry id="0" hint="text"> Vehicle physics: </entry>
+				<section name="items">
+					<entry id="0">None</entry>
+					<entry id="1">Car</entry>
+					<entry id="2">Motorcycle</entry>
+				</section>
+			</section>
+			<section name="Chassis width: " hint="Slider">
+				<entry id="0" hint="text">Chassis width: </entry>
+			</section>
+			<section name="Front Left Wheel: " hint="ComboBox">
+				<entry id="0" hint="text">Front Left Wheel: </entry>
+				<entry id="1" hint="tooltip">Map an entity transform to this wheel, so the wheel graphics can be animated by physics (optional).
+The entity name must contain the word wheel to be displayed here.</entry>
+				<section name="items" />
+			</section>
+		</section>
+		<section name=" Spline" hint="Window">
+			<entry id="0" hint="text"> Spline</entry>
+			<section name="Mesh subdivision: " hint="Slider">
+				<entry id="0" hint="text">网格细分： </entry>
+				<entry id="1" hint="tooltip">设置网格生成的细分数。
+大于0将启用网格生成，值越大质量越高。</entry>
+			</section>
+			<section name="Terrain modifier: " hint="Slider">
+				<entry id="0" hint="text">地形修改器： </entry>
+				<entry id="1" hint="tooltip">设置地形修改强度（0为关闭，值越大越锐利）。</entry>
+			</section>
+			<section name="Terrain texture falloff: " hint="Slider">
+				<entry id="0" hint="text">地形纹理衰减： </entry>
+				<entry id="1" hint="tooltip">影响样条线修改地形时的地形纹理衰减。</entry>
+			</section>
+			<section name="Width: " hint="Slider">
+				<entry id="0" hint="text">宽度： </entry>
+				<entry id="1" hint="tooltip">设置所有节点的整体宽度乘数，用于网格生成。</entry>
+			</section>
+			<section name="Filled: " hint="CheckBox">
+				<entry id="0" hint="text">填充： </entry>
+				<entry id="1" hint="tooltip">填充循环样条线的内部。</entry>
+			</section>
+			<section name="Draw Aligned: " hint="CheckBox">
+				<entry id="0" hint="text">对齐绘制： </entry>
+			</section>
+			<section name="SplineInfo" hint="Label">
+				<entry id="0" hint="text">样条线是一条平滑曲线，通过每个指定的带TransformComponent的实体。增加细分数可以自动生成网格。使用地形修改滑块时还可以修改地形。如果样条线有材质，还可以修改地形纹理。</entry>
+			</section>
+			<section name="Terrain push down: " hint="Slider">
+				<entry id="0" hint="text">地形下推： </entry>
+				<entry id="1" hint="tooltip">将地形几何从样条线平面向下推一定量。</entry>
+			</section>
+			<section name="AddNode" hint="Button">
+				<entry id="0" hint="text">+</entry>
+				<entry id="1" hint="tooltip">将实体作为节点添加到样条线（必须有TransformComponent）。快捷键：Ctrl + E</entry>
+			</section>
+			<section name="Compute Normals for Fill: " hint="ComboBox">
+				<entry id="0" hint="text">填充法线计算： </entry>
+				<entry id="1" hint="tooltip">选择填充样条线网格的法线计算方法。</entry>
+				<section name="items">
+					<entry id="0">SMOOTH</entry>
+					<entry id="1">HARD</entry>
+				</section>
+			</section>
+			<section name="Recenter" hint="Button">
+				<entry id="0" hint="text">重置中心</entry>
+				<entry id="1" hint="tooltip">重新计算父变换位置到样条线节点的中心。</entry>
+			</section>
+			<section name="Looped: " hint="CheckBox">
+				<entry id="0" hint="text">循环： </entry>
+			</section>
+			<section name="Rotation: " hint="Slider">
+				<entry id="0" hint="text">旋转： </entry>
+				<entry id="1" hint="tooltip">设置所有节点的整体旋转，用于网格生成。</entry>
+			</section>
+			<section name="Vertical subdivision: " hint="Slider">
+				<entry id="0" hint="text">垂直细分： </entry>
+				<entry id="1" hint="tooltip">设置网格生成垂直轴的细分数以创建走廊或隧道。</entry>
+			</section>
+		</section>
+		<section name=" Hair Particle System" hint="Window">
+			<entry id="0" hint="text"> Hair Particle System</entry>
+			<section name="Drag: " hint="Slider">
+				<entry id="0" hint="text">阻力： </entry>
+				<entry id="1" hint="tooltip">设置发丝阻力，即其运动随时间减慢的程度。</entry>
+			</section>
+			<section name="Gravity Power: " hint="Slider">
+				<entry id="0" hint="text">重力强度： </entry>
+				<entry id="1" hint="tooltip">设置发丝重力，即其运动被持续向下拉的程度。</entry>
+			</section>
+			<section name="Mesh: " hint="ComboBox">
+				<entry id="0" hint="text">网格： </entry>
+				<entry id="1" hint="tooltip">选择毛发将从中生长的网格...</entry>
+				<section name="items" />
+			</section>
+			<section name="Width: " hint="Slider">
+				<entry id="0" hint="text">宽度： </entry>
+				<entry id="1" hint="tooltip">设置发丝宽度乘数。仅水平缩放毛发粒子。</entry>
+			</section>
+			<section name="Uniformity: " hint="Slider">
+				<entry id="0" hint="text">均匀度： </entry>
+				<entry id="1" hint="tooltip">精灵选择分布噪声受粒子位置调制的程度。</entry>
+			</section>
+			<section name="Camera Bend: " hint="CheckBox">
+				<entry id="0" hint="text">相机弯曲： </entry>
+				<entry id="1" hint="tooltip">在相机视图中启用轻微弯曲，有助于从上方观察时隐藏卡片外观。</entry>
+			</section>
+			<section name="Select sprite rect" hint="Button">
+				<entry id="0" hint="text">选择精灵矩形</entry>
+				<entry id="1" hint="tooltip">添加新精灵到图集选择以创建粒子多样性。
+如果未添加精灵，则使用材质中的整个纹理。</entry>
+			</section>
+			<section name="Segments: " hint="Slider">
+				<entry id="0" hint="text">段数： </entry>
+				<entry id="1" hint="tooltip">设置组成一束发丝的段数。</entry>
+			</section>
+			<section name="Length: " hint="Slider">
+				<entry id="0" hint="text">长度： </entry>
+				<entry id="1" hint="tooltip">设置发丝长度。均匀缩放毛发粒子。</entry>
+			</section>
+			<section name="Randomness: " hint="Slider">
+				<entry id="0" hint="text">随机性： </entry>
+				<entry id="1" hint="tooltip">设置发丝长度随机化因子。影响发丝长度的随机性。</entry>
+			</section>
+			<section name="Strand Count: " hint="Slider">
+				<entry id="0" hint="text">发丝数量： </entry>
+				<entry id="1" hint="tooltip">设置发丝数量</entry>
+			</section>
+			<section name="View distance: " hint="Slider">
+				<entry id="0" hint="text">视距： </entry>
+				<entry id="1" hint="tooltip">设置视距。超过此距离粒子将淡出。</entry>
+			</section>
+			<section name="Random seed: " hint="Slider">
+				<entry id="0" hint="text">随机种子： </entry>
+				<entry id="1" hint="tooltip">设置毛发系统随机种子值。影响毛发块放置随机化。</entry>
+			</section>
+			<section name="Stiffness: " hint="Slider">
+				<entry id="0" hint="text">刚度： </entry>
+				<entry id="1" hint="tooltip">设置发丝刚度，即其尝试回到静止位置的程度。</entry>
+			</section>
+			<section name="Billboards: " hint="Slider">
+				<entry id="0" hint="text">公告板： </entry>
+				<entry id="1" hint="tooltip">设置组成一束发丝的公告板几何体数量。</entry>
+			</section>
+		</section>
+		<section name=" Decal" hint="Window">
+			<entry id="0" hint="text"> Decal</entry>
+			<section name="Decal Placement Enabled: " hint="CheckBox">
+				<entry id="0" hint="text">贴花放置启用： </entry>
+				<entry id="1" hint="tooltip">启用贴花放置。使用鼠标左键将贴花放置到场景中。</entry>
+			</section>
+			<section name="Slope Blend: " hint="Slider">
+				<entry id="0" hint="text">斜坡混合： </entry>
+				<entry id="1" hint="tooltip">设置表面斜坡混合的幂因子。0 = 无斜坡混合，增大 = 更多斜坡混合</entry>
+			</section>
+			<section name="widget_94" hint="Label">
+				<entry id="0" hint="text">在材质组件中设置贴花属性。贴花支持以下材质属性：
+ - 基础颜色
+ - 基础颜色纹理
+ - 自发光强度
+ - 法线贴图纹理
+ - 法线贴图强度
+ - 表面贴图纹理
+ - 纹理平铺（TexMulAdd）</entry>
+			</section>
+			<section name="Alpha only basecolor: " hint="CheckBox">
+				<entry id="0" hint="text">仅Alpha基础颜色： </entry>
+				<entry id="1" hint="tooltip">可启用此选项仅使用基础颜色贴图的Alpha通道。适用于混合仅法线贴图贴花。</entry>
+			</section>
+		</section>
+		<section name=" Hierarchy" hint="Window">
+			<entry id="0" hint="text"> Hierarchy</entry>
+			<section name="Parent: " hint="ComboBox">
+				<entry id="0" hint="text">父级： </entry>
+				<entry id="1" hint="tooltip">选择父实体（即使选中实体没有变换也有效）</entry>
+				<section name="items" />
+			</section>
+		</section>
+		<section name=" Object" hint="Window">
+			<entry id="0" hint="text"> Object</entry>
+			<section name="Not visible in main camera: " hint="CheckBox">
+				<entry id="0" hint="text">主相机中不可见： </entry>
+				<entry id="1" hint="tooltip">设置对象不在主相机中渲染。
+适用于第一人称角色模型，角色仍将在反射和阴影中渲染。</entry>
+			</section>
+			<section name="Clear Lightmap" hint="Button">
+				<entry id="0" hint="text">清除光照贴图</entry>
+				<entry id="1" hint="tooltip">清除此对象的光照贴图。</entry>
+			</section>
+			<section name="Lightmap resolution: " hint="Slider">
+				<entry id="0" hint="text">光照贴图分辨率： </entry>
+				<entry id="1" hint="tooltip">设置此对象光照贴图的大致分辨率。稍后将打包到更大的全局光照贴图中。</entry>
+			</section>
+			<section name="Mesh: " hint="ComboBox">
+				<entry id="0" hint="text">网格： </entry>
+				<section name="items" />
+			</section>
+			<section name="Cast Shadow: " hint="CheckBox">
+				<entry id="0" hint="text">投射阴影： </entry>
+				<entry id="1" hint="tooltip">设置对象参与阴影。</entry>
+			</section>
+			<section name="Not visible in reflections: " hint="CheckBox">
+				<entry id="0" hint="text">反射中不可见： </entry>
+				<entry id="1" hint="tooltip">设置对象不在反射中渲染。
+适用于吸血鬼。</entry>
+			</section>
+			<section name="Renderable: " hint="CheckBox">
+				<entry id="0" hint="text">可渲染： </entry>
+				<entry id="1" hint="tooltip">设置对象参与渲染。</entry>
+			</section>
+			<section name="Transparency: " hint="Slider">
+				<entry id="0" hint="text">透明度： </entry>
+				<entry id="1" hint="tooltip">调整对象的透明度。不透明材质将使用抖动透明度！</entry>
+			</section>
+			<section name="Alpha Ref: " hint="Slider">
+				<entry id="0" hint="text">Alpha 参考值： </entry>
+				<entry id="1" hint="tooltip">按实例调整Alpha参考值。
+这是材质Alpha参考值之上的额外值，用于Alpha测试（Alpha裁剪）。</entry>
+			</section>
+			<section name="Block Compression (BC6H): " hint="CheckBox">
+				<entry id="0" hint="text">块压缩 (BC6H)： </entry>
+				<entry id="1" hint="tooltip">启用光照贴图块压缩将减少内存使用，但可能导致质量下降。
+启用后，光照贴图将使用BC6H块压缩。
+禁用后，光照贴图将使用R11G11B10_FLOAT打包。
+更改后将在生成新光照贴图时生效。</entry>
+			</section>
+			<section name="Rim Intensity: " hint="Slider">
+				<entry id="0" hint="text">边缘光强度： </entry>
+				<entry id="1" hint="tooltip">边缘高亮颜色的强度。</entry>
+			</section>
+			<section name="Rim Falloff: " hint="Slider">
+				<entry id="0" hint="text">边缘光衰减： </entry>
+				<entry id="1" hint="tooltip">边缘高亮效果的衰减幂。</entry>
+			</section>
+			<section name="Foreground: " hint="CheckBox">
+				<entry id="0" hint="text">前景： </entry>
+				<entry id="1" hint="tooltip">设置对象在前景中渲染。
+适用于第一人称手部或武器，使其不穿入墙壁和其他物体。</entry>
+			</section>
+			<section name="Color picker mode: " hint="ComboBox">
+				<entry id="0" hint="text">颜色选择器模式： </entry>
+				<entry id="1" hint="tooltip">选择颜色选择器的目标数据。</entry>
+				<section name="items">
+					<entry id="0">基础颜色</entry>
+					<entry id="1">自发光颜色</entry>
+					<entry id="2">边缘高亮</entry>
+				</section>
+			</section>
+			<section name="Stop Lightmap Gen" hint="Button">
+				<entry id="0" hint="text">停止光照贴图生成</entry>
+				<entry id="1" hint="tooltip">停止光照贴图渲染并保存光照贴图。
+如果启用了降噪器，此时将对光照贴图进行降噪，可能需要一些时间。</entry>
+			</section>
+			<section name="LOD Bias: " hint="Slider">
+				<entry id="0" hint="text">LOD 偏移： </entry>
+				<entry id="1" hint="tooltip">增加或减少LOD选择</entry>
+			</section>
+			<section name="Object Color" hint="ColorPicker">
+				<entry id="0" hint="text">对象颜色</entry>
+				<section name="Hex" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入RGBA十六进制值</entry>
+				</section>
+				<section name="B" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入蓝色通道值（0-255）</entry>
+				</section>
+				<section name="S" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入饱和度通道值（0-100）</entry>
+				</section>
+				<section name="R" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入红色通道值（0-255）</entry>
+				</section>
+				<section name="G" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入绿色通道值（0-255）</entry>
+				</section>
+				<section name="V" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入亮度通道值（0-100）</entry>
+				</section>
+				<section name="widget_78" hint="Slider">
+					<entry id="1" hint="tooltip">Alpha - 透明度通道值（0-255）</entry>
+				</section>
+				<section name="H" hint="TextInputField">
+					<entry id="1" hint="tooltip">输入色相通道值（0-360）</entry>
+				</section>
+			</section>
+			<section name="UV Set: " hint="ComboBox">
+				<entry id="0" hint="text">UV 集： </entry>
+				<entry id="1" hint="tooltip">设置生成光照贴图图集时使用的UV集</entry>
+				<section name="items">
+					<entry id="0">复制 UV 0</entry>
+					<entry id="1">复制 UV 1</entry>
+					<entry id="2">保留图集</entry>
+					<entry id="3">生成图集</entry>
+				</section>
+			</section>
+			<section name="Navmesh: " hint="CheckBox">
+				<entry id="0" hint="text">导航网格： </entry>
+				<entry id="1" hint="tooltip">设置对象为导航网格过滤（FILTER_NAVIGATION_MESH）。
+启用导航网格也会为基础网格启用BVH。</entry>
+			</section>
+			<section name="Ray count: " hint="Slider">
+				<entry id="0" hint="text">光线数： </entry>
+				<entry id="1" hint="tooltip">设置顶点AO烘焙的每顶点光线数。
+值越大烘焙时间越长，质量越好。</entry>
+			</section>
+			<section name="Cascade Mask: " hint="Slider">
+				<entry id="0" hint="text">级联遮罩： </entry>
+				<entry id="1" hint="tooltip">将此对象渲染到阴影贴图时跳过多少阴影级联？（0：不跳过，将在所有级联中，1：跳过第一个（最大级联），等等...）</entry>
+			</section>
+			<section name="Generate Lightmap" hint="Button">
+				<entry id="0" hint="text">生成光照贴图</entry>
+				<entry id="1" hint="tooltip">仅为此对象渲染光照贴图。将自动与全局光照贴图合并。</entry>
+			</section>
+			<section name="Draw Distance: " hint="Slider">
+				<entry id="0" hint="text">绘制距离： </entry>
+				<entry id="1" hint="tooltip">指定对象的绘制距离</entry>
+			</section>
+			<section name="Ray length: " hint="Slider">
+				<entry id="0" hint="text">光线长度： </entry>
+				<entry id="1" hint="tooltip">设置顶点AO烘焙的光线长度。
+较小的光线长度可以减少较大特征的环境光遮蔽。</entry>
+			</section>
+			<section name="Wet map: " hint="CheckBox">
+				<entry id="0" hint="text">湿润图： </entry>
+				<entry id="1" hint="tooltip">如果启用了湿润图，湿润度将由图形系统自动跟踪。</entry>
+			</section>
+			<section name="Sort Priority: " hint="Slider">
+				<entry id="0" hint="text">排序优先级： </entry>
+				<entry id="1" hint="tooltip">设为较大值以更早绘制（最适用于Alpha混合的透明对象，如果按距离排序不够好）</entry>
+			</section>
+		</section>
+		<section name=" Layer" hint="Window">
+			<entry id="0" hint="text"> Layer</entry>
+			<section name="widget_144" hint="CheckBox">
+				<entry id="0" hint="text">4: </entry>
+			</section>
+			<section name="widget_160" hint="CheckBox">
+				<entry id="0" hint="text">20: </entry>
+			</section>
+			<section name="widget_154" hint="CheckBox">
+				<entry id="0" hint="text">14: </entry>
+			</section>
+			<section name="widget_143" hint="CheckBox">
+				<entry id="0" hint="text">3: </entry>
+			</section>
+			<section name="widget_168" hint="CheckBox">
+				<entry id="0" hint="text">28: </entry>
+			</section>
+			<section name="widget_163" hint="CheckBox">
+				<entry id="0" hint="text">23: </entry>
+			</section>
+			<section name="widget_155" hint="CheckBox">
+				<entry id="0" hint="text">15: </entry>
+			</section>
+			<section name="widget_142" hint="CheckBox">
+				<entry id="0" hint="text">2: </entry>
+			</section>
+			<section name="widget_149" hint="CheckBox">
+				<entry id="0" hint="text">9: </entry>
+			</section>
+			<section name="widget_162" hint="CheckBox">
+				<entry id="0" hint="text">22: </entry>
+			</section>
+			<section name="widget_156" hint="CheckBox">
+				<entry id="0" hint="text">16: </entry>
+			</section>
+			<section name="widget_141" hint="CheckBox">
+				<entry id="0" hint="text">1: </entry>
+			</section>
+			<section name="widget_148" hint="CheckBox">
+				<entry id="0" hint="text">8: </entry>
+			</section>
+			<section name="widget_170" hint="CheckBox">
+				<entry id="0" hint="text">30: </entry>
+			</section>
+			<section name="widget_158" hint="CheckBox">
+				<entry id="0" hint="text">18: </entry>
+			</section>
+			<section name="widget_165" hint="CheckBox">
+				<entry id="0" hint="text">25: </entry>
+			</section>
+			<section name="widget_157" hint="CheckBox">
+				<entry id="0" hint="text">17: </entry>
+			</section>
+			<section name="widget_140" hint="CheckBox">
+				<entry id="0" hint="text">0: </entry>
+			</section>
+			<section name="widget_150" hint="CheckBox">
+				<entry id="0" hint="text">10: </entry>
+			</section>
+			<section name="widget_159" hint="CheckBox">
+				<entry id="0" hint="text">19: </entry>
+			</section>
+			<section name="widget_171" hint="CheckBox">
+				<entry id="0" hint="text">31: </entry>
+			</section>
+			<section name="widget_164" hint="CheckBox">
+				<entry id="0" hint="text">24: </entry>
+			</section>
+			<section name="widget_147" hint="CheckBox">
+				<entry id="0" hint="text">7: </entry>
+			</section>
+			<section name="LayerWindowLabel" hint="Label">
+				<entry id="0" hint="text">层是一个32位掩码（uint32_t），可用于多个系统的过滤（可见性、碰撞、拾取、脚本等）。
+- 如果所有位都被禁用，意味着层在大多数系统中将不活动。</entry>
+			</section>
+			<section name="widget_151" hint="CheckBox">
+				<entry id="0" hint="text">11: </entry>
+			</section>
+			<section name="widget_167" hint="CheckBox">
+				<entry id="0" hint="text">27: </entry>
+			</section>
+			<section name="widget_146" hint="CheckBox">
+				<entry id="0" hint="text">6: </entry>
+			</section>
+			<section name="widget_152" hint="CheckBox">
+				<entry id="0" hint="text">12: </entry>
+			</section>
+			<section name="widget_166" hint="CheckBox">
+				<entry id="0" hint="text">26: </entry>
+			</section>
+			<section name="widget_145" hint="CheckBox">
+				<entry id="0" hint="text">5: </entry>
+			</section>
+			<section name="widget_161" hint="CheckBox">
+				<entry id="0" hint="text">21: </entry>
+			</section>
+			<section name="widget_153" hint="CheckBox">
+				<entry id="0" hint="text">13: </entry>
+			</section>
+			<section name="NONE " hint="Button">
+				<entry id="0" hint="text">NONE </entry>
+			</section>
+			<section name="widget_169" hint="CheckBox">
+				<entry id="0" hint="text">29: </entry>
+			</section>
+			<section name="ALL " hint="Button">
+				<entry id="0" hint="text">ALL </entry>
+			</section>
+		</section>
+		<section name=" Environment Probe" hint="Window">
+			<entry id="0" hint="text"> Environment Probe</entry>
+			<section name="Export Cubemap" hint="Button">
+				<entry id="0" hint="text">导出立方体贴图</entry>
+				<entry id="1" hint="tooltip">将选中的探针导出为DDS立方体贴图纹理文件。</entry>
+			</section>
+			<section name="Resolution: " hint="ComboBox">
+				<entry id="0" hint="text">分辨率： </entry>
+				<entry id="1" hint="tooltip">设置选中环境探针的分辨率。仅对此渲染探针有效，不适用于从文件导入的探针。</entry>
+				<section name="items">
+					<entry id="0">32</entry>
+					<entry id="1">64</entry>
+					<entry id="2">128</entry>
+					<entry id="3">256</entry>
+					<entry id="4">512</entry>
+					<entry id="5">1024</entry>
+					<entry id="6">2048</entry>
+				</section>
+			</section>
+			<section name="Refresh" hint="Button">
+				<entry id="0" hint="text">刷新</entry>
+				<entry id="1" hint="tooltip">重新渲染选中的探针。</entry>
+			</section>
+			<section name="RealTime: " hint="CheckBox">
+				<entry id="0" hint="text">实时： </entry>
+				<entry id="1" hint="tooltip">每帧持续渲染探针。</entry>
+			</section>
+			<section name="Import Cubemap" hint="Button">
+				<entry id="0" hint="text">导入立方体贴图</entry>
+				<entry id="1" hint="tooltip">将DDS纹理文件导入到选中的环境探针。</entry>
+			</section>
+			<section name="Update Interval: " hint="Slider">
+				<entry id="0" hint="text">更新间隔： </entry>
+				<entry id="1" hint="tooltip">控制实时探针渲染的频率（秒）。0 - 每帧，1.0 - 每秒一次，等等。</entry>
+			</section>
+			<section name="View distance: " hint="Slider">
+				<entry id="0" hint="text">视距： </entry>
+				<entry id="1" hint="tooltip">控制此探针的剔除距离。-1：使用主相机的视距，&gt; 0：自定义视距</entry>
+			</section>
+			<section name="MSAA: " hint="CheckBox">
+				<entry id="0" hint="text">MSAA: </entry>
+				<entry id="1" hint="tooltip">Enable Multi Sampling Anti Aliasing for the probe, this will improve its quality.</entry>
+			</section>
+			<section name="Refresh All" hint="Button">
+				<entry id="0" hint="text">Refresh All</entry>
+				<entry id="1" hint="tooltip">Re-renders all probes in the scene.</entry>
+			</section>
+		</section>
+		<section name=" Video" hint="Window">
+			<entry id="0" hint="text"> Video</entry>
+			<section name="" hint="Button">
+				<entry id="0" hint="text"></entry>
+				<entry id="1" hint="tooltip">Stop selected video instance.</entry>
+			</section>
+			<section name="Timer: " hint="Slider">
+				<entry id="0" hint="text">Timer: </entry>
+			</section>
+			<section name="Looped: " hint="CheckBox">
+				<entry id="0" hint="text">Looped: </entry>
+				<entry id="1" hint="tooltip">Enable looping for the selected video instance.</entry>
+			</section>
+			<section name="Open File " hint="Button">
+				<entry id="0" hint="text">Open File </entry>
+				<entry id="1" hint="tooltip">Open video file.
+Supported extensions: MP4</entry>
+			</section>
+			<section name="" hint="Button">
+				<entry id="0" hint="text"></entry>
+				<entry id="1" hint="tooltip">Play/Pause selected video instance.</entry>
+			</section>
+		</section>
+		<section name=" Name" hint="Window">
+			<entry id="0" hint="text"> Name</entry>
+			<section name="widget_172" hint="TextInputField" />
+		</section>
+		<section name=" Emitter" hint="Window">
+			<entry id="0" hint="text"> Emitter</entry>
+			<section name="SPH (h): " hint="Slider">
+				<entry id="0" hint="text">SPH (h)： </entry>
+				<entry id="1" hint="tooltip">设置SPH参数：平滑半径</entry>
+			</section>
+			<section name="widget_104" hint="TextInputField">
+				<entry id="1" hint="tooltip">指定爆发数量（要爆发的粒子数）。</entry>
+			</section>
+			<section name="widget_113" hint="TextInputField">
+				<entry id="1" hint="tooltip">向量Y分量</entry>
+			</section>
+			<section name="Drag: " hint="Slider">
+				<entry id="0" hint="text">阻力： </entry>
+				<entry id="1" hint="tooltip">速度将乘以此值，因此小于1将减速粒子。</entry>
+			</section>
+			<section name="SPH - FluidSim: " hint="CheckBox">
+				<entry id="0" hint="text">SPH - 流体模拟： </entry>
+				<entry id="1" hint="tooltip">启用粒子之间的碰撞。使用平滑粒子流体动力学（SPH）求解器模拟。</entry>
+			</section>
+			<section name="widget_114" hint="TextInputField">
+				<entry id="1" hint="tooltip">向量Z分量</entry>
+			</section>
+			<section name="SPH (K): " hint="Slider">
+				<entry id="0" hint="text">SPH (K)： </entry>
+				<entry id="1" hint="tooltip">设置SPH参数：压力常数</entry>
+			</section>
+			<section name="Mesh: " hint="ComboBox">
+				<entry id="0" hint="text">网格： </entry>
+				<entry id="1" hint="tooltip">选择粒子将从其发射的网格...</entry>
+				<section name="items" />
+			</section>
+			<section name="Sorting: " hint="CheckBox">
+				<entry id="0" hint="text">排序： </entry>
+				<entry id="1" hint="tooltip">启用粒子排序。这可能降低性能。</entry>
+			</section>
+			<section name="widget_115" hint="TextInputField">
+				<entry id="1" hint="tooltip">向量X分量</entry>
+			</section>
+			<section name="Take color from mesh: " hint="CheckBox">
+				<entry id="0" hint="text">从网格取色： </entry>
+				<entry id="1" hint="tooltip">如果从网格发射，粒子颜色将从网格材质表面获取。</entry>
+			</section>
+			<section name="SPH (p0): " hint="Slider">
+				<entry id="0" hint="text">SPH (p0)： </entry>
+				<entry id="1" hint="tooltip">设置SPH参数：参考密度</entry>
+			</section>
+			<section name="Frame Blending: " hint="CheckBox">
+				<entry id="0" hint="text">帧混合： </entry>
+				<entry id="1" hint="tooltip">如果精灵表动画生效，帧将平滑混合。</entry>
+			</section>
+			<section name="Mass: " hint="Slider">
+				<entry id="0" hint="text">质量： </entry>
+				<entry id="1" hint="tooltip">设置每个粒子的质量。</entry>
+			</section>
+			<section name="widget_116" hint="TextInputField">
+				<entry id="1" hint="tooltip">向量Y分量</entry>
+			</section>
+			<section name="Scaling: " hint="Slider">
+				<entry id="0" hint="text">缩放： </entry>
+				<entry id="1" hint="tooltip">根据粒子生命周期设置粒子缩放。</entry>
+			</section>
+			<section name="Size: " hint="Slider">
+				<entry id="0" hint="text">大小： </entry>
+				<entry id="1" hint="tooltip">设置发射粒子的大小。</entry>
+			</section>
+			<section name="Timestep: " hint="Slider">
+				<entry id="0" hint="text">时间步长： </entry>
+				<entry id="1" hint="tooltip">调整发射器模拟的时间步长。-1表示可变时间步长，正值表示固定时间步长。</entry>
+			</section>
+			<section name="Motion blur: " hint="Slider">
+				<entry id="0" hint="text">运动模糊： </entry>
+				<entry id="1" hint="tooltip">设置粒子系统的运动模糊量。</entry>
+			</section>
+			<section name="DEBUG: " hint="CheckBox">
+				<entry id="0" hint="text">调试： </entry>
+				<entry id="1" hint="tooltip">切换发射器调试可视化器。</entry>
+			</section>
+			<section name="widget_117" hint="TextInputField">
+				<entry id="1" hint="tooltip">向量Z分量</entry>
+			</section>
+			<section name="Opacity End: " hint="Slider">
+				<entry id="0" hint="text">不透明度结束： </entry>
+				<entry id="1" hint="tooltip">设置不透明度应开始衰减的位置，相对于粒子生命周期。</entry>
+			</section>
+			<section name="Normal factor: " hint="Slider">
+				<entry id="0" hint="text">法线因子： </entry>
+				<entry id="1" hint="tooltip">根据发射器表面法线向量设置发射粒子的速度。</entry>
+			</section>
+			<section name="Restitution: " hint="CheckBox">
+				<entry id="0" hint="text">恢复力： </entry>
+				<entry id="1" hint="tooltip">如果粒子启用了碰撞，碰撞后这是其反弹速度的乘数</entry>
+			</section>
+			<section name="widget_109" hint="TextInputField">
+				<entry id="1" hint="tooltip">精灵表中有多少垂直帧。</entry>
+			</section>
+			<section name="Depth Buffer: " hint="CheckBox">
+				<entry id="0" hint="text">深度缓冲： </entry>
+				<entry id="1" hint="tooltip">启用粒子与深度缓冲区的碰撞。</entry>
+			</section>
+			<section name="Randomness: " hint="Slider">
+				<entry id="0" hint="text">随机性： </entry>
+				<entry id="1" hint="tooltip">设置发射器的总体随机性。</entry>
+			</section>
+			<section name="Emit: " hint="Slider">
+				<entry id="0" hint="text">发射： </entry>
+				<entry id="1" hint="tooltip">设置每秒发射的粒子数。</entry>
+			</section>
+			<section name="widget_110" hint="TextInputField">
+				<entry id="1" hint="tooltip">精灵表动画中的总帧数。</entry>
+			</section>
+			<section name="widget_107" hint="TextInputField">
+				<entry id="1" hint="tooltip">输入值以启用循环精灵表动画（每秒帧数）。设为0表示沿粒子生命周期恰好完成一次完整动画。</entry>
+			</section>
+			<section name="SPH (e): " hint="Slider">
+				<entry id="0" hint="text">SPH (e)： </entry>
+				<entry id="1" hint="tooltip">设置SPH参数：粘度常数</entry>
+			</section>
+			<section name="widget_108" hint="TextInputField">
+				<entry id="1" hint="tooltip">精灵表中有多少水平帧。</entry>
+			</section>
+			<section name="Burst" hint="Button">
+				<entry id="0" hint="text">爆发</entry>
+				<entry id="1" hint="tooltip">一次性发射一定数量的粒子。</entry>
+			</section>
+			<section name="Color randomness: " hint="Slider">
+				<entry id="0" hint="text">颜色随机性： </entry>
+				<entry id="1" hint="tooltip">设置发射粒子颜色的随机性。</entry>
+			</section>
+			<section name="Restart Emitter" hint="Button">
+				<entry id="0" hint="text">重启发射器</entry>
+				<entry id="1" hint="tooltip">重启粒子系统发射器</entry>
+			</section>
+			<section name="widget_111" hint="TextInputField">
+				<entry id="1" hint="tooltip">指定动画的起始帧。</entry>
+			</section>
+			<section name="Max count: " hint="Slider">
+				<entry id="0" hint="text">最大数量： </entry>
+				<entry id="1" hint="tooltip">设置此系统可处理的最大粒子数。这会影响内存预算。</entry>
+			</section>
+			<section name="Opacity Start: " hint="Slider">
+				<entry id="0" hint="text">不透明度开始： </entry>
+				<entry id="1" hint="tooltip">设置不透明度应变满的位置，相对于粒子生命周期。</entry>
+			</section>
+			<section name="Volume: " hint="CheckBox">
+				<entry id="0" hint="text">体积： </entry>
+				<entry id="1" hint="tooltip">为发射器启用体积。粒子将在体积内发射。</entry>
+			</section>
+			<section name="Life span: " hint="Slider">
+				<entry id="0" hint="text">生命期： </entry>
+				<entry id="1" hint="tooltip">设置发射粒子的生命期（秒）。</entry>
+			</section>
+			<section name="Rotation: " hint="Slider">
+				<entry id="0" hint="text">旋转： </entry>
+				<entry id="1" hint="tooltip">设置发射粒子的旋转速度。</entry>
+			</section>
+			<section name="Colliders disabled: " hint="CheckBox">
+				<entry id="0" hint="text">禁用碰撞体： </entry>
+				<entry id="1" hint="tooltip">简单地禁用所有碰撞体对此粒子系统的作用</entry>
+			</section>
+			<section name="widget_112" hint="TextInputField">
+				<entry id="1" hint="tooltip">向量X分量</entry>
+			</section>
+			<section name="ShaderType: " hint="ComboBox">
+				<entry id="0" hint="text">着色器类型： </entry>
+				<entry id="1" hint="tooltip">为粒子选择着色器类型。这决定了它们的渲染方式。</entry>
+				<section name="items">
+					<entry id="0">SIMPLE</entry>
+					<entry id="1">SOFT</entry>
+					<entry id="2">DISTORTION</entry>
+					<entry id="3">LIGHTING</entry>
+				</section>
+			</section>
+			<section name="Life randomness: " hint="Slider">
+				<entry id="0" hint="text">生命随机性： </entry>
+				<entry id="1" hint="tooltip">设置发射粒子生命期的随机性。</entry>
+			</section>
+			<section name="PAUSE: " hint="CheckBox">
+				<entry id="0" hint="text">暂停： </entry>
+				<entry id="1" hint="tooltip">停止模拟更新。</entry>
+			</section>
+			<section name="EmitterInfo" hint="Label">
+				<entry id="0" hint="text">未选中发射器对象。</entry>
+			</section>
+		</section>
+		<section name=" Spring" hint="Window">
+			<entry id="0" hint="text"> Spring</entry>
+			<section name="Drag: " hint="Slider">
+				<entry id="0" hint="text">阻力： </entry>
+				<entry id="1" hint="tooltip">阻力影响能量损失的速度（值越大弹簧越快静止）</entry>
+			</section>
+			<section name="Gravity affection: " hint="Slider">
+				<entry id="0" hint="text">重力影响： </entry>
+				<entry id="1" hint="tooltip">全局重力效果对弹簧的影响程度</entry>
+			</section>
+			<section name="Reset All" hint="Button">
+				<entry id="0" hint="text">全部重置</entry>
+				<entry id="1" hint="tooltip">将场景中所有弹簧重置为初始姿态。</entry>
+			</section>
+			<section name="Collision hit radius: " hint="Slider">
+				<entry id="0" hint="text">碰撞命中半径： </entry>
+				<entry id="1" hint="tooltip">弹簧碰撞球体的半径，将用于与碰撞体检测。</entry>
+			</section>
+			<section name="Disabled: " hint="CheckBox">
+				<entry id="0" hint="text">禁用： </entry>
+				<entry id="1" hint="tooltip">禁用模拟。</entry>
+			</section>
+			<section name="Wind affection: " hint="Slider">
+				<entry id="0" hint="text">风力影响： </entry>
+				<entry id="1" hint="tooltip">全局风效对弹簧的影响程度</entry>
+			</section>
+			<section name="Gravity enabled: " hint="CheckBox">
+				<entry id="0" hint="text">重力启用： </entry>
+				<entry id="1" hint="tooltip">全局重力是否影响弹簧</entry>
+			</section>
+			<section name="Stiffness: " hint="Slider">
+				<entry id="0" hint="text">刚度： </entry>
+				<entry id="1" hint="tooltip">刚度影响弹簧尝试恢复静止姿态的强度（值越大抖动越强）</entry>
+			</section>
+		</section>
+		<section name=" Camera" hint="Window">
+			<entry id="0" hint="text"> Camera</entry>
+			<section name="RenderToTexture" hint="Button">
+				<entry id="0" hint="text">渲染到纹理</entry>
+				<entry id="1" hint="tooltip">如果为相机启用了渲染到纹理，相机将场景渲染到自己的纹理中
+可以重用于其他用途如材质。</entry>
+			</section>
+			<section name="Far Plane: " hint="Slider">
+				<entry id="0" hint="text">远平面： </entry>
+				<entry id="1" hint="tooltip">控制相机的远裁剪面，超出此距离的几何体将被裁剪。</entry>
+			</section>
+			<section name="CRT: " hint="CheckBox">
+				<entry id="0" hint="text">CRT： </entry>
+				<entry id="1" hint="tooltip">为此相机切换CRT电视模式（启用渲染到纹理时）</entry>
+			</section>
+			<section name="Sample count: " hint="Slider">
+				<entry id="0" hint="text">采样数： </entry>
+				<entry id="1" hint="tooltip">设置渲染分辨率采样数（MSAA）</entry>
+			</section>
+			<section name="Aperture Shape Y: " hint="Slider">
+				<entry id="0" hint="text">光圈形状 Y： </entry>
+				<entry id="1" hint="tooltip">控制景深效果的散景形状</entry>
+			</section>
+			<section name="Aperture Size: " hint="Slider">
+				<entry id="0" hint="text">光圈大小： </entry>
+				<entry id="1" hint="tooltip">控制景深效果的强度</entry>
+			</section>
+			<section name="Aperture Shape X: " hint="Slider">
+				<entry id="0" hint="text">光圈形状 X： </entry>
+				<entry id="1" hint="tooltip">控制景深效果的散景形状</entry>
+			</section>
+			<section name="Focal Length: " hint="Slider">
+				<entry id="0" hint="text">焦距： </entry>
+				<entry id="1" hint="tooltip">控制景深效果的焦距</entry>
+			</section>
+			<section name="FOV: " hint="Slider">
+				<entry id="0" hint="text">视场角： </entry>
+				<entry id="1" hint="tooltip">控制相机的俯仰视场角（度）</entry>
+			</section>
+			<section name="Render Height: " hint="Slider">
+				<entry id="0" hint="text">渲染高度： </entry>
+				<entry id="1" hint="tooltip">设置渲染分辨率高度</entry>
+			</section>
+			<section name="Update Interval: " hint="Slider">
+				<entry id="0" hint="text">更新间隔： </entry>
+				<entry id="1" hint="tooltip">控制相机渲染频率（秒）。0 - 每帧，1.0 - 每秒一次，等等。</entry>
+			</section>
+			<section name="Near Plane: " hint="Slider">
+				<entry id="0" hint="text">近平面： </entry>
+				<entry id="1" hint="tooltip">控制相机的近裁剪面，比此距离近的几何体将被裁剪。</entry>
+			</section>
+			<section name="Render Width: " hint="Slider">
+				<entry id="0" hint="text">渲染宽度： </entry>
+				<entry id="1" hint="tooltip">设置渲染分辨率宽度</entry>
+			</section>
+		</section>
+		<section name=" Terrain" hint="Window">
+			<entry id="0" hint="text"> Terrain</entry>
+			<section name="Add Modifier: " hint="ComboBox">
+				<entry id="0" hint="text">添加修改器： </entry>
+				<entry id="1" hint="tooltip">添加将影响地形生成的新修改器。</entry>
+				<section name="items">
+					<entry id="0">柏林噪声</entry>
+					<entry id="1">Voronoi噪声</entry>
+					<entry id="2">高度图图像</entry>
+				</section>
+			</section>
+			<section name="High Altitude Region: " hint="Slider">
+				<entry id="0" hint="text">高海拔区域： </entry>
+				<entry id="1" hint="tooltip">区域的衰减幂</entry>
+			</section>
+			<section name="Prop Distance: " hint="Slider">
+				<entry id="0" hint="text">道具距离： </entry>
+				<entry id="1" hint="tooltip">道具将生成的距离（值为块数）</entry>
+			</section>
+			<section name="Slope material: " hint="ComboBox">
+				<entry id="0" hint="text">斜坡材质： </entry>
+				<entry id="1" hint="tooltip">选择材质实体</entry>
+				<section name="items" />
+			</section>
+			<section name="Physics Distance: " hint="Slider">
+				<entry id="0" hint="text">物理距离： </entry>
+				<entry id="1" hint="tooltip">物理网格将生成的距离（值为块数）</entry>
+			</section>
+			<section name="Generation Distance: " hint="Slider">
+				<entry id="0" hint="text">生成距离： </entry>
+				<entry id="1" hint="tooltip">块将生成的距离（值为块数）</entry>
+			</section>
+			<section name="Low Altitude Region: " hint="Slider">
+				<entry id="0" hint="text">低海拔区域： </entry>
+				<entry id="1" hint="tooltip">区域的衰减幂</entry>
+			</section>
+			<section name="Low altitude material: " hint="ComboBox">
+				<entry id="0" hint="text">低海拔材质： </entry>
+				<entry id="1" hint="tooltip">选择材质实体</entry>
+				<section name="items" />
+			</section>
+			<section name="Top Level: " hint="Slider">
+				<entry id="0" hint="text">顶层： </entry>
+				<entry id="1" hint="tooltip">地形网格网格最高层</entry>
+			</section>
+			<section name="Preset: " hint="ComboBox">
+				<entry id="0" hint="text">预设： </entry>
+				<entry id="1" hint="tooltip">选择地形预设</entry>
+				<section name="items">
+					<entry id="0">丘陵</entry>
+					<entry id="1">岛屿</entry>
+					<entry id="2">山脉</entry>
+					<entry id="3">北极</entry>
+					<entry id="4">沙漠</entry>
+				</section>
+			</section>
+			<section name="Base material: " hint="ComboBox">
+				<entry id="0" hint="text">基础材质： </entry>
+				<entry id="1" hint="tooltip">选择材质实体</entry>
+				<section name="items" />
+			</section>
+			<section name="Seed: " hint="Slider">
+				<entry id="0" hint="text">种子： </entry>
+				<entry id="1" hint="tooltip">地形随机性的种子</entry>
+			</section>
+			<section name="Tessellation: " hint="CheckBox">
+				<entry id="0" hint="text">曲面细分： </entry>
+				<entry id="1" hint="tooltip">指定是否为地形表面启用曲面细分。
+曲面细分需要GPU硬件支持
+曲面细分不适用于光线追踪效果或可见性计算着色渲染模式。</entry>
+			</section>
+			<section name="Removal: " hint="CheckBox">
+				<entry id="0" hint="text">移除： </entry>
+				<entry id="1" hint="tooltip">自动移除距离中心块生成距离更远的块。</entry>
+			</section>
+			<section name="Grass: " hint="CheckBox">
+				<entry id="0" hint="text">草地： </entry>
+				<entry id="1" hint="tooltip">指定是否启用草地生成。</entry>
+			</section>
+			<section name="Prop Density: " hint="Slider">
+				<entry id="0" hint="text">道具密度： </entry>
+				<entry id="1" hint="tooltip">修改整体道具密度。</entry>
+			</section>
+			<section name="Chunk Scale: " hint="Slider">
+				<entry id="0" hint="text">块缩放： </entry>
+				<entry id="1" hint="tooltip">一个块在水平方向的大小。
+较大的块缩放覆盖更大距离，但每单位细节更少。</entry>
+			</section>
+			<section name="Slope Region: " hint="Slider">
+				<entry id="0" hint="text">斜坡区域： </entry>
+				<entry id="1" hint="tooltip">区域的衰减幂</entry>
+			</section>
+			<section name="High altitude material: " hint="ComboBox">
+				<entry id="0" hint="text">高海拔材质： </entry>
+				<entry id="1" hint="tooltip">选择材质实体</entry>
+				<section name="items" />
+			</section>
+			<section name="Chunk LOD Bias: " hint="Slider">
+				<entry id="0" hint="text">块LOD偏移： </entry>
+				<entry id="1" hint="tooltip">设置LOD（细节级别）距离乘数。
+低值增加远处的LOD细节</entry>
+			</section>
+			<section name="Grass Length: " hint="Slider">
+				<entry id="0" hint="text">草地长度： </entry>
+				<entry id="1" hint="tooltip">修改整体草地长度。</entry>
+			</section>
+			<section name="Bottom Level: " hint="Slider">
+				<entry id="0" hint="text">底层： </entry>
+				<entry id="1" hint="tooltip">地形网格网格最低层</entry>
+			</section>
+			<section name="Props" hint="Window">
+				<entry id="0" hint="text">道具</entry>
+				<section name="Add prop" hint="Button">
+					<entry id="0" hint="text">添加道具</entry>
+				</section>
+				<section name="Reload props" hint="Button">
+					<entry id="0" hint="text">重新加载道具</entry>
+					<entry id="1" hint="tooltip">从源实体重新加载所有道具以更新最新的组件更改</entry>
+				</section>
+			</section>
+			<section name="Save Blendmap..." hint="Button">
+				<entry id="0" hint="text">保存混合图...</entry>
+				<entry id="1" hint="tooltip">从当前生成的地形保存颜色纹理，其中RGBA通道表示地形属性混合权重。
+注意：如果Alpha通道权重为零且导出为PNG，很容易得到完全透明的图像。</entry>
+			</section>
+			<section name="Grass Density: " hint="Slider">
+				<entry id="0" hint="text">草地密度： </entry>
+				<entry id="1" hint="tooltip">修改整体草地密度。</entry>
+			</section>
+			<section name="Save Heightmap..." hint="Button">
+				<entry id="0" hint="text">保存高度图...</entry>
+				<entry id="1" hint="tooltip">从当前生成的地形保存高度图纹理，其中红色通道对应地形高度，分辨率对应尺寸。
+图像将保存为单通道16位PNG。</entry>
+			</section>
+			<section name="Grass material: " hint="ComboBox">
+				<entry id="0" hint="text">草地材质： </entry>
+				<entry id="1" hint="tooltip">选择材质实体</entry>
+				<section name="items" />
+			</section>
+			<section name="Physics: " hint="CheckBox">
+				<entry id="0" hint="text">物理： </entry>
+				<entry id="1" hint="tooltip">指定是否为地形块启用物理。</entry>
+			</section>
+			<section name="Center to Cam: " hint="CheckBox">
+				<entry id="0" hint="text">居中到相机： </entry>
+				<entry id="1" hint="tooltip">自动在相机周围生成块。这将中心块设置为相机位置。</entry>
+			</section>
+			<section name="Grass Distance: " hint="Slider">
+				<entry id="0" hint="text">草地距离： </entry>
+				<entry id="1" hint="tooltip">修改草地视距。</entry>
+			</section>
+		</section>
+		<section name=" VoxelGrid" hint="Window">
+			<entry id="0" hint="text"> VoxelGrid</entry>
+			<section name="Generate Simplified Mesh " hint="Button">
+				<entry id="0" hint="text">Generate Simplified Mesh </entry>
+				<entry id="1" hint="tooltip">从体素生成简化网格。</entry>
+			</section>
+			<section name="Subtraction mode: " hint="CheckBox">
+				<entry id="0" hint="text">减法模式： </entry>
+				<entry id="1" hint="tooltip">启用后，体素化将为减法模式，即移除而非添加体素。</entry>
+			</section>
+			<section name="Debug draw all: " hint="CheckBox">
+				<entry id="0" hint="text">调试绘制全部： </entry>
+				<entry id="1" hint="tooltip">绘制所有体素网格，无论是否被选中。</entry>
+			</section>
+			<section name="Flood fill " hint="Button">
+				<entry id="0" hint="text">Flood fill </entry>
+				<entry id="1" hint="tooltip">将封闭的空体素区域填充为实体。
+如果有大型封闭空区域，这可能需要很长时间。</entry>
+			</section>
+			<section name="Generate Mesh " hint="Button">
+				<entry id="0" hint="text">Generate Mesh </entry>
+				<entry id="1" hint="tooltip">Generate a mesh from the voxels.</entry>
+			</section>
+			<section name="DimY" hint="TextInputField" />
+			<section name="Voxelize objects " hint="Button">
+				<entry id="0" hint="text">Voxelize objects </entry>
+				<entry id="1" hint="tooltip">Generate navigation grid including all meshes.</entry>
+			</section>
+			<section name="DimX" hint="TextInputField" />
+			<section name="Voxelize navigation " hint="Button">
+				<entry id="0" hint="text">Voxelize navigation </entry>
+				<entry id="1" hint="tooltip">Generate navigation grid including all navmeshes (object tagged as navmesh).</entry>
+			</section>
+			<section name="Clear voxels " hint="Button">
+				<entry id="0" hint="text">Clear voxels </entry>
+			</section>
+			<section name="Generate Navigation Mesh " hint="Button">
+				<entry id="0" hint="text">Generate Navigation Mesh </entry>
+				<entry id="1" hint="tooltip">Generate a simplified navigation mesh from the voxels.</entry>
+			</section>
+			<section name="Voxelize CPU colliders " hint="Button">
+				<entry id="0" hint="text">Voxelize CPU colliders </entry>
+				<entry id="1" hint="tooltip">Generate navigation grid including all CPU colliders.</entry>
+			</section>
+			<section name="DimZ" hint="TextInputField" />
+			<section name="Fit bounds to scene " hint="Button">
+				<entry id="0" hint="text">Fit bounds to scene </entry>
+				<entry id="1" hint="tooltip">Fit the bounds of the voxel grid onto the whole scene.</entry>
+			</section>
+		</section>
+	</section>
+	<section name="" hint="Button">
+		<entry id="1" hint="tooltip">绘制工具</entry>
+	</section>
+	<section name="Paint Tool" hint="Window">
+		<entry id="0" hint="text">Paint Tool </entry>
+		<section name="Smoothness: " hint="Slider">
+			<entry id="0" hint="text">Smoothness: </entry>
+			<entry id="1" hint="tooltip">设置笔刷平滑度。0 = 硬，增大以获得更多平滑度</entry>
+		</section>
+		<section name="Spacing: " hint="Slider">
+			<entry id="0" hint="text">Spacing: </entry>
+			<entry id="1" hint="tooltip">笔刷间距表示多少笔刷移动（像素）开始新笔划。0 = 每帧新笔划，100 = 自上次笔划移动100像素开始新笔划。</entry>
+		</section>
+		<section name="Backfaces: " hint="CheckBox">
+			<entry id="0" hint="text">Backfaces: </entry>
+			<entry id="1" hint="tooltip">Set whether to paint on backfaces of geometry or not</entry>
+		</section>
+		<section name="Paint Tool is disabled." hint="Label">
+			<entry id="0" hint="text">Paint Tool is disabled.</entry>
+		</section>
+		<section name="Save Texture" hint="Button">
+			<entry id="0" hint="text">Save Texture</entry>
+			<entry id="1" hint="tooltip">Save edited texture.</entry>
+		</section>
+		<section name="Power: " hint="Slider">
+			<entry id="0" hint="text">Power: </entry>
+			<entry id="1" hint="tooltip">Set the brush power amount. 0 = minimum affection, 1 = maximum affection</entry>
+		</section>
+		<section name="Brush Shape: " hint="ComboBox">
+			<entry id="0" hint="text">Brush Shape: </entry>
+			<entry id="1" hint="tooltip">Choose shape for brush masking effect</entry>
+			<section name="items">
+				<entry id="0"></entry>
+				<entry id="1"></entry>
+			</section>
+		</section>
+		<section name="Redirect alpha: " hint="CheckBox">
+			<entry id="0" hint="text">Redirect alpha: </entry>
+			<entry id="1" hint="tooltip">The red color will be redirected to write alpha channel. Alpha value controls the blending like normally.</entry>
+		</section>
+		<section name="Brush Radius: " hint="Slider">
+			<entry id="0" hint="text">Brush Radius: </entry>
+			<entry id="1" hint="tooltip">Set the brush radius in pixel units</entry>
+		</section>
+		<section name="Stabilizer: " hint="Slider">
+			<entry id="0" hint="text">Stabilizer: </entry>
+			<entry id="1" hint="tooltip">The stabilizer generates a small delay between user input and painting, which will be used to compute a smoother paint stroke..</entry>
+		</section>
+		<section name="Terrain only: " hint="CheckBox">
+			<entry id="0" hint="text">Terrain only: </entry>
+			<entry id="1" hint="tooltip">Terrain specific sculpting mode.</entry>
+		</section>
+		<section name="widget_24" hint="Button">
+			<entry id="1" hint="tooltip">Open an image to use as brush texture (splatting mode).
+Splat mode means that the texture will be relative to the brush position</entry>
+		</section>
+		<section name="Color" hint="ColorPicker">
+			<entry id="0" hint="text">Color</entry>
+			<section name="Hex" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter RGBA hex value</entry>
+			</section>
+			<section name="B" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for BLUE channel (0-255)</entry>
+			</section>
+			<section name="S" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for SATURATION channel (0-100)</entry>
+			</section>
+			<section name="R" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for RED channel (0-255)</entry>
+			</section>
+			<section name="G" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for GREEN channel (0-255)</entry>
+			</section>
+			<section name="V" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for LUMINANCE channel (0-100)</entry>
+			</section>
+			<section name="widget_19" hint="Slider">
+				<entry id="1" hint="tooltip">Value for ALPHA - TRANSPARENCY channel (0-255)</entry>
+			</section>
+			<section name="H" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for HUE channel (0-360)</entry>
+			</section>
+		</section>
+		<section name="Axis Lock: " hint="ComboBox">
+			<entry id="0" hint="text">Axis Lock: </entry>
+			<entry id="1" hint="tooltip">You can lock modification to an axis here.</entry>
+			<section name="items">
+				<entry id="0"></entry>
+				<entry id="1">X </entry>
+				<entry id="2">Y </entry>
+				<entry id="3">Z </entry>
+			</section>
+		</section>
+		<section name="widget_25" hint="Button">
+			<entry id="1" hint="tooltip">Open an image to use as reveal mode texture.
+Reveal mode means that the texture will use the UV of the mesh. It will be multiplied by brush tex.</entry>
+		</section>
+		<section name="Pressure: " hint="CheckBox">
+			<entry id="0" hint="text">Pressure: </entry>
+			<entry id="1" hint="tooltip">Set whether to use pressure sensitivity (for example pen tablet)</entry>
+		</section>
+		<section name="Mode: " hint="ComboBox">
+			<entry id="0" hint="text">Mode: </entry>
+			<entry id="1" hint="tooltip">Choose paint tool mode</entry>
+			<section name="items">
+				<entry id="0"> Disabled</entry>
+				<entry id="1"> Texture</entry>
+				<entry id="2"> Vertexcolor</entry>
+				<entry id="3"> Terrain material</entry>
+				<entry id="4"> Sculpting - Add</entry>
+				<entry id="5"> Sculpting - Subtract</entry>
+				<entry id="6"> Softbody - Pinning</entry>
+				<entry id="7"> Softbody - Physics</entry>
+				<entry id="8"> Hairparticle - Add Triangle</entry>
+				<entry id="9"> Hairparticle - Remove Triangle</entry>
+				<entry id="10"> Hairparticle - Length (Alpha)</entry>
+				<entry id="11"> Wind weight (Alpha)</entry>
+			</section>
+		</section>
+		<section name="Wireframe: " hint="CheckBox">
+			<entry id="0" hint="text">Wireframe: </entry>
+			<entry id="1" hint="tooltip">Set whether to draw wireframe on top of geometry or not</entry>
+		</section>
+		<section name="Rotation: " hint="Slider">
+			<entry id="0" hint="text">Rotation: </entry>
+			<entry id="1" hint="tooltip">Brush rotation randomness. This will affect the splat mode brush texture.</entry>
+		</section>
+		<section name="Texture Slot: " hint="ComboBox">
+			<entry id="0" hint="text">Texture Slot: </entry>
+			<entry id="1" hint="tooltip">Choose texture slot of the selected material to paint (texture paint mode only)</entry>
+			<section name="items">
+				<entry id="0">BaseColor (RGBA)</entry>
+				<entry id="1">Normal (RGB)</entry>
+				<entry id="2">SurfaceMap (RGBA)</entry>
+				<entry id="3">DisplacementMap (R)</entry>
+				<entry id="4">EmissiveMap (RGBA)</entry>
+				<entry id="5">OcclusionMap (R)</entry>
+				<entry id="6">TransmissionMap (R)</entry>
+				<entry id="7">SheenColorMap (R)</entry>
+				<entry id="8">SheenRoughMap (R)</entry>
+				<entry id="9">ClearcoatMap (R)</entry>
+				<entry id="10">ClearcoatRoughMap (R)</entry>
+				<entry id="11">ClearcoatNormMap (R)</entry>
+				<entry id="12">SpecularMap (RGBA)</entry>
+				<entry id="13">AnisotropyMap (RG)</entry>
+				<entry id="14">TransparencyMap (R)</entry>
+			</section>
+		</section>
+	</section>
+	<section name="" hint="Button">
+		<entry id="1" hint="tooltip">材质浏览器</entry>
+	</section>
+	<section name="" hint="Button">
+		<entry id="1" hint="tooltip">Scale
+Hotkey: 3</entry>
+	</section>
+	<section name="widget_0">
+		<section name="+" hint="Button">
+			<entry id="1" hint="tooltip">新建场景</entry>
+		</section>
+		<section name="Backlog" hint="Button">
+			<entry id="1" hint="tooltip">打开后台日志（用HOME键切换）</entry>
+		</section>
+		<section name="" hint="Button">
+			<entry id="1" hint="tooltip">停止所有仍在运行的脚本后台进程。</entry>
+		</section>
+		<section name="Save" hint="Button">
+			<entry id="1" hint="tooltip">将当前场景保存到新文件（Ctrl + Shift + S）
+默认情况下，场景将保存为.wiscene，但可以指定.gltf或.glb扩展名导出为GLTF。
+也可以使用Ctrl + S快速保存，无需浏览。</entry>
+		</section>
+		<section name="About" hint="Button">
+			<entry id="1" hint="tooltip">About...</entry>
+		</section>
+		<section name="Content Browser" hint="Button">
+			<entry id="1" hint="tooltip">浏览内容。</entry>
+		</section>
+		<section name="" hint="Button">
+			<entry id="1" hint="tooltip">创建新项目。</entry>
+		</section>
+		<section name="Full screen" hint="Button">
+			<entry id="1" hint="tooltip">切换全屏</entry>
+		</section>
+		<section name="" hint="Button">
+			<entry id="1" hint="tooltip">Execute the last used (standalone) script.
+To use a new script, use the Open button.</entry>
+		</section>
+		<section name="Bug report" hint="Button">
+			<entry id="1" hint="tooltip">Opens a browser window where you can report a bug or an issue.
+URL: https://github.com/turanszkij/WickedEngine/issues/new</entry>
+		</section>
+		<section name="Profiler" hint="Button">
+			<entry id="1" hint="tooltip">查看性能分析器帧时间</entry>
+		</section>
+		<section name="Open" hint="Button">
+			<entry id="1" hint="tooltip">Open a scene, import an asset or execute a Lua script...
+Supported file types: .wiscene, .obj, .gltf, .glb, .vrm, .fbx, .lua, images, videos, sounds, etc.
+You can also drag and drop a file onto the window to open it in the Editor.</entry>
+		</section>
+		<section name="Exit" hint="Button">
+			<entry id="1" hint="tooltip">Exit</entry>
+		</section>
+	</section>
+	<section name="" hint="Button">
+		<entry id="1" hint="tooltip">Toggle navigation testing. When enabled, you can visualize path finding results.
+You can put down START and GOAL waypoints inside voxel grids to test path finding.
+Controls:
+----------
+F5 + middle click: put START to surface
+F6 + middle click: put GOAL to surface
+F7 + middle click: put START to air
+F8 + middle click: put GOAL to air</entry>
+	</section>
+	<section name="" hint="Button">
+		<entry id="1" hint="tooltip">Toggle reference dummy visualizer
+ - Use the reference dummy to get an idea about object sizes compared to a human character size.
+ - Position the dummy by clicking on something with the middle mouse button while the dummy is active.
+ - Pressing this button while Ctrl key is held down will reset dummy position to the origin.
+ - Pressing this button while the Shift key is held down will switch between male and female dummies.</entry>
+	</section>
+	<section name="Project Creator" hint="Window">
+		<entry id="0" hint="text">Project Creator</entry>
+		<section name="projectThumbnail" hint="Button">
+			<entry id="1" hint="tooltip">The thumbnail will be used for displaying the project in the editor.</entry>
+		</section>
+		<section name="" hint="Button">
+			<entry id="0" hint="text"></entry>
+			<entry id="1" hint="tooltip">Reload last project</entry>
+		</section>
+		<section name="projectCreate" hint="Button">
+			<entry id="0" hint="text"> Select folder and create project</entry>
+		</section>
+		<section name="colorPreviewButton" hint="Button">
+			<entry id="0" hint="text">Preview: these colors will be used by the application when showing the initialization screen and backlog text. [Click here to reset colors]</entry>
+		</section>
+		<section name="font color" hint="ColorPicker">
+			<entry id="0" hint="text">font color</entry>
+			<section name="Hex" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter RGBA hex value</entry>
+			</section>
+			<section name="B" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for BLUE channel (0-255)</entry>
+			</section>
+			<section name="S" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for SATURATION channel (0-100)</entry>
+			</section>
+			<section name="R" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for RED channel (0-255)</entry>
+			</section>
+			<section name="widget_226" hint="Slider">
+				<entry id="1" hint="tooltip">Value for ALPHA - TRANSPARENCY channel (0-255)</entry>
+			</section>
+			<section name="G" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for GREEN channel (0-255)</entry>
+			</section>
+			<section name="V" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for LUMINANCE channel (0-100)</entry>
+			</section>
+			<section name="H" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for HUE channel (0-360)</entry>
+			</section>
+		</section>
+		<section name="background color" hint="ColorPicker">
+			<entry id="0" hint="text">background color</entry>
+			<section name="Hex" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter RGBA hex value</entry>
+			</section>
+			<section name="B" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for BLUE channel (0-255)</entry>
+			</section>
+			<section name="S" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for SATURATION channel (0-100)</entry>
+			</section>
+			<section name="R" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for RED channel (0-255)</entry>
+			</section>
+			<section name="G" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for GREEN channel (0-255)</entry>
+			</section>
+			<section name="widget_227" hint="Slider">
+				<entry id="1" hint="tooltip">Value for ALPHA - TRANSPARENCY channel (0-255)</entry>
+			</section>
+			<section name="V" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for LUMINANCE channel (0-100)</entry>
+			</section>
+			<section name="H" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for HUE channel (0-360)</entry>
+			</section>
+		</section>
+		<section name="projectIcon" hint="Button">
+			<entry id="1" hint="tooltip">The icon will be used for the executable icon.</entry>
+		</section>
+		<section name="projectCursorButton" hint="Button">
+			<entry id="1" hint="tooltip">The cursor can be used as a custom cursor for your app. Here you can load an image to create it.</entry>
+		</section>
+		<section name="projectSplashScreen" hint="Button">
+			<entry id="1" hint="tooltip">The splash screen will be shown while the engine is initalizing.
+If there is a splash screen, then it will replace the intialization log display.</entry>
+		</section>
+		<section name="projectCreatorInfo" hint="Label">
+			<entry id="0" hint="text">Here you can create a new Wicked Engine application project. It will create a new folder with the project name, and set up an executable, lua script startup, custom icon, thumbnail and base colors. Lua script will not be overwritten if it already exists in the destination folder with &lt;projectname&gt;.lua.</entry>
+		</section>
+		<section name="projectCursorLabel" hint="Label">
+			<entry id="0" hint="text">You can add a custom cursor for your application here from an image. Specify the cursor click hotspot by clicking the image with the right mouse button and dragging the indicator.</entry>
+		</section>
+	</section>
+	<section name="Content Browser" hint="Window">
+		<entry id="0" hint="text">Content Browser</entry>
+	</section>
+	<section name="Theme Editor" hint="Window">
+		<entry id="0" hint="text">Theme Editor</entry>
+		<section name="themeShadowButton" hint="Button">
+			<entry id="1" hint="tooltip">The color of the gui shadow/border.</entry>
+		</section>
+		<section name="themeFocusButton" hint="Button">
+			<entry id="1" hint="tooltip">The main color of widgets when they are in focus, hovered by the mouse.</entry>
+		</section>
+		<section name="themeFontShadowButton" hint="Button">
+			<entry id="1" hint="tooltip">The text shadow color.</entry>
+		</section>
+		<section name="themeImageSlider" hint="Slider">
+			<entry id="0" hint="text">Background image tint: </entry>
+			<entry id="1" hint="tooltip">Control how much the background color tints the background image.</entry>
+		</section>
+		<section name="themeSave" hint="Button">
+			<entry id="0" hint="text">Save theme</entry>
+		</section>
+		<section name="themeWaveButton" hint="Button">
+			<entry id="1" hint="tooltip">The wave color.</entry>
+		</section>
+		<section name="themeFontButton" hint="Button">
+			<entry id="1" hint="tooltip">The main color of the text.</entry>
+		</section>
+		<section name="themeColorPicker" hint="ColorPicker">
+			<entry id="0" hint="text">themeColorPicker</entry>
+			<section name="Hex" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter RGBA hex value</entry>
+			</section>
+			<section name="B" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for BLUE channel (0-255)</entry>
+			</section>
+			<section name="S" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for SATURATION channel (0-100)</entry>
+			</section>
+			<section name="widget_228" hint="Slider">
+				<entry id="1" hint="tooltip">Value for ALPHA - TRANSPARENCY channel (0-255)</entry>
+			</section>
+			<section name="R" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for RED channel (0-255)</entry>
+			</section>
+			<section name="G" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for GREEN channel (0-255)</entry>
+			</section>
+			<section name="V" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for LUMINANCE channel (0-100)</entry>
+			</section>
+			<section name="H" hint="TextInputField">
+				<entry id="1" hint="tooltip">Enter value for HUE channel (0-360)</entry>
+			</section>
+		</section>
+		<section name="themeGradientButton" hint="Button">
+			<entry id="1" hint="tooltip">The gradient color.</entry>
+		</section>
+		<section name="themeIdleButton" hint="Button">
+			<entry id="1" hint="tooltip">The main color of widgets when they are not in interaction.</entry>
+		</section>
+		<section name="themeBackgroundButton" hint="Button">
+			<entry id="1" hint="tooltip">The color of the gui background.</entry>
+		</section>
+	</section>
+	<section name="Camera" hint="Window">
+		<entry id="0" hint="text">Camera </entry>
+		<section name="Orthographic: " hint="CheckBox">
+			<entry id="0" hint="text">正交： </entry>
+		</section>
+		<section name="Movement Speed: " hint="Slider">
+			<entry id="0" hint="text">移动速度： </entry>
+		</section>
+		<section name="Far Plane: " hint="Slider">
+			<entry id="0" hint="text">远平面： </entry>
+			<entry id="1" hint="tooltip">控制相机的远裁剪面，超出此距离的几何体将被裁剪。</entry>
+		</section>
+		<section name="Aperture Shape Y: " hint="Slider">
+			<entry id="0" hint="text">光圈形状 Y： </entry>
+			<entry id="1" hint="tooltip">控制景深效果的散景形状</entry>
+		</section>
+		<section name="Aperture Size: " hint="Slider">
+			<entry id="0" hint="text">光圈大小： </entry>
+			<entry id="1" hint="tooltip">控制景深效果的强度</entry>
+		</section>
+		<section name="Aperture Shape X: " hint="Slider">
+			<entry id="0" hint="text">光圈形状 X： </entry>
+			<entry id="1" hint="tooltip">控制景深效果的散景形状</entry>
+		</section>
+		<section name="Follow Proxy Delay: " hint="Slider">
+			<entry id="0" hint="text">跟随代理延迟： </entry>
+		</section>
+		<section name="Focal Length: " hint="Slider">
+			<entry id="0" hint="text">焦距： </entry>
+			<entry id="1" hint="tooltip">控制景深效果的焦距。
+也可以按住C键并用左键在场景中拾取来重新对焦。</entry>
+		</section>
+		<section name="Place Proxy" hint="Button">
+			<entry id="0" hint="text">放置代理</entry>
+			<entry id="1" hint="tooltip">复制当前相机并在世界中放置其代理。</entry>
+		</section>
+		<section name="FOV: " hint="Slider">
+			<entry id="0" hint="text">视场角： </entry>
+			<entry id="1" hint="tooltip">控制相机的俯仰视场角（度）</entry>
+		</section>
+		<section name="Near Plane: " hint="Slider">
+			<entry id="0" hint="text">近平面： </entry>
+			<entry id="1" hint="tooltip">控制相机的近裁剪面，比此距离近的几何体将被裁剪。</entry>
+		</section>
+		<section name="Follow Proxy: " hint="CheckBox">
+			<entry id="0" hint="text">跟随代理： </entry>
+		</section>
+		<section name="Reset Camera" hint="Button">
+			<entry id="0" hint="text">重置相机</entry>
+		</section>
+		<section name="Acceleration: " hint="Slider">
+			<entry id="0" hint="text">加速度： </entry>
+		</section>
+		<section name="Rotation Speed: " hint="Slider">
+			<entry id="0" hint="text">旋转速度： </entry>
+		</section>
+		<section name="FPS Camera: " hint="CheckBox">
+			<entry id="0" hint="text">FPS相机： </entry>
+		</section>
+	</section>
+	<section name="" hint="Button">
+		<entry id="1" hint="tooltip">通用选项</entry>
+	</section>
+	<section name="" hint="Button">
+		<entry id="1" hint="tooltip">进入影院模式（禁用所有HUD）。按ESC返回正常模式。</entry>
+	</section>
+	<section name="Profiler" hint="Window">
+		<entry id="0" hint="text">Profiler</entry>
+	</section>
+	<section name="" hint="Button">
+		<entry id="1" hint="tooltip">相机选项</entry>
+	</section>
+	<section name="is2DModeButton" hint="Button">
+		<entry id="0" hint="text">3D</entry>
+		<entry id="1" hint="tooltip">在3D和2D编辑器工作流之间切换。2D模式将锁定相机和控制到XY轴。</entry>
+	</section>
+	<section name="" hint="Button">
+		<entry id="1" hint="tooltip">Rotate
+Hotkey: 2</entry>
+	</section>
+</section>
