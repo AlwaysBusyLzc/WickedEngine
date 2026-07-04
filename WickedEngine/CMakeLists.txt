@@ -90,6 +90,13 @@ list(REMOVE_ITEM SOURCE_FILES
     ${CMAKE_CURRENT_SOURCE_DIR}/wiRenderer.cpp
 )
 
+# RmlUi integration: compile wiRmlUi_BindLua.cpp separately with exceptions enabled (sol2 requirement)
+if(WICKED_RMLUI)
+    list(REMOVE_ITEM SOURCE_FILES
+        ${CMAKE_CURRENT_SOURCE_DIR}/wiRmlUi_BindLua.cpp
+    )
+endif()
+
 file(GLOB SHADER_FILES CONFIGURE_DEPENDS shaders/*.hlsl shaders/*.hlsli)
 
 # these are all Wicked files except wiRenderer.cpp, which can be compiled
@@ -332,3 +339,45 @@ target_link_libraries(offlineshadercompiler
 
 # only this target will see the wiShaderDump.h file, so the _ext_shaders target will not have embedded shaders.
 target_include_directories(WickedEngine_emb_shaders PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
+
+# ============================================================================
+# RmlUi integration
+# ============================================================================
+if(WICKED_RMLUI)
+    # Add sol2 header-only library include path
+    target_include_directories(WickedEngine_common SYSTEM PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/third_party/sol2/include
+    )
+
+    # Add RmlUi include path
+    target_include_directories(WickedEngine_common SYSTEM PRIVATE
+        ${WICKED_ROOT_DIR}/RmlUi/Include
+    )
+
+    # Link RmlUi to the common object library
+    target_link_libraries(WickedEngine_common PUBLIC RmlUi)
+
+    # Define WICKED_RMLUI preprocessor macro
+    target_compile_definitions(WickedEngine_common PUBLIC WICKED_RMLUI=1)
+
+    # Compile wiRmlUi_BindLua.cpp as a separate object with exceptions enabled (sol2 requirement)
+    add_library(wiRmlUi_BindLua OBJECT wiRmlUi_BindLua.cpp)
+    target_include_directories(wiRmlUi_BindLua PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/third_party/sol2/include
+        ${WICKED_ROOT_DIR}/RmlUi/Include
+    )
+    target_precompile_headers(wiRmlUi_BindLua REUSE_FROM WickedEngine_common)
+    target_compile_definitions(wiRmlUi_BindLua PRIVATE WICKED_RMLUI=1 WICKED_CMAKE_BUILD)
+
+    # Enable exceptions for sol2 (WickedEngine disables them globally)
+    if(MSVC)
+        target_compile_options(wiRmlUi_BindLua PRIVATE /EHsc)
+    else()
+        target_compile_options(wiRmlUi_BindLua PRIVATE -fexceptions)
+    endif()
+
+    # Link the object into the main library
+    target_link_libraries(WickedEngine_ext_shaders PRIVATE wiRmlUi_BindLua)
+    target_link_libraries(WickedEngine_emb_shaders PRIVATE wiRmlUi_BindLua)
+endif()

@@ -1,0 +1,37 @@
+/* demo.rcss - RmlUi Cascading Style Sheet for the demo document */
+
+body {
+	font-family: Roboto;
+	font-size: 16px;
+	color: #ffffff;
+	background: transparent;
+}
+
+button {
+	background-color: #4488ff;
+	color: #ffffff;
+	border: none;
+	padding: 8px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+button:hover {
+	background-color: #66aaff;
+}
+
+button:active {
+	background-color: #3366dd;
+}
+
+h1 {
+	font-size: 24px;
+	color: #4488ff;
+	margin: 0;
+}
+
+p {
+	margin: 8px 0;
+	line-height: 1.4;
+}

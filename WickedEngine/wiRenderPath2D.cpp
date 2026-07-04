@@ -4,6 +4,10 @@
 #include "wiSpriteFont.h"
 #include "wiRenderer.h"
 
+#ifdef WICKED_RMLUI
+#include "wiRmlUi.h"
+#endif
+
 using namespace wi::graphics;
 
 namespace wi
@@ -91,11 +95,18 @@ namespace wi
 		if (current_buffersize.x != internalResolution.x || current_buffersize.y != internalResolution.y)
 		{
 			ResizeBuffers();
+#ifdef WICKED_RMLUI
+			wi::rmlui::Resize((int)internalResolution.x, (int)internalResolution.y);
+#endif
 		}
 		if (current_layoutscale != GetDPIScaling())
 		{
 			ResizeLayout();
 		}
+
+#ifdef WICKED_RMLUI
+		wi::rmlui::Update(dt);
+#endif
 
 		GetGUI().Update(*this, dt);
 
@@ -302,11 +313,16 @@ namespace wi
 			// Convert the regular SRGB result of the render path to linear space for HDR compositing:
 			fx.enableLinearOutputMapping(hdr_scaling);
 		}
-		wi::image::Draw(&GetRenderResult2D(), fx, cmd);
+	wi::image::Draw(&GetRenderResult2D(), fx, cmd);
 
-		device->EventEnd(cmd);
+#ifdef WICKED_RMLUI
+	// Render RmlUi on top of the 2D scene
+	wi::rmlui::Render(cmd);
+#endif
 
-		RenderPath::Compose(cmd);
+	device->EventEnd(cmd);
+
+	RenderPath::Compose(cmd);
 	}
 
 

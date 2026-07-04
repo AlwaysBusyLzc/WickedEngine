@@ -48,6 +48,7 @@ else()
     set(symlink_default ON)
 endif()
 option(WICKED_ENABLE_SYMLINKS "Prefer symlinking over copying directories" ${symlink_default})
+option(WICKED_RMLUI "Enable RmlUi UI library integration" OFF)
 
 # check that IPO is supported when turned on
 if(WICKED_ENABLE_IPO)
@@ -184,6 +185,21 @@ elseif (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
 endif()
 
 add_subdirectory(WickedEngine)
+
+if(WICKED_RMLUI)
+    # Build RmlUi as a static library with exceptions and RTTI enabled
+    set(BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
+    set(RMLUI_SAMPLES OFF CACHE BOOL "" FORCE)
+    set(RMLUI_TESTS OFF CACHE BOOL "" FORCE)
+    set(RMLUI_LUA_BINDINGS OFF CACHE BOOL "" FORCE)
+    add_subdirectory(RmlUi)
+    # RmlUi requires C++ exceptions and RTTI, enable them for the RmlUi target only
+    if(MSVC)
+        target_compile_options(RmlUi PRIVATE /EHsc /GR)
+    else()
+        target_compile_options(RmlUi PRIVATE -fexceptions -frtti)
+    endif()
+endif()
 add_custom_target(Content
    COMMAND ${CMAKE_COMMAND} -E ${COPY_OR_SYMLINK_DIR_CMD} ${WICKED_ROOT_DIR}/Content ${CMAKE_CURRENT_BINARY_DIR}/Content
    COMMENT "$<IF:$<BOOL:${WICKED_ENABLE_SYMLINKS}>,Symlinking,Copying> Content directory"

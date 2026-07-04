@@ -1,6 +1,10 @@
 #include "wiInitializer.h"
 #include "WickedEngine.h"
 
+#ifdef WICKED_RMLUI
+#include "wiRmlUi.h"
+#endif
+
 #include <thread>
 #include <atomic>
 
@@ -181,6 +185,11 @@ namespace wi::initializer
 		wi::lua::Initialize(); systems[INITIALIZED_SYSTEM_LUA].store(true);
 		wi::audio::Initialize(); systems[INITIALIZED_SYSTEM_AUDIO].store(true);
 		wi::font::Initialize(); systems[INITIALIZED_SYSTEM_FONT].store(true);
+
+#ifdef WICKED_RMLUI
+		// RmlUi must be initialized after Lua, as the Lua bindings register into the Lua state
+		wi::rmlui::Initialize(); systems[INITIALIZED_SYSTEM_RMLUI].store(true);
+#endif
 
 		std::thread([] {
 			wi::jobsystem::Wait(ctx);

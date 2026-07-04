@@ -25,6 +25,9 @@
 #include "wiVoxelGrid_BindLua.h"
 #include "wiPathQuery_BindLua.h"
 #include "wiTrailRenderer_BindLua.h"
+#ifdef WICKED_RMLUI
+#include "wiRmlUi_BindLua.h"
+#endif
 #include "wiAsync_BindLua.h"
 #include "wiTimer.h"
 #include "wiVector.h"
@@ -423,6 +426,10 @@ namespace wi::lua
 		PathQuery_BindLua::Bind();
 		TrailRenderer_BindLua::Bind();
 		Async_BindLua::Bind();
+
+#ifdef WICKED_RMLUI
+		wi::lua::rmlui::Bind();
+#endif
 
 		wilog("wi::lua Initialized [Lua %s.%s.%s] (%d ms)", LUA_VERSION_MAJOR, LUA_VERSION_MINOR, LUA_VERSION_RELEASE, (int)std::round(timer.elapsed()));
 	}
